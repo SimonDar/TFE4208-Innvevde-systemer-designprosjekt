@@ -1,0 +1,868 @@
+Analysis & Synthesis report for Ver2
+Fri Jan 13 11:53:20 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component
+ 12. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_binSearchReg:inst2|wb_block_decoder:inst2
+ 13. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component
+ 14. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component
+ 15. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|2-1-mux:inst9
+ 16. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component
+ 17. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component
+ 18. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component
+ 19. Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component
+ 20. lpm_mult Parameter Settings by Entity Instance
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jan 13 11:53:20 2023          ;
+; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                      ; Ver2                                           ;
+; Top-level Entity Name              ; StudentDesign                                  ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 249                                            ;
+;     Total combinational functions  ; 232                                            ;
+;     Dedicated logic registers      ; 82                                             ;
+; Total registers                    ; 82                                             ;
+; Total pins                         ; 92                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 6                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; StudentDesign      ; Ver2               ;
+; Family name                                                      ; Cyclone IV E       ; Stratix II         ;
+; Maximum processors allowed for parallel compilation              ; 4                  ; 1                  ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 100                ; 100                ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------+---------+
+; StudentDesign.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/StudentDesign.bdf                           ;         ;
+; fact.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/fact.bdf                                    ;         ;
+; edgeDetector.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/edgeDetector.bdf                            ;         ;
+; factSTM.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/factSTM.bdf                                 ;         ;
+; wb_aComp_envShape.bdf            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_aComp_envShape.bdf                       ;         ;
+; wb_acomp_factorfinder.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factorfinder.bdf                   ;         ;
+; wb_acomp_factcount.vhd           ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcount.vhd                      ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/dffeea.inc              ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/aglobal221.inc          ;         ;
+; db/cntr_lhj.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/cntr_lhj.tdf                             ;         ;
+; wb_acomp_binsearchreg.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_binsearchreg.bdf                   ;         ;
+; wb_block_decoder.vhd             ; yes             ; Auto-Found VHDL File                     ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_block_decoder.vhd                        ;         ;
+; wb_acomp_factcompare.vhd         ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcompare.vhd                    ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_compare.tdf         ;         ;
+; comptree.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/comptree.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; db/cmpr_vgj.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/cmpr_vgj.tdf                             ;         ;
+; wb_acomp_factormult.vhd          ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factormult.vhd                     ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
+; multcore.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/multcore.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; db/mult_ofn.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/mult_ofn.tdf                             ;         ;
+; 2-1-mux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/2-1-mux.bdf                                 ;         ;
+; wb_acomp_envcomp.vhd             ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envcomp.vhd                        ;         ;
+; db/cmpr_ing.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/cmpr_ing.tdf                             ;         ;
+; wb_acomp_valuereducer.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_valuereducer.bdf                   ;         ;
+; wb_acomp_envshapesub.vhd         ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapesub.vhd                    ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_6ai.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/add_sub_6ai.tdf                          ;         ;
+; wb_acomp_envshapemult.vhd        ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapemult.vhd                   ;         ;
+; db/mult_mfn.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/mult_mfn.tdf                             ;         ;
+; lpm_decode0.vhd                  ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/lpm_decode0.vhd                             ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_decode.tdf          ;         ;
+; declut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/declut.inc              ;         ;
+; db/decode_ucf.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/decode_ucf.tdf                           ;         ;
+; abslt.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/abslt.bdf                                   ;         ;
+; krets_12.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/krets_12.bdf                                ;         ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 249       ;
+;                                             ;           ;
+; Total combinational functions               ; 232       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 65        ;
+;     -- 3 input functions                    ; 110       ;
+;     -- <=2 input functions                  ; 57        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 152       ;
+;     -- arithmetic mode                      ; 80        ;
+;                                             ;           ;
+; Total registers                             ; 82        ;
+;     -- Dedicated logic registers            ; 82        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 92        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 6         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 82        ;
+; Total fan-out                               ; 1228      ;
+; Average fan-out                             ; 2.44      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                          ;
++----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                   ; Entity Name           ; Library Name ;
++----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |StudentDesign                                     ; 232 (0)             ; 82 (0)                    ; 0           ; 6            ; 0       ; 3         ; 92   ; 0            ; |StudentDesign                                                                                                                                                        ; StudentDesign         ; work         ;
+;    |ABSLT:inst|                                    ; 27 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|ABSLT:inst                                                                                                                                             ; ABSLT                 ; work         ;
+;       |Krets_12:inst1|                             ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|ABSLT:inst|Krets_12:inst1                                                                                                                              ; Krets_12              ; work         ;
+;       |Krets_12:inst2|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|ABSLT:inst|Krets_12:inst2                                                                                                                              ; Krets_12              ; work         ;
+;       |Krets_12:inst3|                             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|ABSLT:inst|Krets_12:inst3                                                                                                                              ; Krets_12              ; work         ;
+;       |Krets_12:inst|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|ABSLT:inst|Krets_12:inst                                                                                                                               ; Krets_12              ; work         ;
+;    |fact:inst5|                                    ; 205 (0)             ; 82 (0)                    ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |StudentDesign|fact:inst5                                                                                                                                             ; fact                  ; work         ;
+;       |edgeDetector:inst|                          ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|edgeDetector:inst                                                                                                                           ; edgeDetector          ; work         ;
+;       |factSTM:inst1|                              ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|factSTM:inst1                                                                                                                               ; factSTM               ; work         ;
+;       |wb_aComp_envShape:inst8|                    ; 136 (16)            ; 40 (40)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8                                                                                                                     ; wb_aComp_envShape     ; work         ;
+;          |2-1-mux:inst9|                           ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|2-1-mux:inst9                                                                                                       ; 2-1-mux               ; work         ;
+;          |wb_aComp_envComp:inst|                   ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst                                                                                               ; wb_aComp_envComp      ; work         ;
+;             |lpm_compare:lpm_compare_component|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component                                                             ; lpm_compare           ; work         ;
+;                |cmpr_ing:auto_generated|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component|cmpr_ing:auto_generated                                     ; cmpr_ing              ; work         ;
+;          |wb_aComp_valueReducer:inst1|             ; 95 (16)             ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1                                                                                         ; wb_aComp_valueReducer ; work         ;
+;             |lpm_decode0:inst|                     ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst                                                                        ; lpm_decode0           ; work         ;
+;                |lpm_decode:lpm_decode_component|   ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component                                        ; lpm_decode            ; work         ;
+;                   |decode_ucf:auto_generated|      ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_ucf:auto_generated              ; decode_ucf            ; work         ;
+;             |wb_aComp_envShapeMult:inst6|          ; 22 (0)              ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6                                                             ; wb_aComp_envShapeMult ; work         ;
+;                |lpm_mult:lpm_mult_component|       ; 22 (0)              ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component                                 ; lpm_mult              ; work         ;
+;                   |mult_mfn:auto_generated|        ; 22 (22)             ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_mfn:auto_generated         ; mult_mfn              ; work         ;
+;             |wb_aComp_envShapeSub:inst7|           ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7                                                              ; wb_aComp_envShapeSub  ; work         ;
+;                |lpm_add_sub:lpm_add_sub_component| ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component                            ; lpm_add_sub           ; work         ;
+;                   |add_sub_6ai:auto_generated|     ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component|add_sub_6ai:auto_generated ; add_sub_6ai           ; work         ;
+;       |wb_aComp_factorFinder:inst6|                ; 64 (3)              ; 38 (19)                   ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6                                                                                                                 ; wb_aComp_factorFinder ; work         ;
+;          |wb_aComp_binSearchReg:inst2|             ; 49 (34)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_binSearchReg:inst2                                                                                     ; wb_aComp_binSearchReg ; work         ;
+;             |wb_block_decoder:inst2|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_binSearchReg:inst2|wb_block_decoder:inst2                                                              ; wb_block_decoder      ; work         ;
+;          |wb_aComp_factCompare:inst1|              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1                                                                                      ; wb_aComp_factCompare  ; work         ;
+;             |lpm_compare:lpm_compare_component|    ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component                                                    ; lpm_compare           ; work         ;
+;                |cmpr_vgj:auto_generated|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component|cmpr_vgj:auto_generated                            ; cmpr_vgj              ; work         ;
+;          |wb_aComp_factCount:inst7|                ; 5 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7                                                                                        ; wb_aComp_factCount    ; work         ;
+;             |lpm_counter:lpm_counter_component|    ; 5 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component                                                      ; lpm_counter           ; work         ;
+;                |cntr_lhj:auto_generated|           ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component|cntr_lhj:auto_generated                              ; cntr_lhj              ; work         ;
+;          |wb_aComp_factorMult:inst|                ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst                                                                                        ; wb_aComp_factorMult   ; work         ;
+;             |lpm_mult:lpm_mult_component|          ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component                                                            ; lpm_mult              ; work         ;
+;                |mult_ofn:auto_generated|           ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |StudentDesign|fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component|mult_ofn:auto_generated                                    ; mult_ofn              ; work         ;
++----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 3           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 6           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 3           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++-------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                        ;
++--------------------------------------------------+----------------------------------------+
+; Register name                                    ; Reason for Removal                     ;
++--------------------------------------------------+----------------------------------------+
+; fact:inst5|wb_aComp_factorFinder:inst6|inst3[15] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1            ;                                        ;
++--------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 82    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Asynchronous Clear ; 82    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 74    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component ;
++------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                                   ;
++------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                                         ;
+; LPM_WIDTH              ; 4            ; Signed Integer                                                                                         ;
+; LPM_DIRECTION          ; DOWN         ; Untyped                                                                                                ;
+; LPM_MODULUS            ; 0            ; Untyped                                                                                                ;
+; LPM_AVALUE             ; UNUSED       ; Untyped                                                                                                ;
+; LPM_SVALUE             ; UNUSED       ; Untyped                                                                                                ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED  ; Untyped                                                                                                ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                                                ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                                                ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                                     ;
+; NOT_GATE_PUSH_BACK     ; ON           ; NOT_GATE_PUSH_BACK                                                                                     ;
+; CARRY_CNT_EN           ; SMART        ; Untyped                                                                                                ;
+; LABWIDE_SCLR           ; ON           ; Untyped                                                                                                ;
+; USE_NEW_VERSION        ; TRUE         ; Untyped                                                                                                ;
+; CBXI_PARAMETER         ; cntr_lhj     ; Untyped                                                                                                ;
++------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_binSearchReg:inst2|wb_block_decoder:inst2 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------+
+; widthin        ; 4     ; Untyped                                                                                                       ;
+; widthout       ; 16    ; Untyped                                                                                                       ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                                     ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------+
+; lpm_width              ; 32           ; Signed Integer                                                                                           ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                                                  ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                                                  ;
+; CHAIN_SIZE             ; 8            ; Untyped                                                                                                  ;
+; ONE_INPUT_IS_CONSTANT  ; YES          ; Untyped                                                                                                  ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                                                  ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                                                  ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                                       ;
+; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                                                     ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                                                  ;
+; CBXI_PARAMETER         ; cmpr_vgj     ; Untyped                                                                                                  ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                                             ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                                           ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component ;
++------------------------------------------------+--------------+--------------------------------------------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                                                     ;
++------------------------------------------------+--------------+--------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                                               ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                                             ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                                             ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                                           ;
+; LPM_WIDTHA                                     ; 16           ; Signed Integer                                                           ;
+; LPM_WIDTHB                                     ; 16           ; Signed Integer                                                           ;
+; LPM_WIDTHP                                     ; 32           ; Signed Integer                                                           ;
+; LPM_WIDTHR                                     ; 0            ; Untyped                                                                  ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                                                  ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                                                                  ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                                                  ;
+; LATENCY                                        ; 0            ; Untyped                                                                  ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                                                  ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                                                  ;
+; USE_EAB                                        ; OFF          ; Untyped                                                                  ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped                                                                  ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                                                  ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                                                  ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                                                      ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                                                  ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                                                  ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                                                  ;
+; CBXI_PARAMETER                                 ; mult_ofn     ; Untyped                                                                  ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                                                  ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                                                  ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                                                  ;
++------------------------------------------------+--------------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|2-1-mux:inst9 ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; busWidth       ; 40    ; Untyped                                                              ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component ;
++------------------------+--------------+-------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                            ;
++------------------------+--------------+-------------------------------------------------------------------------------------------------+
+; lpm_width              ; 40           ; Signed Integer                                                                                  ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                                         ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                                         ;
+; CHAIN_SIZE             ; 8            ; Untyped                                                                                         ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                                         ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                                         ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                                         ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                              ;
+; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                                            ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                                         ;
+; CBXI_PARAMETER         ; cmpr_ing     ; Untyped                                                                                         ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                                    ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                                  ;
++------------------------+--------------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                                                             ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 40           ; Signed Integer                                                                                                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                                                                          ;
+; LPM_DIRECTION          ; SUB          ; Untyped                                                                                                                          ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                                                                          ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                                                                          ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                                                                                                                          ;
+; REGISTERED_AT_END      ; 0            ; Untyped                                                                                                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                                                                                                          ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                                                                                                                          ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                                                                          ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                                                               ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                                                                          ;
+; USE_WYS                ; OFF          ; Untyped                                                                                                                          ;
+; STYLE                  ; FAST         ; Untyped                                                                                                                          ;
+; CBXI_PARAMETER         ; add_sub_6ai  ; Untyped                                                                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                                                                   ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component ;
++------------------------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                                                                                ;
++------------------------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                                                                          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                                                                        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                                                                        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                                                                      ;
+; LPM_WIDTHA                                     ; 16           ; Signed Integer                                                                                      ;
+; LPM_WIDTHB                                     ; 24           ; Signed Integer                                                                                      ;
+; LPM_WIDTHP                                     ; 40           ; Signed Integer                                                                                      ;
+; LPM_WIDTHR                                     ; 0            ; Untyped                                                                                             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                                                                             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                                                                                             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                                                                             ;
+; LATENCY                                        ; 0            ; Untyped                                                                                             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                                                                             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                                                                             ;
+; USE_EAB                                        ; OFF          ; Untyped                                                                                             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped                                                                                             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                                                                             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                                                                             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                                                                                 ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                                                                             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                                                                             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                                                                             ;
+; CBXI_PARAMETER                                 ; mult_mfn     ; Untyped                                                                                             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                                                                             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                                                                             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                                                                             ;
++------------------------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                                                 ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 4            ; Signed Integer                                                                                                       ;
+; LPM_DECODES            ; 16           ; Signed Integer                                                                                                       ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                                                              ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                                                              ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                                                              ;
+; CBXI_PARAMETER         ; decode_ucf   ; Untyped                                                                                                              ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                                                         ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                                                       ;
++------------------------+--------------+----------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                                                                                 ;
++---------------------------------------+------------------------------------------------------------------------------------------------------------------------+
+; Name                                  ; Value                                                                                                                  ;
++---------------------------------------+------------------------------------------------------------------------------------------------------------------------+
+; Number of entity instances            ; 2                                                                                                                      ;
+; Entity Instance                       ; fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component                            ;
+;     -- LPM_WIDTHA                     ; 16                                                                                                                     ;
+;     -- LPM_WIDTHB                     ; 16                                                                                                                     ;
+;     -- LPM_WIDTHP                     ; 32                                                                                                                     ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                                                               ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                                     ;
+;     -- USE_EAB                        ; OFF                                                                                                                    ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                                   ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                                     ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                                     ;
+; Entity Instance                       ; fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                                                                     ;
+;     -- LPM_WIDTHB                     ; 24                                                                                                                     ;
+;     -- LPM_WIDTHP                     ; 40                                                                                                                     ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                                                               ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                                     ;
+;     -- USE_EAB                        ; OFF                                                                                                                    ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                                   ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                                     ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                                     ;
++---------------------------------------+------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 92                          ;
+; cycloneiii_ff         ; 82                          ;
+;     CLR               ; 8                           ;
+;     ENA CLR           ; 54                          ;
+;     ENA CLR SLD       ; 20                          ;
+; cycloneiii_lcell_comb ; 233                         ;
+;     arith             ; 80                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 64                          ;
+;     normal            ; 153                         ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 46                          ;
+;         4 data inputs ; 65                          ;
+; cycloneiii_mac_mult   ; 3                           ;
+; cycloneiii_mac_out    ; 3                           ;
+;                       ;                             ;
+; Max LUT depth         ; 10.10                       ;
+; Average LUT depth     ; 5.18                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Fri Jan 13 11:53:06 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Ver2
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file lab3.bdf
+    Info (12023): Found entity 1: Lab3
+Info (12021): Found 1 design units, including 1 entities, in source file studentdesign.bdf
+    Info (12023): Found entity 1: StudentDesign
+Info (12021): Found 1 design units, including 1 entities, in source file fact.bdf
+    Info (12023): Found entity 1: fact
+Info (12021): Found 1 design units, including 1 entities, in source file edgedetector.bdf
+    Info (12023): Found entity 1: edgeDetector
+Info (12021): Found 1 design units, including 1 entities, in source file factstm.bdf
+    Info (12023): Found entity 1: factSTM
+Info (12021): Found 1 design units, including 1 entities, in source file wb_acomp_envshape.bdf
+    Info (12023): Found entity 1: wb_aComp_envShape
+Info (12021): Found 2 design units, including 1 entities, in source file wb_hexto7segone.vhd
+    Info (12022): Found design unit 1: wb_hexTo7segOne-behavior File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_hexTo7segOne.vhd Line: 17
+    Info (12023): Found entity 1: wb_hexTo7segOne File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_hexTo7segOne.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file wb_hexto7segall.vhd
+    Info (12022): Found design unit 1: wb_hexTo7segAll-behavior File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_hexTo7segAll.vhd Line: 20
+    Info (12023): Found entity 1: wb_hexTo7segAll File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_hexTo7segAll.vhd Line: 4
+Info (12127): Elaborating entity "StudentDesign" for the top level hierarchy
+Warning (275043): Pin "RESULT_B[15..0]" is missing source
+Warning (275043): Pin "STATUS[7..0]" is missing source
+Warning (275009): Pin "B" not connected
+Warning (275009): Pin "D" not connected
+Info (12128): Elaborating entity "fact" for hierarchy "fact:inst5"
+Warning (275009): Pin "ENFACT" not connected
+Info (12128): Elaborating entity "factSTM" for hierarchy "fact:inst5|factSTM:inst1"
+Warning (12125): Using design file wb_acomp_factorfinder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: wb_aComp_factorFinder
+Info (12128): Elaborating entity "wb_aComp_factorFinder" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6"
+Warning (12125): Using design file wb_acomp_factcount.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_acomp_factcount-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcount.vhd Line: 54
+    Info (12023): Found entity 1: wb_aComp_factCount File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcount.vhd Line: 42
+Info (12128): Elaborating entity "wb_aComp_factCount" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcount.vhd Line: 79
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcount.vhd Line: 79
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcount.vhd Line: 79
+    Info (12134): Parameter "lpm_direction" = "DOWN"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_lhj.tdf
+    Info (12023): Found entity 1: cntr_lhj File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/cntr_lhj.tdf Line: 26
+Info (12128): Elaborating entity "cntr_lhj" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCount:inst7|lpm_counter:lpm_counter_component|cntr_lhj:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
+Warning (12125): Using design file wb_acomp_binsearchreg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: wb_aComp_binSearchReg
+Info (12128): Elaborating entity "wb_aComp_binSearchReg" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_binSearchReg:inst2"
+Warning (12125): Using design file wb_block_decoder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_block_decoder-behavior File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_block_decoder.vhd Line: 52
+    Info (12023): Found entity 1: wb_block_decoder File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_block_decoder.vhd Line: 37
+Info (12128): Elaborating entity "wb_block_decoder" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_binSearchReg:inst2|wb_block_decoder:inst2"
+Warning (12125): Using design file wb_acomp_factcompare.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_acomp_factcompare-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcompare.vhd Line: 51
+    Info (12023): Found entity 1: wb_aComp_factCompare File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcompare.vhd Line: 42
+Info (12128): Elaborating entity "wb_aComp_factCompare" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcompare.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcompare.vhd Line: 78
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factcompare.vhd Line: 78
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_vgj.tdf
+    Info (12023): Found entity 1: cmpr_vgj File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/cmpr_vgj.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_vgj" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factCompare:inst1|lpm_compare:lpm_compare_component|cmpr_vgj:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+Warning (12125): Using design file wb_acomp_factormult.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_acomp_factormult-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factormult.vhd Line: 52
+    Info (12023): Found entity 1: wb_aComp_factorMult File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factormult.vhd Line: 42
+Info (12128): Elaborating entity "wb_aComp_factorMult" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst"
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factormult.vhd Line: 77
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factormult.vhd Line: 77
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_factormult.vhd Line: 77
+    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_MULT"
+    Info (12134): Parameter "lpm_widtha" = "16"
+    Info (12134): Parameter "lpm_widthb" = "16"
+    Info (12134): Parameter "lpm_widthp" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ofn.tdf
+    Info (12023): Found entity 1: mult_ofn File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/mult_ofn.tdf Line: 29
+Info (12128): Elaborating entity "mult_ofn" for hierarchy "fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component|mult_ofn:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
+Info (12128): Elaborating entity "wb_aComp_envShape" for hierarchy "fact:inst5|wb_aComp_envShape:inst8"
+Warning (12125): Using design file 2-1-mux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 2-1-mux
+Info (12128): Elaborating entity "2-1-mux" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|2-1-mux:inst9"
+Warning (12125): Using design file wb_acomp_envcomp.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_acomp_envcomp-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envcomp.vhd Line: 52
+    Info (12023): Found entity 1: wb_aComp_envComp File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envcomp.vhd Line: 42
+Info (12128): Elaborating entity "wb_aComp_envComp" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envcomp.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envcomp.vhd Line: 74
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envcomp.vhd Line: 74
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
+    Info (12134): Parameter "lpm_width" = "40"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ing.tdf
+    Info (12023): Found entity 1: cmpr_ing File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/cmpr_ing.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_ing" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_envComp:inst|lpm_compare:lpm_compare_component|cmpr_ing:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+Warning (12125): Using design file wb_acomp_valuereducer.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: wb_aComp_valueReducer
+Info (12128): Elaborating entity "wb_aComp_valueReducer" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1"
+Warning (275002): No superset bus at connection
+Warning (12125): Using design file wb_acomp_envshapesub.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_acomp_envshapesub-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapesub.vhd Line: 53
+    Info (12023): Found entity 1: wb_aComp_envShapeSub File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapesub.vhd Line: 42
+Info (12128): Elaborating entity "wb_aComp_envShapeSub" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapesub.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapesub.vhd Line: 80
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapesub.vhd Line: 80
+    Info (12134): Parameter "lpm_direction" = "SUB"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "40"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_6ai.tdf
+    Info (12023): Found entity 1: add_sub_6ai File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/add_sub_6ai.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_6ai" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeSub:inst7|lpm_add_sub:lpm_add_sub_component|add_sub_6ai:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+Warning (12125): Using design file wb_acomp_envshapemult.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: wb_acomp_envshapemult-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapemult.vhd Line: 52
+    Info (12023): Found entity 1: wb_aComp_envShapeMult File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapemult.vhd Line: 42
+Info (12128): Elaborating entity "wb_aComp_envShapeMult" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6"
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapemult.vhd Line: 77
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapemult.vhd Line: 77
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/wb_acomp_envshapemult.vhd Line: 77
+    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_MULT"
+    Info (12134): Parameter "lpm_widtha" = "16"
+    Info (12134): Parameter "lpm_widthb" = "24"
+    Info (12134): Parameter "lpm_widthp" = "40"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_mfn.tdf
+    Info (12023): Found entity 1: mult_mfn File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/mult_mfn.tdf Line: 31
+Info (12128): Elaborating entity "mult_mfn" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_mfn:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
+Warning (12125): Using design file lpm_decode0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: lpm_decode0-SYN File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/lpm_decode0.vhd Line: 66
+    Info (12023): Found entity 1: lpm_decode0 File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/lpm_decode0.vhd Line: 42
+Info (12128): Elaborating entity "lpm_decode0" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst"
+Info (12128): Elaborating entity "lpm_decode" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/lpm_decode0.vhd Line: 134
+Info (12130): Elaborated megafunction instantiation "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component" File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/lpm_decode0.vhd Line: 134
+Info (12133): Instantiated megafunction "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component" with the following parameter: File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/lpm_decode0.vhd Line: 134
+    Info (12134): Parameter "lpm_decodes" = "16"
+    Info (12134): Parameter "lpm_type" = "LPM_DECODE"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_ucf.tdf
+    Info (12023): Found entity 1: decode_ucf File: C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/db/decode_ucf.tdf Line: 23
+Info (12128): Elaborating entity "decode_ucf" for hierarchy "fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_ucf:auto_generated" File: c:/intelfpga_lite22/22.1std/quartus/libraries/megafunctions/lpm_decode.tdf Line: 77
+Info (12128): Elaborating entity "edgeDetector" for hierarchy "fact:inst5|edgeDetector:inst"
+Warning (12125): Using design file abslt.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ABSLT
+Info (12128): Elaborating entity "ABSLT" for hierarchy "ABSLT:inst"
+Warning (12125): Using design file krets_12.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Krets_12
+Info (12128): Elaborating entity "Krets_12" for hierarchy "ABSLT:inst|Krets_12:inst"
+Info (13014): Ignored 60 buffer(s)
+    Info (13019): Ignored 60 SOFT buffer(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "RESULT_A[15]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[15]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[14]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[13]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[12]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[11]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[10]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[9]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[8]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[7]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[6]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[5]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[4]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[3]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[2]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[1]" is stuck at GND
+    Warning (13410): Pin "RESULT_B[0]" is stuck at GND
+    Warning (13410): Pin "STATUS[7]" is stuck at GND
+    Warning (13410): Pin "STATUS[6]" is stuck at GND
+    Warning (13410): Pin "STATUS[5]" is stuck at GND
+    Warning (13410): Pin "STATUS[4]" is stuck at GND
+    Warning (13410): Pin "STATUS[3]" is stuck at GND
+    Warning (13410): Pin "STATUS[2]" is stuck at GND
+    Warning (13410): Pin "STATUS[1]" is stuck at GND
+    Warning (13410): Pin "STATUS[0]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 27 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "C[7]"
+    Warning (15610): No output dependent on input pin "C[6]"
+    Warning (15610): No output dependent on input pin "C[5]"
+    Warning (15610): No output dependent on input pin "B[15]"
+    Warning (15610): No output dependent on input pin "B[14]"
+    Warning (15610): No output dependent on input pin "B[13]"
+    Warning (15610): No output dependent on input pin "B[12]"
+    Warning (15610): No output dependent on input pin "B[11]"
+    Warning (15610): No output dependent on input pin "B[10]"
+    Warning (15610): No output dependent on input pin "B[9]"
+    Warning (15610): No output dependent on input pin "B[8]"
+    Warning (15610): No output dependent on input pin "B[7]"
+    Warning (15610): No output dependent on input pin "B[6]"
+    Warning (15610): No output dependent on input pin "B[5]"
+    Warning (15610): No output dependent on input pin "B[4]"
+    Warning (15610): No output dependent on input pin "B[3]"
+    Warning (15610): No output dependent on input pin "B[2]"
+    Warning (15610): No output dependent on input pin "B[1]"
+    Warning (15610): No output dependent on input pin "B[0]"
+    Warning (15610): No output dependent on input pin "D[7]"
+    Warning (15610): No output dependent on input pin "D[6]"
+    Warning (15610): No output dependent on input pin "D[5]"
+    Warning (15610): No output dependent on input pin "D[4]"
+    Warning (15610): No output dependent on input pin "D[3]"
+    Warning (15610): No output dependent on input pin "D[2]"
+    Warning (15610): No output dependent on input pin "D[1]"
+    Warning (15610): No output dependent on input pin "D[0]"
+Info (21057): Implemented 364 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 51 input pins
+    Info (21059): Implemented 41 output pins
+    Info (21061): Implemented 266 logic cells
+    Info (21062): Implemented 6 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 74 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Fri Jan 13 11:53:20 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
+
+

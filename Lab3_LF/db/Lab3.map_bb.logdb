@@ -1,0 +1,4 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fact:inst5|wb_aComp_factorFinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component|mult_ofn:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_mfn:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fact:inst5|wb_aComp_envShape:inst8|wb_aComp_valueReducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_mfn:auto_generated|mac_out2,
