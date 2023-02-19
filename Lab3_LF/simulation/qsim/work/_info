@@ -1,0 +1,165 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/pgk/Quartus/TFE4208LabV22/Lab3/simulation/qsim
+T_opt
+!s110 1673618577
+V2<jV?V`4iGO5Pgh2Bo9II0
+04 25 18 work studentdesign_vhd_vec_tst studentdesign_arch 1
+=1-e4b97a03575b-63c16490-1cf-4eac
+!s124 OEM10U3 
+o-quiet -sdf -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim -sdfmax StudentDesign_vhd_vec_tst/i1=Ver2_vhd.sdo -suppress 1948
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Ehard_block
+Z1 w1673618572
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 2f3=Lc`XY`hMf__56;aG40
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 JKUzf[HafYzhzXnW?zDh60
+!i122 3
+R0
+Z8 8Ver2.vho
+Z9 FVer2.vho
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z10 OL;C;2021.2;73
+32
+Z11 !s110 1673618575
+!i10b 1
+Z12 !s108 1673618575.000000
+Z13 !s90 -work|work|Ver2.vho|
+Z14 !s107 Ver2.vho|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 3
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Estudentdesign
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 TQ^5KMh2RTWZ2DMjzQ9nl1
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 PeP4hI9?O;BKk::[TF3o:2
+!i122 3
+R0
+R8
+R9
+l0
+L80 1
+V]I`PlU`7aeVS^6VP;8:fz0
+!s100 3Liim9PMVVdCDW>P=n>oP0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 13 studentdesign 0 22 ]I`PlU`7aeVS^6VP;8:fz0
+!i122 3
+l767
+L191 7859
+Vnkc3>[QPEGfHNhLSEWQOD1
+!s100 ^c:5`m]9=MGN[dD2mDhJ?3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Estudentdesign_vhd_vec_tst
+Z19 w1673618569
+R5
+R6
+!i122 4
+R0
+Z20 8StudentDesign_sim2.vwf.vht
+Z21 FStudentDesign_sim2.vwf.vht
+l0
+L32 1
+V_kb]YHi_WnlW5TzPU4ezG3
+!s100 mFF8YKf3_PoCie3J`h[dm2
+R10
+32
+R11
+!i10b 1
+R12
+Z22 !s90 -work|work|StudentDesign_sim2.vwf.vht|
+Z23 !s107 StudentDesign_sim2.vwf.vht|
+!i113 0
+R15
+R16
+Astudentdesign_arch
+R5
+R6
+DEx4 work 25 studentdesign_vhd_vec_tst 0 22 _kb]YHi_WnlW5TzPU4ezG3
+!i122 4
+l63
+L34 406
+VYXj67;YI:0VR`nd^7?eNA2
+!s100 5Ych8:7cH`mSiCFBFY`zc1
+R10
+32
+R11
+!i10b 1
+R12
+R22
+R23
+!i113 0
+R15
+R16
