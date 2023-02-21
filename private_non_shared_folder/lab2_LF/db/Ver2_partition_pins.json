@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "CO",
+					"strict" : false
+				},
+				{
+					"name" : "DO3",
+					"strict" : false
+				},
+				{
+					"name" : "DO2",
+					"strict" : false
+				},
+				{
+					"name" : "DO1",
+					"strict" : false
+				},
+				{
+					"name" : "DO0",
+					"strict" : false
+				},
+				{
+					"name" : "EN2",
+					"strict" : false
+				},
+				{
+					"name" : "DI0",
+					"strict" : false
+				},
+				{
+					"name" : "DI1",
+					"strict" : false
+				},
+				{
+					"name" : "EN1",
+					"strict" : false
+				},
+				{
+					"name" : "DI2",
+					"strict" : false
+				},
+				{
+					"name" : "DI3",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
