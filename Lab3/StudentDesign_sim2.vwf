@@ -1,13 +1,13 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab3 -c Ver2 --vector_source="C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/StudentDesign_sim2.vwf" --testbench_file="C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/simulation/qsim/StudentDesign_sim2.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab3 -c Ver2 --vector_source="C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/StudentDesign_sim2.vwf" --testbench_file="C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/simulation/qsim/StudentDesign_sim2.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/simulation/qsim/" Lab3 -c Ver2</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/pgk/Quartus/TFE4208LabV22/Lab3/simulation/qsim/" Lab3 -c Ver2</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab3 -c Ver2 --vector_source="/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/Lab3/StudentDesign_sim2.vwf" --testbench_file="/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/Lab3/simulation/qsim/StudentDesign_sim2.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab3 -c Ver2 --vector_source="/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/Lab3/StudentDesign_sim2.vwf" --testbench_file="/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/Lab3/simulation/qsim/StudentDesign_sim2.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/Lab3/simulation/qsim/" Lab3 -c Ver2</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/Lab3/simulation/qsim/" Lab3 -c Ver2</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work Ver2.vho
 vcom -work work StudentDesign_sim2.vwf.vht
-vsim -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.StudentDesign_vhd_vec_tst
+vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.StudentDesign_vhd_vec_tst
 vcd file -direction Lab3.msim.vcd
 vcd add -internal StudentDesign_vhd_vec_tst/*
 vcd add -internal StudentDesign_vhd_vec_tst/i1/*
@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -1568,8 +1570,7 @@ TRANSITION_LIST("RESULT_A[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1578,8 +1579,7 @@ TRANSITION_LIST("RESULT_A[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1588,8 +1588,7 @@ TRANSITION_LIST("RESULT_A[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1598,8 +1597,7 @@ TRANSITION_LIST("RESULT_A[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1608,8 +1606,7 @@ TRANSITION_LIST("RESULT_A[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1618,8 +1615,7 @@ TRANSITION_LIST("RESULT_A[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1628,8 +1624,7 @@ TRANSITION_LIST("RESULT_A[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1638,8 +1633,7 @@ TRANSITION_LIST("RESULT_A[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1648,8 +1642,7 @@ TRANSITION_LIST("RESULT_A[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1658,8 +1651,7 @@ TRANSITION_LIST("RESULT_A[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1668,8 +1660,7 @@ TRANSITION_LIST("RESULT_A[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1678,8 +1669,7 @@ TRANSITION_LIST("RESULT_A[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1688,8 +1678,7 @@ TRANSITION_LIST("RESULT_A[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1698,8 +1687,7 @@ TRANSITION_LIST("RESULT_A[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1708,8 +1696,7 @@ TRANSITION_LIST("RESULT_A[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1718,8 +1705,7 @@ TRANSITION_LIST("RESULT_A[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 9001.0;
+		LEVEL X FOR 10000.0;
 	}
 }
 

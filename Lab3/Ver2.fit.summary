@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Jan 13 11:53:46 2023
-Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Fitter Status : Successful - Mon Feb 20 03:08:56 2023
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : Ver2
 Top-level Entity Name : StudentDesign
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 243 / 114,480 ( < 1 % )
-    Total combinational functions : 232 / 114,480 ( < 1 % )
+Total logic elements : 238 / 114,480 ( < 1 % )
+    Total combinational functions : 230 / 114,480 ( < 1 % )
     Dedicated logic registers : 82 / 114,480 ( < 1 % )
 Total registers : 82
 Total pins : 92 / 529 ( 17 % )

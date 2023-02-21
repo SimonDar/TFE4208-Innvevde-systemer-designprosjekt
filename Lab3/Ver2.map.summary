@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Jan 13 11:53:20 2023
-Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Analysis & Synthesis Status : Successful - Mon Feb 20 03:08:43 2023
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : Ver2
 Top-level Entity Name : StudentDesign
 Family : Cyclone IV E
-Total logic elements : 249
-    Total combinational functions : 232
+Total logic elements : 247
+    Total combinational functions : 230
     Dedicated logic registers : 82
 Total registers : 82
 Total pins : 92
