@@ -1,0 +1,112 @@
+!SESSION 2023-03-20 13:49:27.631 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_322
+java.vendor=Temurin
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /opt/intelFPGA/21.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /opt/intelFPGA/21.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2023-03-20 13:50:10.105
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-20 13:54:05.949
+!MESSAGE Indexed 'hello_world_0_bsp' (79 sources, 184 headers) in 3.24 sec: 6,150 declarations; 9,243 references; 5 unresolved inclusions; 3 syntax errors; 6 unresolved names (0.039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-20 13:54:06.534
+!MESSAGE Indexed 'hello_world_0' (1 sources, 32 headers) in 0.081 sec: 1,050 declarations; 1,615 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2023-03-20 13:58:21.842 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_322
+java.vendor=Temurin
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /opt/intelFPGA/21.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /opt/intelFPGA/21.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2023-03-20 13:58:32.569
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.debug.core 4 102 2023-03-20 13:59:48.540
+!MESSAGE A project was not specified in the launch configuration.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:00:01.350
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:00:02.941
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0/hello_world_0.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:00:18.418
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:00:18.455
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:00:20.043
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0/hello_world_0.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:18.104
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:18.150
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:19.540
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0/hello_world_0.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:32.816
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:32.862
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:34.245
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0/hello_world_0.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:45.394
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:45.459
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:46.842
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0/hello_world_0.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:57.716
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:57.745
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-20 14:01:59.145
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0/hello_world_0.elf]
