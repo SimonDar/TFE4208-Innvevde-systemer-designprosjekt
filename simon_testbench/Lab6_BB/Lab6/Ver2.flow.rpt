@@ -1,5 +1,5 @@
 Flow report for Ver2
-Sun Mar 26 15:44:11 2023
+Sun Mar 26 18:20:19 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 26 15:44:00 2023       ;
+; Flow Status                        ; Successful - Sun Mar 26 18:20:14 2023       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Ver2                                        ;
 ; Top-level Entity Name              ; Lab6                                        ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/26/2023 15:42:07 ;
+; Start date & time ; 03/26/2023 18:18:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ver2                ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------------------------------+---------------+--------------+------------+
 ; Assignment Name                     ; Value                                                          ; Default Value ; Entity Name  ; Section Id ;
 +-------------------------------------+----------------------------------------------------------------+---------------+--------------+------------+
-; COMPILER_SIGNATURE_ID               ; 228956642828229.167983812707493                                ; --            ; --           ; --         ;
+; COMPILER_SIGNATURE_ID               ; 228956642828229.167984753225718                                ; --            ; --           ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                             ; --            ; --           ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                              ; --            ; --           ; --         ;
 ; MISC_FILE                           ; DE2_115_SOPC/synthesis/../DE2_115_SOPC.cmp                     ; --            ; --           ; --         ;
@@ -102,11 +102,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 689 MB              ; 00:01:04                           ;
-; Fitter               ; 00:00:50     ; 1.1                     ; 1325 MB             ; 00:01:10                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 434 MB              ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.4                     ; 679 MB              ; 00:00:09                           ;
-; Total                ; 00:01:52     ; --                      ; --                  ; 00:02:30                           ;
+; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 689 MB              ; 00:00:56                           ;
+; Fitter               ; 00:00:33     ; 1.1                     ; 1324 MB             ; 00:00:54                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 434 MB              ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.4                     ; 681 MB              ; 00:00:05                           ;
+; Total                ; 00:01:20     ; --                      ; --                  ; 00:01:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

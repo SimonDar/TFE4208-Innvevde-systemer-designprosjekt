@@ -26,7 +26,6 @@ while(1)
 {
 	for(int32_t var = 0b1; var <= 0b1111111111111111000; var = pow(2,count))
 	{
-		count >> 1;
 		IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, var);
 		delay = 0;
 		printbit(var);
