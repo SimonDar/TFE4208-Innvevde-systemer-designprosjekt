@@ -22,7 +22,7 @@ int CheckClose(int InputFrequency) {
 
     int result = 404;
 
-    for (int i = 0; i < /*arrayLengt()*/; ++i)
+    for (int i = 0; i < arrayLengt(); ++i)
     {
         if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
         {
