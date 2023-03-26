@@ -1,0 +1,20 @@
+//Verilog Custom Instruction Template 
+module getMax_Custom_Instruction(
+                        clk, // CPU's master-input clk <required for multi-cycle>
+                    );
+    input clk;
+
+    output reg[31:0] result;
+
+    always @ (posedge clk)
+    begin
+        if(reset == 1)
+        begin
+            result <= 0;
+            done <= 'b0;
+        end
+            result <= data;
+            done <= 'b1;
+    end
+    
+endmodule
