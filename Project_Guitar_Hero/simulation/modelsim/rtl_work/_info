@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/simulation/modelsim
+vcontroll_for_fft
+Z1 !s110 1679840452
+!i10b 1
+!s100 6dAhBj=?ABgU:NVEcDo;X3
+Io5l>4^XP1_W=WB6<?InbS0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1679840353
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/controll_for_fft.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/controll_for_fft.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1679840452.000000
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/controll_for_fft.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/controll_for_fft.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero
+Z7 tCvgOpt 0
+vfft
+R1
+!i10b 1
+!s100 82agSI>[6hi=z4eT0?iaJ3
+IFnFF9SofiTJMbXg0Y7`OW2
+R2
+R0
+w1679837659
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v|
+!s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v|
+!i113 1
+R7
+vfft_wraper
+R1
+!i10b 1
+!s100 @Wb0:cg:TPY2R>S_k7Cie1
+I^fP8[ida49=]?9[8`[VTe1
+R2
+R0
+w1679836462
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v|
+!i113 1
+R5
+R6
+R7
+vtestbench
+R1
+!i10b 1
+!s100 O80`2JhMdD;A_@DJ:ABQV3
+IBX;NoCdYR8L423<`_a8bF2
+R2
+R0
+w1679839885
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v|
+!i113 1
+R5
+R6
+R7

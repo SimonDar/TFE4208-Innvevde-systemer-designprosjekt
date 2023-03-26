@@ -1,12 +1,12 @@
-# system info fft on 2023.03.26.14:37:57
+# system info fft on 2023.03.26.15:34:20
 system_info:
 name,value
 DEVICE,EP4CE115F29C7
 DEVICE_FAMILY,Cyclone IV E
-GENERATION_ID,1679834274
+GENERATION_ID,1679837658
 #
 #
-# Files generated for fft on 2023.03.26.14:37:57
+# Files generated for fft on 2023.03.26.15:34:20
 files:
 filepath,kind,attributes,module,is_top
 simulation/fft.v,VERILOG,,fft,true

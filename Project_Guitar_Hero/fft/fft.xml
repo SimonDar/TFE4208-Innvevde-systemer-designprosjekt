@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.03.26.14:38:03"
- outputDirectory="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/">
+ date="2023.03.26.15:34:25"
+ outputDirectory="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -90,13 +90,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="fft:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE115F29C7,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1679834282,AUTO_UNIQUE_ID=(altera_fft_ii:22.1:CALC_LATENCY=8192,THROUGHPUT_LATENCY=16384,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=NATIVE,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=16,in_width_derived=16,length=8192,num_engines=1,num_engines_derived=1,out_order=Natural,out_width=25,out_width_derived=25,selected_device_family=Cyclone IV E,twid_width=18,twid_width_derived=18)"
+   parameterizationKey="fft:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE115F29C7,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1679837664,AUTO_UNIQUE_ID=(altera_fft_ii:18.1:CALC_LATENCY=8192,THROUGHPUT_LATENCY=16384,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=NATIVE,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=16,in_width_derived=16,length=8192,num_engines=1,num_engines_derived=1,out_order=Natural,out_width=25,out_width_derived=25,selected_device_family=Cyclone IV E,twid_width=18,twid_width_derived=18)"
    instancePathKey="fft"
    kind="fft"
    version="1.0"
    name="fft">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1679834282" />
+  <parameter name="AUTO_GENERATION_ID" value="1679837664" />
   <parameter name="AUTO_DEVICE" value="EP4CE115F29C7" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -105,232 +105,234 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
   <generatedFiles>
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/fft.v"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/fft.v"
        type="VERILOG" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi1.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi1.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr1.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr1.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi2.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi2.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi3.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi3.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr2.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr2.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr3.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr3.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi4.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi4.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi5.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi5.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr4.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr4.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr5.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr5.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi6.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi6.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr6.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr6.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx_1825.v"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx_1825.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.ocp"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/hyper_opt_OFF_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_opt_OFF_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/hyper_pipeline_interface.v"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_pipeline_interface.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/counter_module.sv"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/counter_module.sv"
        type="SYSTEM_VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv"
        type="SYSTEM_VERILOG"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft.qsys" />
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft.qsys" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="C:/intelfpga_lite/22.1std/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+       path="C:/intelfpga_lite/18.1/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
    <file
-       path="C:/intelFPGA_lite/22.1std/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+       path="C:/intelFPGA_lite/18.1/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file
+       path="C:/intelFPGA_lite/18.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
   </childSourceFiles>
   <messages>
    <message level="Debug" culprit="fft">queue size: 0 starting:fft "fft"</message>
@@ -365,10 +367,10 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_fft_ii:22.1:CALC_LATENCY=8192,THROUGHPUT_LATENCY=16384,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=NATIVE,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=16,in_width_derived=16,length=8192,num_engines=1,num_engines_derived=1,out_order=Natural,out_width=25,out_width_derived=25,selected_device_family=Cyclone IV E,twid_width=18,twid_width_derived=18"
+   parameterizationKey="altera_fft_ii:18.1:CALC_LATENCY=8192,THROUGHPUT_LATENCY=16384,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=NATIVE,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=16,in_width_derived=16,length=8192,num_engines=1,num_engines_derived=1,out_order=Natural,out_width=25,out_width_derived=25,selected_device_family=Cyclone IV E,twid_width=18,twid_width_derived=18"
    instancePathKey="fft:.:fft_ii_0"
    kind="altera_fft_ii"
-   version="22.1"
+   version="18.1"
    name="fft_fft_ii_0">
   <parameter name="THROUGHPUT_LATENCY" value="16384" />
   <parameter name="in_width_derived" value="16" />
@@ -394,224 +396,226 @@
   <parameter name="direction" value="Bi-directional" />
   <generatedFiles>
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi1.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi1.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr1.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr1.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi2.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi2.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi3.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi3.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr2.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr2.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr3.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr3.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi4.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi4.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi5.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi5.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr4.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr4.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr5.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr5.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi6.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twi6.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr6.hex"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0_opt_twr6.hex"
        type="HEX"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx_1825.v"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx_1825.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.ocp"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/hyper_opt_OFF_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_opt_OFF_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/hyper_pipeline_interface.v"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_pipeline_interface.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/counter_module.sv"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/counter_module.sv"
        type="SYSTEM_VERILOG"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv"
+       path="C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv"
        type="SYSTEM_VERILOG"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles/>
   <sourceFiles>
    <file
-       path="C:/intelfpga_lite/22.1std/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+       path="C:/intelfpga_lite/18.1/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
    <file
-       path="C:/intelFPGA_lite/22.1std/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+       path="C:/intelFPGA_lite/18.1/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file
+       path="C:/intelFPGA_lite/18.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="fft" as="fft_ii_0" />
