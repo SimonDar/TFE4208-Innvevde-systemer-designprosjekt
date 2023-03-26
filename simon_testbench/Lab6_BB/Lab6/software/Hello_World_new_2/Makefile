@@ -90,7 +90,8 @@ ACDS_VERSION := 21.1
 ELF := Hello_World_new_2.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := hello_world.c
+C_SRCS += Main.c
+C_SRCS += CheckSignal.c
 CXX_SRCS :=
 ASM_SRCS :=
 
