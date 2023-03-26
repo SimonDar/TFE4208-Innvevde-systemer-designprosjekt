@@ -3471,3 +3471,156 @@ java.io.FileNotFoundException: ELF file 'Hello_World_new_2.elf' not found.
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:47:54.359
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:47:55.484
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:47:55.519
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:48:15.177
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:48:15.238
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:48:16.354
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:48:16.396
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:48:50.720
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:48:50.792
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:48:51.894
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:48:51.930
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:49:07.898
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:49:08.400
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:49:09.545
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:49:09.581
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:50:12.221
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:50:12.285
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:50:13.422
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:50:13.462
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:50:41.605
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:50:41.666
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:50:42.800
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:50:42.842
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:31.825
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:31.885
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:51:33.005
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:33.043
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:44.113
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:44.170
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:51:45.270
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:45.308
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:51.218
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:51.273
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:51:52.373
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:51:52.411
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:53:21.638
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:53:22.108
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:53:23.237
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:53:23.273
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:53:47.557
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:53:47.618
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:53:48.720
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:53:48.753
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:54:05.541
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:54:05.599
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:54:06.706
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:54:06.762
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:54:15.532
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:54:15.596
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2023-03-26 18:54:16.701
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [3-1]', --device=1, --instance=1, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-26 18:54:16.745
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go --accept-bad-sysid /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2/Hello_World_new_2.elf]

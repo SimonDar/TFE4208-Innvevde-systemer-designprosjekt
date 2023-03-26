@@ -12,6 +12,6 @@
     #include <math.h>
     #include "system.h"
     #include "altera_avalon_pio_regs.h"
-    //#include "CheckSignal.h"
+    #include "CheckSignal.h"
 
 #endif

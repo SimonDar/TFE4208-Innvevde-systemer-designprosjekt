@@ -1386,3 +1386,296 @@ CheckSignal.h:19:93: warning: control reaches end of non-void function [-Wreturn
    19 |     int arrayLengt() { return (sizeof(gitarFrequency_mHz) / sizeof(gitarFrequency_mHz[0])); }
       |                                                                                             ^
 make: *** [Makefile:726: obj/default/CheckSignal.o] Error 1
+18:47:42 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling CheckSignal.c to obj/default/CheckSignal.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/CheckSignal.o" "CheckSignal.c"
+CheckSignal.c: In function 'CheckClose':
+CheckSignal.c:25:41: error: expected expression before ';' token
+   25 |     for (int i = 0; i < /*arrayLengt()*/; ++i)
+      |                                         ^
+CheckSignal.c:31:22: warning: implicit declaration of function 'arrayLengt' [-Wimplicit-function-declaration]
+   31 |         else if(i == arrayLengt(gitarFrequency_mHz)-1 && halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency)
+      |                      ^~~~~~~~~~
+CheckSignal.c:35:73: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   35 |         else if(halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency <= halfWay(gitarFrequency_mHz[i+1], gitarFrequency_mHz[i+1]))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+make: *** [Makefile:726: obj/default/CheckSignal.o] Error 1
+18:47:53 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:48:13 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+In file included from Main.c:7:
+main.h:15:14: fatal error: CheckSignal.h: No such file or directory
+   15 |     #include "CheckSignal.h"
+      |              ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:725: obj/default/Main.o] Error 1
+18:48:48 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+In file included from Main.c:7:
+main.h:15:14: fatal error: CheckSignal.h: No such file or directory
+   15 |     #include "CheckSignal.h"
+      |              ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:725: obj/default/Main.o] Error 1
+18:49:07 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:50:11 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:50:41 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:51:28 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling CheckSignal.c to obj/default/CheckSignal.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/CheckSignal.o" "CheckSignal.c"
+CheckSignal.c:2:1: warning: "/*" within comment [-Wcomment]
+    2 | /*
+      |  
+In file included from CheckSignal.c:10:
+CheckSignal.h: In function 'arrayLengt':
+CheckSignal.h:19:54: warning: 'sizeof' on array function parameter 'checkArrat' will return size of 'int *' [-Wsizeof-array-argument]
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                                                      ^
+CheckSignal.h:19:24: note: declared here
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                    ~~~~^~~~~~~~~~~~
+CheckSignal.c: In function 'CheckClose':
+CheckSignal.c:27:34: warning: comparison between pointer and integer
+   27 |         if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
+      |                                  ^~
+CheckSignal.c:35:73: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   35 |         else if(halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency <= halfWay(gitarFrequency_mHz[i+1], gitarFrequency_mHz[i+1]))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+CheckSignal.c: At top level:
+CheckSignal.c:75:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+   75 | } * CheckSignal.c
+      |                ^
+make: *** [Makefile:726: obj/default/CheckSignal.o] Error 1
+18:51:42 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling CheckSignal.c to obj/default/CheckSignal.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/CheckSignal.o" "CheckSignal.c"
+CheckSignal.c:2:1: warning: "/*" within comment [-Wcomment]
+    2 | /*
+      |  
+In file included from CheckSignal.c:10:
+CheckSignal.h: In function 'arrayLengt':
+CheckSignal.h:19:54: warning: 'sizeof' on array function parameter 'checkArrat' will return size of 'int *' [-Wsizeof-array-argument]
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                                                      ^
+CheckSignal.h:19:24: note: declared here
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                    ~~~~^~~~~~~~~~~~
+CheckSignal.c: In function 'CheckClose':
+CheckSignal.c:27:34: warning: comparison between pointer and integer
+   27 |         if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
+      |                                  ^~
+CheckSignal.c:35:73: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   35 |         else if(halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency <= halfWay(gitarFrequency_mHz[i+1], gitarFrequency_mHz[i+1]))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+CheckSignal.c: At top level:
+CheckSignal.c:75:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+   75 | } * CheckSignal.c
+      |                ^
+make: *** [Makefile:726: obj/default/CheckSignal.o] Error 1
+18:51:49 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling CheckSignal.c to obj/default/CheckSignal.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/CheckSignal.o" "CheckSignal.c"
+CheckSignal.c:2:1: warning: "/*" within comment [-Wcomment]
+    2 | /*
+      |  
+In file included from CheckSignal.c:10:
+CheckSignal.h: In function 'arrayLengt':
+CheckSignal.h:19:54: warning: 'sizeof' on array function parameter 'checkArrat' will return size of 'int *' [-Wsizeof-array-argument]
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                                                      ^
+CheckSignal.h:19:24: note: declared here
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                    ~~~~^~~~~~~~~~~~
+CheckSignal.c: In function 'CheckClose':
+CheckSignal.c:27:34: warning: comparison between pointer and integer
+   27 |         if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
+      |                                  ^~
+CheckSignal.c:35:73: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   35 |         else if(halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency <= halfWay(gitarFrequency_mHz[i+1], gitarFrequency_mHz[i+1]))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+CheckSignal.c: At top level:
+CheckSignal.c:75:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+   75 | } * CheckSignal.c
+      |                ^
+make: *** [Makefile:726: obj/default/CheckSignal.o] Error 1
+18:53:21 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling CheckSignal.c to obj/default/CheckSignal.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/CheckSignal.o" "CheckSignal.c"
+CheckSignal.c:2:1: warning: "/*" within comment [-Wcomment]
+    2 | /*
+      |  
+In file included from CheckSignal.c:10:
+CheckSignal.h: In function 'arrayLengt':
+CheckSignal.h:19:54: warning: 'sizeof' on array function parameter 'checkArrat' will return size of 'int *' [-Wsizeof-array-argument]
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                                                      ^
+CheckSignal.h:19:24: note: declared here
+   19 |     int arrayLengt(int checkArrat[]) { return (sizeof(checkArrat) / sizeof(checkArrat[0])); }
+      |                    ~~~~^~~~~~~~~~~~
+CheckSignal.c: In function 'CheckClose':
+CheckSignal.c:27:34: warning: comparison between pointer and integer
+   27 |         if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
+      |                                  ^~
+CheckSignal.c:35:73: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   35 |         else if(halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency <= halfWay(gitarFrequency_mHz[i+1], gitarFrequency_mHz[i+1]))
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/CheckSignal.o obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 78 KBytes program size (code + initialized data).
+Info:                         114 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:53:47 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Main.c: In function 'main':
+Main.c:21:35: warning: implicit declaration of function 'CheckInput' [-Wimplicit-function-declaration]
+   21 | printf("Hello from Nios II!4\n  ",CheckInput());
+      |                                   ^~~~~~~~~~
+Main.c:21:8: warning: too many arguments for format [-Wformat-extra-args]
+   21 | printf("Hello from Nios II!4\n  ",CheckInput());
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/CheckSignal.o obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 78 KBytes program size (code + initialized data).
+Info:                         114 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:54:05 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Main.c: In function 'main':
+Main.c:21:38: warning: implicit declaration of function 'CheckInput' [-Wimplicit-function-declaration]
+   21 | printf("Hello from Nios II!4\n  %b", CheckInput());
+      |                                      ^~~~~~~~~~
+Main.c:21:34: warning: unknown conversion type character 'b' in format [-Wformat=]
+   21 | printf("Hello from Nios II!4\n  %b", CheckInput());
+      |                                  ^
+Main.c:21:8: warning: too many arguments for format [-Wformat-extra-args]
+   21 | printf("Hello from Nios II!4\n  %b", CheckInput());
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/CheckSignal.o obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 78 KBytes program size (code + initialized data).
+Info:                         114 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+18:54:14 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling Main.c to obj/default/Main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/Main.o" "Main.c"
+Main.c: In function 'main':
+Main.c:21:38: warning: implicit declaration of function 'CheckInput' [-Wimplicit-function-declaration]
+   21 | printf("Hello from Nios II!4\n  %d", CheckInput());
+      |                                      ^~~~~~~~~~
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/CheckSignal.o obj/default/Main.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 78 KBytes program size (code + initialized data).
+Info:                         114 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]

@@ -24,9 +24,12 @@ int CheckClose(int InputFrequency) {
 
     for (int i = 0; i < arrayLengt(gitarFrequency_mHz); ++i)
     {
-        if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
+        if (i == 0)
         {
-            result = 0;
+        	if(arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
+        	{
+        		result = 0;
+        	}
         }
         else if(i == arrayLengt(gitarFrequency_mHz)-1 && halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]) < InputFrequency)
         {
@@ -72,4 +75,10 @@ int CheckClose(int InputFrequency) {
     }*/
 
 
-}
+} * CheckSignal.c
+ *
+ *  Created on: Mar 26, 2023
+ *      Author: simondar
+ */
+
+

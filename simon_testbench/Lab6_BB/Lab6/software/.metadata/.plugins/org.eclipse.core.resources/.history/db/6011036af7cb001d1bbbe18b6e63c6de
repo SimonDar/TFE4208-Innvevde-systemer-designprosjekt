@@ -44,7 +44,6 @@ void testLed()
 	}
 }
 
-
 int main()
 {
 printf("Hello from Nios II!4\n");

@@ -1,4 +1,4 @@
-/*
+
 /*
  * CheckSignal.c
  *
@@ -22,7 +22,7 @@ int CheckClose(int InputFrequency) {
 
     int result = 404;
 
-    for (int i = 0; i < arrayLengt(gitarFrequency_mHz); ++i)
+    for (int i = 0; i < /*arrayLengt()*/; ++i)
     {
         if (i == 0 && arrayLengt <= halfWay(gitarFrequency_mHz[i], gitarFrequency_mHz[i+1]))
         {
@@ -39,7 +39,7 @@ int CheckClose(int InputFrequency) {
     }
 
     return(result);
-
+}
     /*
     int result;
     const int InputFrequency_const  = InputFrequency;
@@ -72,4 +72,5 @@ int CheckClose(int InputFrequency) {
     }*/
 
 
-}
+
+
