@@ -1,0 +1,152 @@
+IP Upgrade report for spectru
+Sun Mar 26 14:38:03 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                            ;
++------------------------------+------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sun Mar 26 14:38:03 2023              ;
+; Quartus Prime Version        ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                ; spectru                                        ;
+; Top-level Entity Name        ; block                                          ;
+; Family                       ; Cyclone IV E                                   ;
++------------------------------+------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                     ;
++-------------+----------------+---------+-----------------------+----------------------+-----------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File  ; Generation File Path ; New Source File       ; Message ;
++-------------+----------------+---------+-----------------------+----------------------+-----------------------+---------+
+; fft         ; altera_fft_ii  ; 18.1    ; fft/synthesis/fft.qip ; fft.qsys             ; fft/synthesis/fft.qip ;         ;
++-------------+----------------+---------+-----------------------+----------------------+-----------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "fft.qsys" to "fft.BAK.qsys"
+Info (11902): Backing up file "fft/synthesis/fft.v" to "fft.BAK.v"
+Info (11837): Started upgrading IP component altera_fft_ii with file "fft.qsys"
+Info: 2023.03.26.14:37:46 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2023.03.26.14:37:46 Info: Finished upgrading the ip cores
+Info: 2023.03.26.14:37:53 Info: Saving generation log to C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft
+Info: 2023.03.26.14:37:53 Info: Starting: Create simulation model
+Info: 2023.03.26.14:37:53 Info: qsys-generate "C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft.qsys" --simulation=VERILOG --allow-mixed-language-simulation --output-directory="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\simulation" --family="Cyclone IV E" --part=EP4CE115F29C7
+Info: 2023.03.26.14:37:53 Info: Loading Project_Guitar_Hero
+Info: 2023.03.26.14:37:54 Info: Reading input file
+Info: 2023.03.26.14:37:54 Info: Adding fft_ii_0 [altera_fft_ii 22.1]
+Info: 2023.03.26.14:37:54 Info: Parameterizing module fft_ii_0
+Info: 2023.03.26.14:37:54 Info: Building connections
+Info: 2023.03.26.14:37:54 Info: Parameterizing connections
+Info: 2023.03.26.14:37:54 Info: Validating
+Info: 2023.03.26.14:37:54 Info: Done reading input file
+Info: 2023.03.26.14:37:54 Info: fft.fft_ii_0: Radix-2 digit reverse implied
+Info: 2023.03.26.14:37:55 Info: fft: Generating fft "fft" for SIM_VERILOG
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi1.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr1.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi2.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi3.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr2.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr3.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi4.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi5.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr4.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr5.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi6.hex
+Info: 2023.03.26.14:37:56 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr6.hex
+Info: 2023.03.26.14:37:57 Info: fft_ii_0: "fft" instantiated altera_fft_ii "fft_ii_0"
+Info: 2023.03.26.14:37:57 Info: fft: Done "fft" with 2 modules, 142 files
+Info: 2023.03.26.14:37:57 Info: qsys-generate succeeded.
+Info: 2023.03.26.14:37:57 Info: Finished: Create simulation model
+Info: 2023.03.26.14:37:57 Info: Starting: Create Modelsim Project.
+Info: 2023.03.26.14:37:57 Info: Doing: ip-make-simscript --spd=C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\fft.spd --output-directory=C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation
+Info: 2023.03.26.14:37:58 Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation
+Info: 2023.03.26.14:37:58 Info:     aldec
+Info: 2023.03.26.14:37:58 Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation
+Info: 2023.03.26.14:37:58 Info:     mentor
+Info: 2023.03.26.14:37:58 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation
+Info: 2023.03.26.14:37:58 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2023.03.26.14:37:58 Info: Finished: Create Modelsim Project.
+Info: 2023.03.26.14:37:58 Info: Starting: Create block symbol file (.bsf)
+Info: 2023.03.26.14:37:58 Info: qsys-generate "C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft.qsys" --block-symbol-file --output-directory="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft" --family="Cyclone IV E" --part=EP4CE115F29C7
+Info: 2023.03.26.14:37:58 Info: Loading Project_Guitar_Hero
+Info: 2023.03.26.14:37:59 Info: Reading input file
+Info: 2023.03.26.14:37:59 Info: Adding fft_ii_0 [altera_fft_ii 22.1]
+Info: 2023.03.26.14:37:59 Info: Parameterizing module fft_ii_0
+Info: 2023.03.26.14:37:59 Info: Building connections
+Info: 2023.03.26.14:37:59 Info: Parameterizing connections
+Info: 2023.03.26.14:37:59 Info: Validating
+Info: 2023.03.26.14:37:59 Info: Done reading input file
+Info: 2023.03.26.14:38:00 Info: fft.fft_ii_0: Radix-2 digit reverse implied
+Info: 2023.03.26.14:38:00 Info: qsys-generate succeeded.
+Info: 2023.03.26.14:38:00 Info: Finished: Create block symbol file (.bsf)
+Info: 2023.03.26.14:38:00 Info:
+Info: 2023.03.26.14:38:00 Info: Starting: Create HDL design files for synthesis
+Info: 2023.03.26.14:38:00 Info: qsys-generate "C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft.qsys" --synthesis=VERILOG --output-directory="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\synthesis" --family="Cyclone IV E" --part=EP4CE115F29C7
+Info: 2023.03.26.14:38:00 Info: Loading Project_Guitar_Hero
+Info: 2023.03.26.14:38:01 Info: Reading input file
+Info: 2023.03.26.14:38:01 Info: Adding fft_ii_0 [altera_fft_ii 22.1]
+Info: 2023.03.26.14:38:01 Info: Parameterizing module fft_ii_0
+Info: 2023.03.26.14:38:01 Info: Building connections
+Info: 2023.03.26.14:38:01 Info: Parameterizing connections
+Info: 2023.03.26.14:38:01 Info: Validating
+Info: 2023.03.26.14:38:01 Info: Done reading input file
+Info: 2023.03.26.14:38:02 Info: fft.fft_ii_0: Radix-2 digit reverse implied
+Info: 2023.03.26.14:38:02 Info: fft: Generating fft "fft" for QUARTUS_SYNTH
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi1.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr1.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi2.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi3.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr2.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr3.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi4.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi5.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr4.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr5.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi6.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr6.hex
+Info: 2023.03.26.14:38:03 Info: fft_ii_0: "fft" instantiated altera_fft_ii "fft_ii_0"
+Info: 2023.03.26.14:38:03 Info: fft: Done "fft" with 2 modules, 54 files
+Info: 2023.03.26.14:38:03 Info: qsys-generate succeeded.
+Info: 2023.03.26.14:38:03 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component altera_fft_ii with file "fft.qsys"
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/22.1std/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Sun Mar 26 14:38:03 2023
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:01:03
+
+

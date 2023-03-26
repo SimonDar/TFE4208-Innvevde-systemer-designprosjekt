@@ -1,0 +1,23 @@
+IP Ports Diff Report for fft
+Sun Mar 26 14:38:03 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++--------------------------------------------+
+; IP Information                             ;
++----------------------+---------------------+
+; IP Variation Name    ; fft                 ;
+; Prior Version        ; 18.1                ;
+; New Version          ; 22.1                ;
+; New File             ; fft/synthesis/fft.v ;
+; Has Port Differences ; No                  ;
++----------------------+---------------------+
+
+

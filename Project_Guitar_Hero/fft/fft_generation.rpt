@@ -1,0 +1,80 @@
+Info: Starting: Create simulation model
+Info: qsys-generate "C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft.qsys" --simulation=VERILOG --allow-mixed-language-simulation --output-directory="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\simulation" --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Project_Guitar_Hero/fft.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 22.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft.fft_ii_0: Radix-2 digit reverse implied
+Info: fft: Generating fft "fft" for SIM_VERILOG
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi1.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr1.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi2.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi3.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr2.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr3.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi4.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi5.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr4.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr5.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi6.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr6.hex
+Info: fft_ii_0: "fft" instantiated altera_fft_ii "fft_ii_0"
+Info: fft: Done "fft" with 2 modules, 142 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\fft.spd" --output-directory="C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation/" --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\fft.spd --output-directory=C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/Madra/OneDrive - NTNU/NTNU/8. semester/TFE4208/Project_Guitar_Hero/fft/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft.qsys" --block-symbol-file --output-directory="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft" --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Project_Guitar_Hero/fft.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 22.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft.fft_ii_0: Radix-2 digit reverse implied
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft.qsys" --synthesis=VERILOG --output-directory="C:\Users\Madra\OneDrive - NTNU\NTNU\8. semester\TFE4208\Project_Guitar_Hero\fft\synthesis" --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Project_Guitar_Hero/fft.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 22.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft.fft_ii_0: Radix-2 digit reverse implied
+Info: fft: Generating fft "fft" for QUARTUS_SYNTH
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi1.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr1.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi2.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi3.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr2.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr3.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi4.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi5.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr4.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr5.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twi6.hex
+Info: fft_ii_0: --- add file: fft_fft_ii_0_opt_twr6.hex
+Info: fft_ii_0: "fft" instantiated altera_fft_ii "fft_ii_0"
+Info: fft: Done "fft" with 2 modules, 54 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
