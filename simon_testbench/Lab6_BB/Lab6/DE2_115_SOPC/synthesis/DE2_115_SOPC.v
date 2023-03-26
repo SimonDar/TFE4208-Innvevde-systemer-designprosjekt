@@ -4,9 +4,9 @@
 
 `timescale 1 ps / 1 ps
 module DE2_115_SOPC (
-		input  wire       clk_clk,                            //                         clk.clk
-		output wire [7:0] pio_led_external_connection_export, // pio_led_external_connection.export
-		input  wire       reset_reset_n                       //                       reset.reset_n
+		input  wire        clk_clk,                            //                         clk.clk
+		output wire [17:0] pio_led_external_connection_export, // pio_led_external_connection.export
+		input  wire        reset_reset_n                       //                       reset.reset_n
 	);
 
 	wire  [31:0] cpu_lab6_data_master_readdata;                             // mm_interconnect_0:cpu_lab6_data_master_readdata -> cpu_lab6:d_readdata

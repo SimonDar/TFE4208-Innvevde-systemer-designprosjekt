@@ -1,13 +1,13 @@
-13:54:02 **** Clean-only build of configuration Nios II for project hello_world_0_bsp ****
+15:18:07 **** Clean-only build of configuration Nios II for project Hello_World_new_2_bsp ****
 make clean 
 [BSP clean complete]
-13:54:04 **** Clean-only build of configuration Nios II for project hello_world_0 ****
+15:18:09 **** Clean-only build of configuration Nios II for project Hello_World_new_2 ****
 make clean 
-[hello_world_0 clean complete]
-13:59:57 **** Build of configuration Nios II for project hello_world_0 ****
+[Hello_World_new_2 clean complete]
+12:34:32 **** Build of configuration Nios II for project Hello_World_new_2 ****
 make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
 Compiling alt_alarm_start.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
 Compiling alt_busy_sleep.c...
@@ -189,84 +189,195 @@ rm -f -f libhal_bsp.a
 nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_0_bsp//HAL/inc -I../hello_world_0_bsp/ -I../hello_world_0_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
-Info: Linking hello_world_0.elf
-nios2-elf-g++ -T'../hello_world_0_bsp//linker.x' -msys-crt0='../hello_world_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_0_bsp/   -Wl,-Map=hello_world_0.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world_0.elf obj/default/hello_world.o -lm -msys-lib=m
-nios2-elf-insert hello_world_0.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../DE2_115_SOPC.sopcinfo
-Info: (hello_world_0.elf) 28 KBytes program size (code + initialized data).
-Info:                     164 KBytes free for stack + heap.
-Info: Creating hello_world_0.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source hello_world_0.elf >hello_world_0.objdump
-[hello_world_0 build complete]
-14:00:00 **** Incremental Build of configuration Nios II for project hello_world_0 ****
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 28 KBytes program size (code + initialized data).
+Info:                         164 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+12:34:35 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
 make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
 [BSP build complete]
-[hello_world_0 build complete]
-14:00:18 **** Incremental Build of configuration Nios II for project hello_world_0 ****
+[Hello_World_new_2 build complete]
+12:34:55 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
 make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
 [BSP build complete]
-[hello_world_0 build complete]
-14:01:17 **** Incremental Build of configuration Nios II for project hello_world_0 ****
+[Hello_World_new_2 build complete]
+12:36:55 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
 make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
-[BSP build complete]
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_0_bsp//HAL/inc -I../hello_world_0_bsp/ -I../hello_world_0_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
-Info: Linking hello_world_0.elf
-nios2-elf-g++ -T'../hello_world_0_bsp//linker.x' -msys-crt0='../hello_world_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_0_bsp/   -Wl,-Map=hello_world_0.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world_0.elf obj/default/hello_world.o -lm -msys-lib=m
-nios2-elf-insert hello_world_0.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../DE2_115_SOPC.sopcinfo
-Info: (hello_world_0.elf) 28 KBytes program size (code + initialized data).
-Info:                     164 KBytes free for stack + heap.
-Info: Creating hello_world_0.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source hello_world_0.elf >hello_world_0.objdump
-[hello_world_0 build complete]
-14:01:32 **** Incremental Build of configuration Nios II for project hello_world_0 ****
-make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_0_bsp//HAL/inc -I../hello_world_0_bsp/ -I../hello_world_0_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
-Info: Linking hello_world_0.elf
-nios2-elf-g++ -T'../hello_world_0_bsp//linker.x' -msys-crt0='../hello_world_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_0_bsp/   -Wl,-Map=hello_world_0.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world_0.elf obj/default/hello_world.o -lm -msys-lib=m
-nios2-elf-insert hello_world_0.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../DE2_115_SOPC.sopcinfo
-Info: (hello_world_0.elf) 28 KBytes program size (code + initialized data).
-Info:                     164 KBytes free for stack + heap.
-Info: Creating hello_world_0.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source hello_world_0.elf >hello_world_0.objdump
-[hello_world_0 build complete]
-14:01:44 **** Incremental Build of configuration Nios II for project hello_world_0 ****
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
+hello_world.c: In function 'bin':
+hello_world.c:5:19: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    5 |         (n & i) ? printf("1") : printf("0");
+      |                   ^~~~~~
+hello_world.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | void bin(unsigned n)
+hello_world.c:5:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    5 |         (n & i) ? printf("1") : printf("0");
+      |                   ^~~~~~
+hello_world.c:5:19: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:6:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    6 |     printf("\n");
+      |     ^~~~~~
+hello_world.c:6:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c: In function 'main':
+hello_world.c:11:1: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   11 | printf("Hello from Nios II!1\n");
+      | ^~~~~~
+hello_world.c:11:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:16:13: error: unknown type name 'int32_t'
+   16 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count))
+      |             ^~~~~~~
+hello_world.c:1:1: note: 'int32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | void bin(unsigned n)
+hello_world.c:16:67: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+   16 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count))
+      |                                                                   ^~~
+hello_world.c:1:1: note: include '<math.h>' or provide a declaration of 'pow'
+  +++ |+#include <math.h>
+    1 | void bin(unsigned n)
+hello_world.c:16:67: warning: incompatible implicit declaration of built-in function 'pow' [-Wbuiltin-declaration-mismatch]
+   16 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count))
+      |                                                                   ^~~
+hello_world.c:16:67: note: include '<math.h>' or provide a declaration of 'pow'
+hello_world.c:18:17: warning: implicit declaration of function 'IOWR_ALTERA_AVALON_PIO_DATA' [-Wimplicit-function-declaration]
+   18 |                 IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, var);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+hello_world.c:18:45: error: 'PIO_LED_BASE' undeclared (first use in this function)
+   18 |                 IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE, var);
+      |                                             ^~~~~~~~~~~~
+hello_world.c:18:45: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:725: obj/default/hello_world.o] Error 1
+12:37:21 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
 make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_0_bsp//HAL/inc -I../hello_world_0_bsp/ -I../hello_world_0_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
-Info: Linking hello_world_0.elf
-nios2-elf-g++ -T'../hello_world_0_bsp//linker.x' -msys-crt0='../hello_world_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_0_bsp/   -Wl,-Map=hello_world_0.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world_0.elf obj/default/hello_world.o -lm -msys-lib=m
-nios2-elf-insert hello_world_0.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../DE2_115_SOPC.sopcinfo
-Info: (hello_world_0.elf) 28 KBytes program size (code + initialized data).
-Info:                     164 KBytes free for stack + heap.
-Info: Creating hello_world_0.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source hello_world_0.elf >hello_world_0.objdump
-[hello_world_0 build complete]
-14:01:57 **** Incremental Build of configuration Nios II for project hello_world_0 ****
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
+hello_world.c: In function 'main':
+hello_world.c:22:67: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+   22 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count))
+      |                                                                   ^~~
+hello_world.c:5:1: note: include '<math.h>' or provide a declaration of 'pow'
+    4 | #include "altera_avalon_pio_regs.h"
+  +++ |+#include <math.h>
+    5 | 
+hello_world.c:22:67: warning: incompatible implicit declaration of built-in function 'pow' [-Wbuiltin-declaration-mismatch]
+   22 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count))
+      |                                                                   ^~~
+hello_world.c:22:67: note: include '<math.h>' or provide a declaration of 'pow'
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+12:38:20 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
 make all 
-Info: Building ../hello_world_0_bsp/
-make --no-print-directory -C ../hello_world_0_bsp/
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_0_bsp//HAL/inc -I../hello_world_0_bsp/ -I../hello_world_0_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
-Info: Linking hello_world_0.elf
-nios2-elf-g++ -T'../hello_world_0_bsp//linker.x' -msys-crt0='../hello_world_0_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_0_bsp/   -Wl,-Map=hello_world_0.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world_0.elf obj/default/hello_world.o -lm -msys-lib=m
-nios2-elf-insert hello_world_0.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/private_non_shared_folder/Lab6_BB/Lab6/software/hello_world_0_bsp/../../DE2_115_SOPC.sopcinfo
-Info: (hello_world_0.elf) 28 KBytes program size (code + initialized data).
-Info:                     164 KBytes free for stack + heap.
-Info: Creating hello_world_0.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source hello_world_0.elf >hello_world_0.objdump
-[hello_world_0 build complete]
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
+hello_world.c: In function 'main':
+hello_world.c:22:67: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+   22 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count)-2)
+      |                                                                   ^~~
+hello_world.c:5:1: note: include '<math.h>' or provide a declaration of 'pow'
+    4 | #include "altera_avalon_pio_regs.h"
+  +++ |+#include <math.h>
+    5 | 
+hello_world.c:22:67: warning: incompatible implicit declaration of built-in function 'pow' [-Wbuiltin-declaration-mismatch]
+   22 |         for(int32_t var = 0b0; var <= 0b111111111111111100; var = pow(2,count)-2)
+      |                                                                   ^~~
+hello_world.c:22:67: note: include '<math.h>' or provide a declaration of 'pow'
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+12:38:41 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+[Hello_World_new_2 build complete]
+12:51:04 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
+hello_world.c: In function 'main':
+hello_world.c:22:68: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+   22 |         for(int32_t var = 0b1; var <= 0b1111111111111111000; var = pow(2,count))
+      |                                                                    ^~~
+hello_world.c:5:1: note: include '<math.h>' or provide a declaration of 'pow'
+    4 | #include "altera_avalon_pio_regs.h"
+  +++ |+#include <math.h>
+    5 | 
+hello_world.c:22:68: warning: incompatible implicit declaration of built-in function 'pow' [-Wbuiltin-declaration-mismatch]
+   22 |         for(int32_t var = 0b1; var <= 0b1111111111111111000; var = pow(2,count))
+      |                                                                    ^~~
+hello_world.c:22:68: note: include '<math.h>' or provide a declaration of 'pow'
+hello_world.c:24:23: warning: statement with no effect [-Wunused-value]
+   24 |                 count >> 1;
+      |                 ~~~~~~^~~~
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]
+13:06:49 **** Incremental Build of configuration Nios II for project Hello_World_new_2 ****
+make all 
+Info: Building ../Hello_World_new_2_bsp/
+make --no-print-directory -C ../Hello_World_new_2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Hello_World_new_2_bsp//HAL/inc -I../Hello_World_new_2_bsp/ -I../Hello_World_new_2_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/hello_world.o" "hello_world.c"
+hello_world.c: In function 'main':
+hello_world.c:23:68: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+   23 |         for(int32_t var = 0b1; var <= 0b1111111111111111000; var = pow(2,count))
+      |                                                                    ^~~
+hello_world.c:5:1: note: include '<math.h>' or provide a declaration of 'pow'
+    4 | #include "altera_avalon_pio_regs.h"
+  +++ |+#include <math.h>
+    5 | 
+hello_world.c:23:68: warning: incompatible implicit declaration of built-in function 'pow' [-Wbuiltin-declaration-mismatch]
+   23 |         for(int32_t var = 0b1; var <= 0b1111111111111111000; var = pow(2,count))
+      |                                                                    ^~~
+hello_world.c:23:68: note: include '<math.h>' or provide a declaration of 'pow'
+hello_world.c:25:23: warning: statement with no effect [-Wunused-value]
+   25 |                 count >> 1;
+      |                 ~~~~~~^~~~
+Info: Linking Hello_World_new_2.elf
+nios2-elf-g++ -T'../Hello_World_new_2_bsp//linker.x' -msys-crt0='../Hello_World_new_2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Hello_World_new_2_bsp/   -Wl,-Map=Hello_World_new_2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Hello_World_new_2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Hello_World_new_2.elf --thread_model hal --cpu_name cpu_lab6 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE2_115_SOPC --quartus_project_dir "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6" --jdi /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../Ver2.jdi --sopcinfo /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Hello_World_new_2_bsp/../../DE2_115_SOPC.sopcinfo
+Info: (Hello_World_new_2.elf) 77 KBytes program size (code + initialized data).
+Info:                         115 KBytes free for stack + heap.
+Info: Creating Hello_World_new_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Hello_World_new_2.elf >Hello_World_new_2.objdump
+[Hello_World_new_2 build complete]

@@ -2,7 +2,7 @@ set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_TO
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_TOOL_VERSION "21.1"
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "DE2_115_SOPC" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../DE2_115_SOPC.sopcinfo"]
-set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name SLD_INFO "QSYS_NAME DE2_115_SOPC HAS_SOPCINFO 1 GENERATION_ID 1678796734"
+set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name SLD_INFO "QSYS_NAME DE2_115_SOPC HAS_SOPCINFO 1 GENERATION_ID 1679751601"
 set_global_assignment -library "DE2_115_SOPC" -name MISC_FILE [file join $::quartus(qip_path) "../DE2_115_SOPC.cmp"]
 set_global_assignment -library "DE2_115_SOPC" -name SLD_FILE [file join $::quartus(qip_path) "DE2_115_SOPC.regmap"]
 set_global_assignment -library "DE2_115_SOPC" -name SLD_FILE [file join $::quartus(qip_path) "DE2_115_SOPC.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_CO
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY3ODc5NjczNA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY3OTc1MTYwMQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0UxMTVGMjlDNw==::QXV0byBERVZJQ0U="
 set_global_assignment -entity "DE2_115_SOPC" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -660,7 +660,7 @@ set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -na
 set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "Yml0TW9kaWZ5aW5nT3V0UmVn::ZmFsc2U=::RW5hYmxlIGluZGl2aWR1YWwgYml0IHNldHRpbmcvY2xlYXJpbmc="
 set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::T3V0cHV0::RGlyZWN0aW9u"
 set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "cmVzZXRWYWx1ZQ==::MA==::T3V0cHV0IFBvcnQgUmVzZXQgVmFsdWU="
-set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "d2lkdGg=::OA==::V2lkdGggKDEtMzIgYml0cyk="
+set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "d2lkdGg=::MTg=::V2lkdGggKDEtMzIgYml0cyk="
 set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::NTAwMDAwMDA=::Y2xvY2tSYXRl"
 set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfdHJp::ZmFsc2U=::ZGVyaXZlZF9oYXNfdHJp"
 set_global_assignment -entity "DE2_115_SOPC_pio_led" -library "DE2_115_SOPC" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfb3V0::dHJ1ZQ==::ZGVyaXZlZF9oYXNfb3V0"

@@ -42,15 +42,15 @@ Info: DE2_115_SOPC.jtag_uart: JTAG UART IP input clock need to be at least doubl
 Info: DE2_115_SOPC: Generating DE2_115_SOPC "DE2_115_SOPC" for QUARTUS_SYNTH
 Info: cpu_lab6: "DE2_115_SOPC" instantiated altera_nios2_gen2 "cpu_lab6"
 Info: jtag_uart: Starting RTL generation for module 'DE2_115_SOPC_jtag_uart'
-Info: jtag_uart:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64/perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2_115_SOPC_jtag_uart --dir=/tmp/alt9430_2211735597898671262.dir/0027_jtag_uart_gen/ --quartus_dir=/opt/intelFPGA/21.1/quartus --verilog --config=/tmp/alt9430_2211735597898671262.dir/0027_jtag_uart_gen//DE2_115_SOPC_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64/perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2_115_SOPC_jtag_uart --dir=/tmp/alt9430_3364784669121632483.dir/0002_jtag_uart_gen/ --quartus_dir=/opt/intelFPGA/21.1/quartus --verilog --config=/tmp/alt9430_3364784669121632483.dir/0002_jtag_uart_gen//DE2_115_SOPC_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'DE2_115_SOPC_jtag_uart'
 Info: jtag_uart: "DE2_115_SOPC" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: onchip_memory2: Starting RTL generation for module 'DE2_115_SOPC_onchip_memory2'
-Info: onchip_memory2:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64/perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2_115_SOPC_onchip_memory2 --dir=/tmp/alt9430_2211735597898671262.dir/0028_onchip_memory2_gen/ --quartus_dir=/opt/intelFPGA/21.1/quartus --verilog --config=/tmp/alt9430_2211735597898671262.dir/0028_onchip_memory2_gen//DE2_115_SOPC_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64/perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2_115_SOPC_onchip_memory2 --dir=/tmp/alt9430_3364784669121632483.dir/0003_onchip_memory2_gen/ --quartus_dir=/opt/intelFPGA/21.1/quartus --verilog --config=/tmp/alt9430_3364784669121632483.dir/0003_onchip_memory2_gen//DE2_115_SOPC_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2: Done RTL generation for module 'DE2_115_SOPC_onchip_memory2'
 Info: onchip_memory2: "DE2_115_SOPC" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
 Info: pio_led: Starting RTL generation for module 'DE2_115_SOPC_pio_led'
-Info: pio_led:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64/perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2_115_SOPC_pio_led --dir=/tmp/alt9430_2211735597898671262.dir/0029_pio_led_gen/ --quartus_dir=/opt/intelFPGA/21.1/quartus --verilog --config=/tmp/alt9430_2211735597898671262.dir/0029_pio_led_gen//DE2_115_SOPC_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_led:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64/perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/intelFPGA/21.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2_115_SOPC_pio_led --dir=/tmp/alt9430_3364784669121632483.dir/0004_pio_led_gen/ --quartus_dir=/opt/intelFPGA/21.1/quartus --verilog --config=/tmp/alt9430_3364784669121632483.dir/0004_pio_led_gen//DE2_115_SOPC_pio_led_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_led: Done RTL generation for module 'DE2_115_SOPC_pio_led'
 Info: pio_led: "DE2_115_SOPC" instantiated altera_avalon_pio "pio_led"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -61,21 +61,21 @@ Info: mm_interconnect_0: "DE2_115_SOPC" instantiated altera_mm_interconnect "mm_
 Info: irq_mapper: "DE2_115_SOPC" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "DE2_115_SOPC" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'DE2_115_SOPC_cpu_lab6_cpu'
-Info: cpu:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64//perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64//perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=DE2_115_SOPC_cpu_lab6_cpu --dir=/tmp/alt9430_2211735597898671262.dir/0032_cpu_gen/ --quartus_bindir=/opt/intelFPGA/21.1/quartus/linux64/ --verilog --config=/tmp/alt9430_2211735597898671262.dir/0032_cpu_gen//DE2_115_SOPC_cpu_lab6_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2023.03.14 13:02:51 (*) Starting Nios II generation
-Info: cpu: # 2023.03.14 13:02:51 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2023.03.14 13:02:51 (*)   Creating all objects for CPU
-Info: cpu: # 2023.03.14 13:02:51 (*)     Testbench
-Info: cpu: # 2023.03.14 13:02:51 (*)     Instruction decoding
-Info: cpu: # 2023.03.14 13:02:51 (*)       Instruction fields
-Info: cpu: # 2023.03.14 13:02:51 (*)       Instruction decodes
-Info: cpu: # 2023.03.14 13:02:51 (*)       Signals for RTL simulation waveforms
-Info: cpu: # 2023.03.14 13:02:51 (*)       Instruction controls
-Info: cpu: # 2023.03.14 13:02:51 (*)     Pipeline frontend
-Info: cpu: # 2023.03.14 13:02:51 (*)     Pipeline backend
-Info: cpu: # 2023.03.14 13:02:52 (*)   Generating RTL from CPU objects
-Info: cpu: # 2023.03.14 13:02:52 (*)   Creating plain-text RTL
-Info: cpu: # 2023.03.14 13:02:53 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec /opt/intelFPGA/21.1/quartus/linux64//perl/bin/perl -I /opt/intelFPGA/21.1/quartus/linux64//perl/lib -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA/21.1/quartus/sopc_builder/bin -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /opt/intelFPGA/21.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=DE2_115_SOPC_cpu_lab6_cpu --dir=/tmp/alt9430_3364784669121632483.dir/0007_cpu_gen/ --quartus_bindir=/opt/intelFPGA/21.1/quartus/linux64/ --verilog --config=/tmp/alt9430_3364784669121632483.dir/0007_cpu_gen//DE2_115_SOPC_cpu_lab6_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.03.14 13:25:38 (*) Starting Nios II generation
+Info: cpu: # 2023.03.14 13:25:38 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.03.14 13:25:38 (*)   Creating all objects for CPU
+Info: cpu: # 2023.03.14 13:25:38 (*)     Testbench
+Info: cpu: # 2023.03.14 13:25:38 (*)     Instruction decoding
+Info: cpu: # 2023.03.14 13:25:38 (*)       Instruction fields
+Info: cpu: # 2023.03.14 13:25:38 (*)       Instruction decodes
+Info: cpu: # 2023.03.14 13:25:38 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2023.03.14 13:25:38 (*)       Instruction controls
+Info: cpu: # 2023.03.14 13:25:38 (*)     Pipeline frontend
+Info: cpu: # 2023.03.14 13:25:38 (*)     Pipeline backend
+Info: cpu: # 2023.03.14 13:25:39 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.03.14 13:25:39 (*)   Creating plain-text RTL
+Info: cpu: # 2023.03.14 13:25:40 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'DE2_115_SOPC_cpu_lab6_cpu'
 Info: cpu: "cpu_lab6" instantiated altera_nios2_gen2_unit "cpu"
 Info: cpu_lab6_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_lab6_data_master_translator"

@@ -43,39 +43,39 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  12 .debug_frame  00002738  00000000  00000000  00063fd8  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_str    000028dc  00000000  00000000  00066710  2**0
+ 13 .debug_str    000028e5  00000000  00000000  00066710  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_alt_sim_info 00000030  00000000  00000000  00068fec  2**2
+ 14 .debug_alt_sim_info 00000030  00000000  00000000  00068ff8  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000070  00000000  00000000  00069020  2**3
+ 15 .debug_ranges 00000070  00000000  00000000  00069028  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_line_str 000023d4  00000000  00000000  00069090  2**0
+ 16 .debug_line_str 000023d4  00000000  00000000  00069098  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_loclists 000159bf  00000000  00000000  0006b464  2**0
+ 17 .debug_loclists 000159bf  00000000  00000000  0006b46c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_rnglists 0000193b  00000000  00000000  00080e23  2**0
+ 18 .debug_rnglists 0000193b  00000000  00000000  00080e2b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .thread_model 00000003  00000000  00000000  00085cb6  2**0
+ 19 .thread_model 00000003  00000000  00000000  00085cc6  2**0
                   CONTENTS, READONLY
- 20 .cpu          00000008  00000000  00000000  00085cb9  2**0
+ 20 .cpu          00000008  00000000  00000000  00085cc9  2**0
                   CONTENTS, READONLY
- 21 .qsys         00000001  00000000  00000000  00085cc1  2**0
+ 21 .qsys         00000001  00000000  00000000  00085cd1  2**0
                   CONTENTS, READONLY
- 22 .simulation_enabled 00000001  00000000  00000000  00085cc2  2**0
+ 22 .simulation_enabled 00000001  00000000  00000000  00085cd2  2**0
                   CONTENTS, READONLY
- 23 .stderr_dev   00000009  00000000  00000000  00085cc3  2**0
+ 23 .stderr_dev   00000009  00000000  00000000  00085cd3  2**0
                   CONTENTS, READONLY
- 24 .stdin_dev    00000009  00000000  00000000  00085ccc  2**0
+ 24 .stdin_dev    00000009  00000000  00000000  00085cdc  2**0
                   CONTENTS, READONLY
- 25 .stdout_dev   00000009  00000000  00000000  00085cd5  2**0
+ 25 .stdout_dev   00000009  00000000  00000000  00085ce5  2**0
                   CONTENTS, READONLY
- 26 .sopc_system_name 0000000c  00000000  00000000  00085cde  2**0
+ 26 .sopc_system_name 0000000c  00000000  00000000  00085cee  2**0
                   CONTENTS, READONLY
- 27 .quartus_project_dir 00000059  00000000  00000000  00085cea  2**0
+ 27 .quartus_project_dir 00000059  00000000  00000000  00085cfa  2**0
                   CONTENTS, READONLY
- 28 .jdi          00008bec  00000000  00000000  00085d43  2**0
+ 28 .jdi          00008bec  00000000  00000000  00085d53  2**0
                   CONTENTS, READONLY
- 29 .sopcinfo     00032481  00000000  00000000  0008e92f  2**0
+ 29 .sopcinfo     00032481  00000000  00000000  0008e93f  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00040000 l    d  .entry	00000000 .entry
@@ -424,6 +424,7 @@ SYMBOL TABLE:
 0004bbf0 g     F .text	00000008 __sclose
 00072000 g       *ABS*	00000000 __alt_heap_limit
 0004d4e4 g     F .text	00000010 fclose
+00040284 g     F .text	00000080 printbit
 00046bcc g     F .text	0000175c _dtoa_r
 0004962c g     F .text	000007e4 _malloc_r
 0004dbcc g     F .text	00000030 __ascii_wctomb
@@ -445,7 +446,6 @@ SYMBOL TABLE:
 0004f4d4 g     F .text	00000058 alt_release_fd
 000513a4 g     O .rodata	00000100 .hidden __clz_tab
 000551ac g     O .bss	00000004 _PathLocale
-00040284 g     F .text	00000080 bin
 0005110c g     F .text	00000014 atexit
 0004d18c g     F .text	00000064 _write_r
 0004d884 g     F .text	00000074 setlocale
@@ -987,12 +987,12 @@ alt_after_alt_main:
     br alt_after_alt_main
    40280:	003fff06 	br	40280 <alt_after_alt_main>
 
-00040284 <bin>:
+00040284 <printbit>:
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 
 
-void bin(unsigned n)
+void printbit(unsigned n)
 {
    40284:	defffc04 	addi	sp,sp,-16
    40288:	dfc00315 	stw	ra,12(sp)
@@ -1003,16 +1003,16 @@ void bin(unsigned n)
     for (i = 1 << 31; i > 0; i = i / 2)
    40298:	00a00034 	movhi	r2,32768
    4029c:	e0bfff15 	stw	r2,-4(fp)
-   402a0:	00000e06 	br	402dc <bin+0x58>
+   402a0:	00000e06 	br	402dc <printbit+0x58>
         (n & i) ? printf("1") : printf("0");
    402a4:	e0fffe17 	ldw	r3,-8(fp)
    402a8:	e0bfff17 	ldw	r2,-4(fp)
    402ac:	1884703a 	and	r2,r3,r2
-   402b0:	10000426 	beq	r2,zero,402c4 <bin+0x40>
+   402b0:	10000426 	beq	r2,zero,402c4 <printbit+0x40>
    402b4:	01000174 	movhi	r4,5
    402b8:	2104df04 	addi	r4,r4,4988
    402bc:	00445b40 	call	445b4 <printf>
-   402c0:	00000306 	br	402d0 <bin+0x4c>
+   402c0:	00000306 	br	402d0 <printbit+0x4c>
    402c4:	01000174 	movhi	r4,5
    402c8:	2104e004 	addi	r4,r4,4992
    402cc:	00445b40 	call	445b4 <printf>
@@ -1021,7 +1021,7 @@ void bin(unsigned n)
    402d4:	1004d07a 	srli	r2,r2,1
    402d8:	e0bfff15 	stw	r2,-4(fp)
    402dc:	e0bfff17 	ldw	r2,-4(fp)
-   402e0:	103ff01e 	bne	r2,zero,402a4 <bin+0x20>
+   402e0:	103ff01e 	bne	r2,zero,402a4 <printbit+0x20>
     printf("\n");
    402e4:	01000284 	movi	r4,10
    402e8:	00445f40 	call	445f4 <putchar>
@@ -1049,6 +1049,7 @@ int count = 1;
    40320:	00800044 	movi	r2,1
    40324:	e0bfff15 	stw	r2,-4(fp)
 int delay;
+
 while(1)
 {
 	for(int32_t var = 0b1; var <= 0b1111111111111111000; var = pow(2,count))
@@ -1063,10 +1064,10 @@ while(1)
    4033c:	10c40035 	stwio	r3,4096(r2)
 		delay = 0;
    40340:	e03ffe15 	stw	zero,-8(fp)
-		bin(var);
+		printbit(var);
    40344:	e0bffd17 	ldw	r2,-12(fp)
    40348:	1009883a 	mov	r4,r2
-   4034c:	00402840 	call	40284 <bin>
+   4034c:	00402840 	call	40284 <printbit>
 		printf("\n");
    40350:	01000284 	movi	r4,10
    40354:	00445f40 	call	445f4 <putchar>
