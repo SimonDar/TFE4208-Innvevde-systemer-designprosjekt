@@ -1,32 +1,27 @@
-module find_highest();
+module find_highest(clk, fft_sop, fft_eop, ready, done, enable);
 	input wire fft_sop;
 	input wire fft_eop;
-	input wire[24:0] fft_real;
-	input wire[24:0] fft_img;
-	output wire ready;
+	output reg ready;
+	output wire done;
+	output reg enable;
 	input clk;
 	
-	reg state;
+	assign done = fft_eop;
 	
 	initial begin
-		ready <= 1'b0;
-		state <= 0;
+	enable <= 1'b0;
 	end
 	
-	always (@posedge fft_sop) begin
-		state <= 1;
-	end;
-	
-	always (@posedge clk) begin
-		case(state) begin
-			0:
-				valid <= 1;
-				
-				
-			1:
-				
+	always @(posedge clk) begin
+		ready = 1'b1;
+		if (fft_sop == 1'b1) begin
+			enable <= 1'b1;
 		end
 		
+		if (fft_eop == 1'b1) begin
+			ready = 1'b0;
+			enable <= 1'b0;
+		end
 	end
 
 endmodule

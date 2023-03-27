@@ -7,24 +7,22 @@ output reg sink_valid, sink_sop, sink_eop, inverse, sink_ready;
 output reg [1:0] sink_error;
 
 output [15:0] outreal, outimag;
-output reg [10:0] fft_pts;
+output reg [13:0] fft_pts;
 reg [12:0] count;
 
-initial
-begin
-count = 13'd1;
-inverse = 0;
-sink_valid = 0;
-sink_ready = 1;
-sink_error = 2'b00;
-fft_pts = 14'd8191;
+initial begin
+	count = 13'd1;
+	inverse = 0;
+	sink_valid = 0;
+	sink_ready = 1;
+	sink_error = 2'b00;
+	fft_pts = 14'd8191;
 end
 
 assign outreal = insignal;
 assign outimag = 14'd0;
 
-always @(posedge clk)
-begin
+always @(posedge clk) begin
 	begin
 		count <= count + 1'b1;
 	end

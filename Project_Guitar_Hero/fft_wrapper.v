@@ -75,7 +75,7 @@ end
 		.sink_imag(imag_to_fft_p),
 		.fftpts_in(fft_pts),
 		.inverse(1'b0),
-		.source_valid(1'b1),
+		.source_valid(source_valid),
 		.source_ready(source_ready),
 		.source_error(),
 		.source_sop(fft_source_sop),

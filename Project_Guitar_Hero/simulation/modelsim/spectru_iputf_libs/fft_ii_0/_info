@@ -23,9 +23,9 @@ Vj6@H@VIQ1MYbEnh8cjHUz1
 !s100 BdH<Ejoz0S=ZH<o>;hXEU3
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1679840449
+Z9 !s110 1679929688
 !i10b 1
-Z10 !s108 1679840449.000000
+Z10 !s108 1679929688.000000
 Z11 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd|-work|fft_ii_0|
 Z12 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd|
 !i113 1
@@ -284,11 +284,11 @@ V<C`Yo3D1NSm06iW1<1>m13
 !s100 lEcolbV>2PX_DQRI[@?C42
 R8
 32
-Z32 !s110 1679840448
+R9
 !i10b 1
-Z33 !s108 1679840448.000000
-Z34 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_can.vhd|-work|fft_ii_0|
-Z35 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_can.vhd|
+R10
+Z32 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_can.vhd|-work|fft_ii_0|
+Z33 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_can.vhd|
 !i113 1
 R13
 R14
@@ -303,11 +303,11 @@ V;FNa@M7R9knXQ4WB;oRke1
 !s100 [O7jgRH:4l_8HkZSQVEIK2
 R8
 32
-R32
+R9
 !i10b 1
+R10
+R32
 R33
-R34
-R35
 !i113 1
 R13
 R14
@@ -317,8 +317,8 @@ R29
 R4
 R5
 R0
-Z36 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd
-Z37 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd
+Z34 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd
+Z35 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd
 l0
 L21
 VGeh@g:m?k@zhm1;::6QV^0
@@ -328,8 +328,8 @@ R8
 R9
 !i10b 1
 R10
-Z38 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd|-work|fft_ii_0|
-Z39 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd|
+Z36 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd|-work|fft_ii_0|
+Z37 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd|
 !i113 1
 R13
 R14
@@ -347,24 +347,24 @@ R8
 R9
 !i10b 1
 R10
-R38
-R39
+R36
+R37
 !i113 1
 R13
 R14
-vouwpWli0MQQtA6vJVr/V5G/og1IcdJRSYh6mejO34yE=
+v55hd/fywG5BcBnM6Fto1kRQSzWUkLC5io5hfBnqMU2E=
 R9
 !i10b 0
 !s100 ROe`QZ`_O8;YRM=fJ1[]X0
 IbQ_>5cMhT]U@za]O=A`DS1
-Z40 VDg1SIo80bB@j0V0VzS_@n1
-!i8a 1891402080
+Z38 VDg1SIo80bB@j0V0VzS_@n1
+!i8a 1621580160
 R0
-w1679840449
+w1679929688
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v
-Z41 L0 38
-Z42 OV;L;10.5b;63
+Z39 L0 38
+Z40 OV;L;10.5b;63
 r1
 !s85 0
 31
@@ -373,33 +373,33 @@ R10
 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v|-work|fft_ii_0|
 !i113 1
 R13
-Z43 tCvgOpt 0
+Z41 tCvgOpt 0
 n73d7cc5
 Eauk_dspip_avalon_streaming_block_sink
 R1
-Z44 DPx4 work 18 auk_dspip_math_pkg 0 22 n?1X_^XLl;O4a:8M64kRS0
+Z42 DPx4 work 18 auk_dspip_math_pkg 0 22 n?1X_^XLl;O4a:8M64kRS0
 R29
 R4
 R5
 R0
-Z45 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd
-Z46 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd
+Z43 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd
+Z44 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd
 l0
 L22
 VWW05ER=nE=[fUH26>cVX;2
 !s100 5FkmY2J9_R^OCddRZBZ_i1
 R8
 32
-R32
+Z45 !s110 1679929687
 !i10b 1
-R33
+Z46 !s108 1679929687.000000
 Z47 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd|-work|fft_ii_0|
 Z48 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd|
 !i113 1
 R13
 R14
 Artl
-R44
+R42
 R29
 R4
 R5
@@ -410,9 +410,9 @@ Vik803:S;e99?elY9o>[n11
 !s100 38QZ;1;3801MEH1PhgNl=3
 R8
 32
-R32
+R45
 !i10b 1
-R33
+R46
 R47
 R48
 !i113 1
@@ -421,7 +421,7 @@ R14
 Eauk_dspip_avalon_streaming_block_source
 R1
 R3
-R44
+R42
 Z49 DPx4 work 17 auk_dspip_lib_pkg 0 22 [Lag;Z:I^H?=5^_LMn`Zl2
 R29
 R4
@@ -435,9 +435,9 @@ Voll^MJQjIiGj;<c@0:__Z3
 !s100 PcknmbOT5fM?^3Ua7SJWA0
 R8
 32
-R32
+R45
 !i10b 1
-R33
+R46
 Z52 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd|-work|fft_ii_0|
 Z53 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd|
 !i113 1
@@ -445,7 +445,7 @@ R13
 R14
 Artl
 R3
-R44
+R42
 R49
 R29
 R4
@@ -457,9 +457,9 @@ VHj>HJbQ>0aVDf5ifSaAOH2
 !s100 :k4nQbJ<X1g=i>`Jeb;XM1
 R8
 32
-R32
+R45
 !i10b 1
-R33
+R46
 R52
 R53
 !i113 1
@@ -469,7 +469,7 @@ Eauk_dspip_bit_reverse_addr_control
 R1
 Z54 DPx4 work 13 hyper_opt_pkg 0 22 QPJ8aX04c@m]412eP]K^Q3
 Z55 DPx4 work 24 auk_dspip_r22sdf_lib_pkg 0 22 o@9e;2h4Lejo[z9N@FGmH1
-R44
+R42
 R29
 R4
 R5
@@ -482,9 +482,9 @@ VUblab@[XM2gkQRVSg?>P=3
 !s100 TD?3f5UXQ]1<fIXnEbOB73
 R8
 32
-Z58 !s110 1679840450
+Z58 !s110 1679929689
 !i10b 1
-Z59 !s108 1679840450.000000
+Z59 !s108 1679929689.000000
 Z60 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_bit_reverse_addr_control.vhd|-work|fft_ii_0|
 Z61 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_bit_reverse_addr_control.vhd|
 !i113 1
@@ -493,7 +493,7 @@ R14
 Artl
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -517,7 +517,7 @@ R1
 R3
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -542,7 +542,7 @@ Artl
 R3
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -603,7 +603,7 @@ R69
 R13
 R14
 Pauk_dspip_lib_pkg
-R44
+R42
 R29
 R4
 R5
@@ -617,9 +617,9 @@ V[Lag;Z:I^H?=5^_LMn`Zl2
 !s100 KcRlL:CTnlUz=1CF=kC_S0
 R8
 32
-R32
+R45
 !i10b 1
-R33
+R46
 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_lib_pkg.vhd|-work|fft_ii_0|
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_lib_pkg.vhd|
 !i113 1
@@ -640,16 +640,16 @@ Vn?1X_^XLl;O4a:8M64kRS0
 R8
 32
 b1
-R32
+R45
 !i10b 1
-R33
+R46
 Z72 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_math_pkg.vhd|-work|fft_ii_0|
 Z73 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_math_pkg.vhd|
 !i113 1
 R13
 R14
 Bbody
-R44
+R42
 R29
 R4
 R5
@@ -659,9 +659,9 @@ V^H`3M4[WME?EzH^Ed7LNU1
 !s100 `941_Ff6o7=GBNnXYB1eU3
 R8
 32
-R32
+R45
 !i10b 1
-R33
+R46
 R72
 R73
 !i113 1
@@ -669,7 +669,7 @@ R13
 R14
 Eauk_dspip_r22sdf_adder_fp
 R1
-R44
+R42
 R29
 R49
 R19
@@ -685,16 +685,16 @@ VnahOmW6J`B?H^IRfXJ;W?2
 !s100 Yo3Q__0aPh7U6fFQcB@>?3
 R8
 32
-R58
+Z76 !s110 1679929690
 !i10b 1
 R59
-Z76 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd|-work|fft_ii_0|
-Z77 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd|
+Z77 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd|-work|fft_ii_0|
+Z78 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd|
 !i113 1
 R13
 R14
 Artl
-R44
+R42
 R29
 R49
 R19
@@ -708,47 +708,47 @@ VlA_MOzE5=A[2ZKjU5<DaF3
 !s100 _ibA>^B7;FB43H707L_`a2
 R8
 32
-R58
+R76
 !i10b 1
 R59
-R76
 R77
+R78
 !i113 1
 R13
 R14
 Eauk_dspip_r22sdf_addsub
 R1
 R54
-R44
+R42
 R55
 R3
-Z78 DPx3 lpm 14 lpm_components 0 22 BZZBj]8LhndN7CkCjD@L`2
+Z79 DPx3 lpm 14 lpm_components 0 22 BZZBj]8LhndN7CkCjD@L`2
 R29
 R4
 R5
 R0
-Z79 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd
-Z80 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd
+Z80 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd
+Z81 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd
 l0
 L63
 VznFI9Rj9hA:z3[BY=>U3G1
 !s100 Wa@b2dTl3XCjCR>ieDLYX3
 R8
 32
-R58
+R76
 !i10b 1
-R59
-Z81 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd|-work|fft_ii_0|
-Z82 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd|
+Z82 !s108 1679929690.000000
+Z83 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd|-work|fft_ii_0|
+Z84 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd|
 !i113 1
 R13
 R14
 Artl
 R54
-R44
+R42
 R55
 R3
-R78
+R79
 R29
 R4
 R5
@@ -759,11 +759,11 @@ VBYRmeUdfchQVTToCHni:B3
 !s100 4gAZVHed[_:Pm6CMIKNa@3
 R8
 32
-R58
+R76
 !i10b 1
-R59
-R81
 R82
+R83
+R84
 !i113 1
 R13
 R14
@@ -771,22 +771,22 @@ Eauk_dspip_r22sdf_bf_control
 R1
 R54
 R55
-R44
+R42
 R29
 R4
 R5
 R0
-Z83 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd
-Z84 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd
+Z85 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd
+Z86 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd
 l0
 L77
 VT:29TN7BK@Fa1JS2;J1E13
 !s100 X@fUf76EFX0K@j>dBAgo80
 R8
 32
-Z85 !s110 1679840451
+R76
 !i10b 1
-Z86 !s108 1679840451.000000
+R82
 Z87 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd|-work|fft_ii_0|
 Z88 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd|
 !i113 1
@@ -795,7 +795,7 @@ R14
 Artl
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -806,9 +806,9 @@ V0]7i04Fj^_f932BmHE<C^2
 !s100 02F^O;71eeX<cb?@1oKXO2
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R87
 R88
 !i113 1
@@ -818,7 +818,7 @@ Eauk_dspip_r22sdf_bfi
 R1
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -831,9 +831,9 @@ VR26nAQLPngAMVOK2EI<Ik3
 !s100 n@MIcm>W:Vm8MekgOOOK[0
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z91 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bfi.vhd|-work|fft_ii_0|
 Z92 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bfi.vhd|
 !i113 1
@@ -842,7 +842,7 @@ R14
 Artl2
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -853,9 +853,9 @@ VSjkBI1:4ggH;1=5zidgMZ3
 !s100 CczYUGK6<hJV10P3BNXQ^2
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R91
 R92
 !i113 1
@@ -865,7 +865,7 @@ Eauk_dspip_r22sdf_bfii
 R1
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -878,9 +878,9 @@ VEZh43TT6AQ:4R26`6W7_P0
 !s100 f_ZCofA5^h:`Yao[1e6W60
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z95 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bfii.vhd|-work|fft_ii_0|
 Z96 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_bfii.vhd|
 !i113 1
@@ -889,7 +889,7 @@ R14
 Artl
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -900,9 +900,9 @@ VUa`maK]bB]IY0[O`HUB=a1
 !s100 kaVbj02XNC6eCM1<Ej@Xz3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R95
 R96
 !i113 1
@@ -913,7 +913,7 @@ R1
 R54
 R55
 R49
-R44
+R42
 R2
 R29
 R4
@@ -927,9 +927,9 @@ V@GcCh=iWo0C108NDI1aah0
 !s100 >ToO>`]8PGMoBeGdl;GLi3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z99 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma.vhd|-work|fft_ii_0|
 Z100 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma.vhd|
 !i113 1
@@ -939,7 +939,7 @@ Artl
 R54
 R55
 R49
-R44
+R42
 R2
 R29
 R4
@@ -951,9 +951,9 @@ VR^9_W@_lUBQW7FSHz?2?R0
 !s100 Gc?K]_bfnH>REFBOIXi]_3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R99
 R100
 !i113 1
@@ -961,7 +961,7 @@ R13
 R14
 Eauk_dspip_r22sdf_cma_adder_fp
 R1
-R44
+R42
 R29
 R49
 R19
@@ -977,16 +977,16 @@ V3Y3^6aBMl5LHIKnCI=UHJ3
 !s100 O4S]CCg2MdLDF_OdP7ini2
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z103 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_adder_fp.vhd|-work|fft_ii_0|
 Z104 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_adder_fp.vhd|
 !i113 1
 R13
 R14
 Artl
-R44
+R42
 R29
 R49
 R19
@@ -1000,9 +1000,9 @@ VMdc>m=`bhgPf3FEDIiZU41
 !s100 >jTGF:71QI3jgVLZK[Pf42
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R103
 R104
 !i113 1
@@ -1012,7 +1012,7 @@ Eauk_dspip_r22sdf_cma_bfi_fp
 R1
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1025,9 +1025,9 @@ V0cXSJnX4na=11IL>H9IZG1
 !s100 V_AF>B6QAL8O_FNS[l60H0
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z107 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_bfi_fp.vhd|-work|fft_ii_0|
 Z108 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_bfi_fp.vhd|
 !i113 1
@@ -1036,7 +1036,7 @@ R14
 Artl
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1047,9 +1047,9 @@ VY[5c1nNJ?ChK;fk>cLH<81
 !s100 <UhW<GMUQQZPF<dmYj1hE0
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R107
 R108
 !i113 1
@@ -1060,7 +1060,7 @@ R1
 R54
 R55
 R49
-R44
+R42
 R2
 R29
 R4
@@ -1074,9 +1074,9 @@ VMTZQV_eG:;VM8c[J87U@G0
 !s100 13;0QBnlEMS]i^g?k[bok3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z111 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_fp.vhd|-work|fft_ii_0|
 Z112 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_fp.vhd|
 !i113 1
@@ -1086,7 +1086,7 @@ Artl
 R54
 R55
 R49
-R44
+R42
 R2
 R29
 R4
@@ -1098,9 +1098,9 @@ V>mJeOL:]b0=[ec=GmZzn13
 !s100 ZE1MmNJZZ41z91U7gNbDT3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R111
 R112
 !i113 1
@@ -1111,7 +1111,7 @@ R1
 R54
 R55
 Z113 DPx4 work 18 auk_dspip_text_pkg 0 22 ?9650dUc4EIVa?hL>i2Z[2
-R44
+R42
 Z114 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R29
 R4
@@ -1125,9 +1125,9 @@ V:ibMlafkjM12?RM21U4Jn1
 !s100 9Y>HA_TT^C7@X`h]YzUzI3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z117 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_core.vhd|-work|fft_ii_0|
 Z118 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_core.vhd|
 !i113 1
@@ -1137,7 +1137,7 @@ Artl
 R54
 R55
 R113
-R44
+R42
 R114
 R29
 R4
@@ -1149,9 +1149,9 @@ V>oNShUnP7:h]C^O:cbY[I0
 !s100 KcW3`HOb]=JliOJnfHnLi2
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R117
 R118
 !i113 1
@@ -1159,7 +1159,7 @@ R13
 R14
 Eauk_dspip_r22sdf_counter
 R1
-R44
+R42
 R29
 R4
 R5
@@ -1172,16 +1172,16 @@ VDz9RRCa8]>CN2fW:>PMK61
 !s100 le]X0]gP_IVTE:jSK>z^b0
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z121 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_counter.vhd|-work|fft_ii_0|
 Z122 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_counter.vhd|
 !i113 1
 R13
 R14
 Artl
-R44
+R42
 R29
 R4
 R5
@@ -1192,9 +1192,9 @@ V2n^;7T20gSC]C^jRZ46OV1
 !s100 V@=gI`5>>CGJI9J1XjlP=2
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R121
 R122
 !i113 1
@@ -1205,7 +1205,7 @@ R1
 R3
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1218,9 +1218,9 @@ VQBB5De:Ri5:8jAzMKK4Il0
 !s100 HLbRh7;nN?YO2a9a??a782
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 Z125 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_delay.vhd|-work|fft_ii_0|
 Z126 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_delay.vhd|
 !i113 1
@@ -1230,7 +1230,7 @@ Artl
 R3
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1241,9 +1241,9 @@ V7h5SQFg6^0:A9ag8o5glD2
 !s100 Cb3]N:H1@0TAUTHVShPei3
 R8
 32
-R85
+R76
 !i10b 1
-R86
+R82
 R125
 R126
 !i113 1
@@ -1253,7 +1253,7 @@ Eauk_dspip_r22sdf_enable_control
 R1
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1266,18 +1266,18 @@ Vb2Tg^AFkg<`5WBSK=97BO1
 !s100 SaQ>9QE1N@zD@C2NTzab@0
 R8
 32
-R85
+Z129 !s110 1679929691
 !i10b 1
-R86
-Z129 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd|-work|fft_ii_0|
-Z130 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd|
+R82
+Z130 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd|-work|fft_ii_0|
+Z131 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd|
 !i113 1
 R13
 R14
 Artl
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1288,17 +1288,17 @@ VPoP[KEmI[:?Q7Z9]S1YV=1
 !s100 <0cRjDMb]N9j<k;E:ZbRO0
 R8
 32
-R85
-!i10b 1
-R86
 R129
+!i10b 1
+R82
 R130
+R131
 !i113 1
 R13
 R14
 Pauk_dspip_r22sdf_lib_pkg
 R54
-R44
+R42
 R29
 R4
 R5
@@ -1324,31 +1324,31 @@ Eauk_dspip_r22sdf_stage
 R1
 R54
 R55
-R44
+R42
 R29
 R4
 R5
 R0
-Z131 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd
-Z132 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd
+Z132 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd
+Z133 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd
 l0
 L131
 V7b5EdlmIC0o:EN:zlLeYE3
 !s100 TQDFN=Q1Q7VTUl@ndCVHl2
 R8
 32
-R85
+R129
 !i10b 1
-R86
-Z133 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd|-work|fft_ii_0|
-Z134 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd|
+Z134 !s108 1679929691.000000
+Z135 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd|-work|fft_ii_0|
+Z136 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd|
 !i113 1
 R13
 R14
 Artl
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1359,32 +1359,32 @@ V6zX8cRz2g;:FGeUi>iMVE3
 !s100 h>CikCS5bHzc^VnV6YQFb1
 R8
 32
-R85
+R129
 !i10b 1
-R86
-R133
 R134
+R135
+R136
 !i113 1
 R13
 R14
 Eauk_dspip_r22sdf_stg_out_pipe
 R1
 R29
-R44
+R42
 R4
 R5
 R0
-Z135 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd
-Z136 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd
+Z137 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd
+Z138 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd
 l0
 L62
 VRSPHSa2OETSlT]k0`6kAL0
 !s100 G8>n@Lmd7EQgZS05QDidb3
 R8
 32
-Z137 !s110 1679840452
+R129
 !i10b 1
-Z138 !s108 1679840452.000000
+R134
 Z139 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd|-work|fft_ii_0|
 Z140 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd|
 !i113 1
@@ -1392,7 +1392,7 @@ R13
 R14
 Artl
 R29
-R44
+R42
 R4
 R5
 DEx4 work 29 auk_dspip_r22sdf_stg_out_pipe 0 22 RSPHSa2OETSlT]k0`6kAL0
@@ -1402,9 +1402,9 @@ V6XcB@dEmZ2bWO4Bm=28Rl1
 !s100 oBGCfLLi36LM:B]];S?[P2
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 R139
 R140
 !i113 1
@@ -1413,7 +1413,7 @@ R14
 Eauk_dspip_r22sdf_stg_pipe
 R1
 R29
-R44
+R42
 R4
 R5
 R0
@@ -1425,9 +1425,9 @@ V6_M674f5jmj0[W>5cJmA^3
 !s100 aJmoI8HK9N`?H6b8OLS0D0
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 Z143 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_pipe.vhd|-work|fft_ii_0|
 Z144 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_pipe.vhd|
 !i113 1
@@ -1435,7 +1435,7 @@ R13
 R14
 Artl
 R29
-R44
+R42
 R4
 R5
 DEx4 work 25 auk_dspip_r22sdf_stg_pipe 0 22 6_M674f5jmj0[W>5cJmA^3
@@ -1445,9 +1445,9 @@ VKR:8dcmeV26dZ<Y`TUn_=0
 !s100 =Hd2^J7QH@;YBmGjXH2`f0
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 R143
 R144
 !i113 1
@@ -1458,7 +1458,7 @@ R1
 R54
 R55
 R49
-R44
+R42
 R29
 R4
 R5
@@ -1471,9 +1471,9 @@ V`Q[`o@FNASO4T@?ZMXNFn1
 !s100 @1i8VjYM7RJZX8F2:hV@C3
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 Z147 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_top.vhd|-work|fft_ii_0|
 Z148 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_top.vhd|
 !i113 1
@@ -1483,7 +1483,7 @@ Astr
 R54
 R55
 R49
-R44
+R42
 R29
 R4
 R5
@@ -1494,9 +1494,9 @@ VoZ@OQ;_^`gC^jK=3mZK5m2
 !s100 @OF9<3bV_Kg00cLIYnA5`3
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 R147
 R148
 !i113 1
@@ -1507,7 +1507,7 @@ R1
 R3
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1520,9 +1520,9 @@ V1215QjnD=[ARH35SGjJYi1
 !s100 amR1h6BIEjd4i=Feln6T40
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 Z151 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_twrom.vhd|-work|fft_ii_0|
 Z152 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/auk_dspip_r22sdf_twrom.vhd|
 !i113 1
@@ -1532,7 +1532,7 @@ Artl
 R3
 R54
 R55
-R44
+R42
 R29
 R4
 R5
@@ -1543,9 +1543,9 @@ VheJT`]gQ_:TnHBdj=M91k3
 !s100 D_E88Ti<`YD215R3O[cSL2
 R8
 32
-R137
+R129
 !i10b 1
-R138
+R134
 R151
 R152
 !i113 1
@@ -1565,9 +1565,9 @@ VB?9f2JYDRH_oj4;=FSnJ32
 !s100 :Ro[aE[BH^N6eIGEG[O?N3
 R8
 32
-R32
+R9
 !i10b 1
-R33
+R46
 Z155 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_roundsat.vhd|-work|fft_ii_0|
 Z156 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_roundsat.vhd|
 !i113 1
@@ -1584,9 +1584,9 @@ VXggCldKcC78L[78CV4YMB3
 !s100 ]_3I0;m7RDoiJeFA6M^`A1
 R8
 32
-R32
+R9
 !i10b 1
-R33
+R46
 R155
 R156
 !i113 1
@@ -1607,9 +1607,9 @@ V?9650dUc4EIVa?hL>i2Z[2
 R8
 32
 b1
-R32
+R45
 !i10b 1
-R33
+R46
 Z159 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_text_pkg.vhd|-work|fft_ii_0|
 Z160 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/auk_dspip_text_pkg.vhd|
 !i113 1
@@ -1626,9 +1626,9 @@ VBMT?2FQ;8ajiSf>Kz973e3
 !s100 8<?]li33IkB>fMMF[SR`S2
 R8
 32
-R32
+R45
 !i10b 1
-R33
+R46
 R159
 R160
 !i113 1
@@ -1676,22 +1676,22 @@ R164
 !i113 1
 R13
 R14
-vmR4Lc7S+bTV2PNnFwEnnTQ==
+vCirgvawSn48NeNrrUvXB9Q==
 Z165 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R58
 !i10b 0
 !s100 QdHzZ<>7ZdJ4XRAz9oZQA0
 I57f5l^jhY[_GNFLE4O=]e1
-R40
-!i8a 1448369184
+R38
+!i8a 1221156224
 !s105 counter_module_sv_unit
 S1
 R0
-Z166 w1679840450
+Z166 w1679929689
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/counter_module.sv
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/counter_module.sv
-R41
-R42
+R39
+R40
 r1
 !s85 0
 31
@@ -1700,15 +1700,15 @@ R59
 !s90 -reportprogress|300|-sv|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/counter_module.sv|-work|fft_ii_0|
 !i113 1
 Z167 o-sv -work fft_ii_0
-R43
+R41
 n50012c5
 vfft_fft_ii_0
 R165
-R137
+R129
 !i10b 1
 !s100 S81=fG9S]<DN77DkjzhNY3
 Ihk3T5B6[LaiaFTniB`3c@0
-R40
+R38
 !s105 fft_fft_ii_0_sv_unit
 S1
 R0
@@ -1716,16 +1716,16 @@ R1
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/fft_fft_ii_0.sv
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/fft_fft_ii_0.sv
 L0 15
-R42
+R40
 r1
 !s85 0
 31
-R138
+R134
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/fft_fft_ii_0.sv|
 !s90 -reportprogress|300|-sv|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/fft_fft_ii_0.sv|-work|fft_ii_0|
 !i113 1
 R167
-R43
+R41
 Phyper_opt_pkg
 R29
 R4
@@ -1748,26 +1748,26 @@ R10
 !i113 1
 R13
 R14
-vM2Zl+DLug0RCTef/LCy61muA/vft66VgfxP4IAgU/u4=
+vqlDlDpaL+K1uPQKyFcNsuW8msYYVyrAkkfxvVgmDHCc=
 R58
 !i10b 0
 !s100 L^@BnRdg_lel_IeL9W?Th1
 IJI1_8Zj:^_A9GS3anViX71
-R40
-!i8a 1556124448
+R38
+!i8a 845345536
 R0
 R166
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/hyper_pipeline_interface.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/hyper_pipeline_interface.v
-R41
-R42
+R39
+R40
 r1
 !s85 0
 31
-R10
+R59
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/hyper_pipeline_interface.v|
 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/submodules/mentor/hyper_pipeline_interface.v|-work|fft_ii_0|
 !i113 1
 R13
-R43
+R41
 n5f39f65
