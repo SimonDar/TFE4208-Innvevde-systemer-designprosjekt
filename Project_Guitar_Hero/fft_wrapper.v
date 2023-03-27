@@ -24,7 +24,6 @@ wire [15:0] real_to_fft_p;
 wire [15:0] imag_to_fft_p;
 reg [4:0] count;
 reg reset_n;
-reg eop2, sop2, eop5;
 
 initial
 begin

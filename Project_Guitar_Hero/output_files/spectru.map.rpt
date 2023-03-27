@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 Analysis & Elaboration report for spectru
 Mon Mar 27 16:59:31 2023
+=======
+Analysis & Synthesis report for spectru
+Mon Mar 27 17:11:59 2023
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,6 +12,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
+<<<<<<< HEAD
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
@@ -17,6 +23,20 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Port Connectivity Checks: "ftt_interface:fft_interface_inst"
  10. Analysis & Elaboration Messages
  11. Analysis & Elaboration Suppressed Messages
+=======
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 
 
 
@@ -40,25 +60,33 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Elaboration Status      ; Successful - Mon Mar 27 16:59:31 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; spectru                                     ;
 ; Top-level Entity Name              ; testbench_test                              ;
+=======
+; Analysis & Synthesis Status        ; Successful - Mon Mar 27 17:11:59 2023       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; spectru                                     ;
+; Top-level Entity Name              ; magnitude                                   ;
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 67                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
+<<<<<<< HEAD
 +------------------------------------------+
 ; Parallel Compilation                     ;
 +----------------------------+-------------+
@@ -298,13 +326,19 @@ refer to the applicable agreement for further details.
 +--------+---------------+---------+--------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
+=======
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
+<<<<<<< HEAD
 ; Top-level entity name                                            ; testbench_test     ; spectru            ;
+=======
+; Top-level entity name                                            ; magnitude          ; spectru            ;
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -384,6 +418,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ftt_interface:fft_interface_inst|controll_for_fft:b2v_inst1"                                                   ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -425,16 +460,170 @@ refer to the applicable agreement for further details.
 ; data_out_imag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; data_out_real ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
+=======
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                        ;
++------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                            ; Library ;
++------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; fft/synthesis/submodules/fft_fft_ii_0.sv ; yes             ; User SystemVerilog HDL File  ; C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv ; fft     ;
+; magnitude.v                              ; yes             ; User Verilog HDL File        ; C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v                              ;         ;
++------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 67    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 67    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |magnitude                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |magnitude          ; magnitude   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; magn[0]                                ; Stuck at GND due to stuck port data_in ;
+; n[0]                                   ; Stuck at GND due to stuck port data_in ;
+; magn[1..26]                            ; Stuck at GND due to stuck port data_in ;
+; index[0..12]                           ; Stuck at GND due to stuck port data_in ;
+; n[1..26]                               ; Stuck at GND due to stuck port data_in ;
+; result[0]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[1]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[2]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[3]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[4]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[5]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[6]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[7]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[8]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[9]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; result[10]~reg0                        ; Stuck at GND due to stuck port data_in ;
+; result[11]~reg0                        ; Stuck at GND due to stuck port data_in ;
+; result[12]~reg0                        ; Stuck at GND due to stuck port data_in ;
+; count[0..14]                           ; Lost fanout                            ;
+; Total Number of Removed Registers = 95 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                                          ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+
+; magn[0]       ; Stuck at GND              ; n[0], index[0], index[1], index[2], index[3], index[4], index[5], index[6], index[7], index[8],                 ;
+;               ; due to stuck port data_in ; index[9], index[10], index[11], index[12], n[1], n[2], n[3], n[4], n[5], n[6], n[7], n[8], n[9], n[10],         ;
+;               ;                           ; n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19], n[20], n[21], n[22], n[23], n[24], n[25], n[26], ;
+;               ;                           ; result[0]~reg0, result[1]~reg0, result[2]~reg0, result[3]~reg0, result[4]~reg0,                                 ;
+;               ;                           ; result[5]~reg0, result[6]~reg0, result[7]~reg0, result[8]~reg0, result[9]~reg0,                                 ;
+;               ;                           ; result[10]~reg0, result[11]~reg0, result[12]~reg0, count[0], count[1], count[2], count[3],                      ;
+;               ;                           ; count[4], count[5], count[6], count[7], count[8], count[9], count[10], count[11], count[12]                     ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 67                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Mon Mar 27 16:59:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off spectru -c spectru --analysis_and_elaboration
+=======
+    Info: Processing started: Mon Mar 27 17:11:38 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off spectru -c spectru
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ftt_interface.v
@@ -442,129 +631,130 @@ Info (12021): Found 1 design units, including 1 entities, in source file ftt_int
 Info (12021): Found 1 design units, including 1 entities, in source file block.bdf
     Info (12023): Found entity 1: block
 Info (12021): Found 1 design units, including 1 entities, in source file fft/synthesis/fft.v
-    Info (12023): Found entity 1: fft File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/fft.v Line: 6
+    Info (12023): Found entity 1: fft File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/fft.v Line: 6
 Info (12021): Found 2 design units, including 0 entities, in source file fft/synthesis/submodules/auk_dspip_text_pkg.vhd
-    Info (12022): Found design unit 1: auk_dspip_text_pkg (fft) File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd Line: 60
-    Info (12022): Found design unit 2: auk_dspip_text_pkg-body File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd Line: 76
+    Info (12022): Found design unit 1: auk_dspip_text_pkg (fft) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd Line: 60
+    Info (12022): Found design unit 2: auk_dspip_text_pkg-body File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_text_pkg.vhd Line: 76
 Info (12021): Found 2 design units, including 0 entities, in source file fft/synthesis/submodules/auk_dspip_math_pkg.vhd
-    Info (12022): Found design unit 1: auk_dspip_math_pkg (fft) File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd Line: 51
-    Info (12022): Found design unit 2: auk_dspip_math_pkg-body File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd Line: 128
+    Info (12022): Found design unit 1: auk_dspip_math_pkg (fft) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd Line: 51
+    Info (12022): Found design unit 2: auk_dspip_math_pkg-body File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_math_pkg.vhd Line: 128
 Info (12021): Found 1 design units, including 0 entities, in source file fft/synthesis/submodules/auk_dspip_lib_pkg.vhd
-    Info (12022): Found design unit 1: auk_dspip_lib_pkg (fft) File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd Line: 28
+    Info (12022): Found design unit 1: auk_dspip_lib_pkg (fft) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd Line: 28
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd
-    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_block_sink-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd Line: 59
-    Info (12023): Found entity 1: auk_dspip_avalon_streaming_block_sink File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd Line: 22
+    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_block_sink-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd Line: 59
+    Info (12023): Found entity 1: auk_dspip_avalon_streaming_block_sink File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd
-    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_block_source-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd Line: 47
-    Info (12023): Found entity 1: auk_dspip_avalon_streaming_block_source File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd Line: 25
+    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_block_source-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd Line: 47
+    Info (12023): Found entity 1: auk_dspip_avalon_streaming_block_source File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd Line: 25
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_roundsat.vhd
-    Info (12022): Found design unit 1: auk_dspip_roundsat-beh File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd Line: 61
-    Info (12023): Found entity 1: auk_dspip_roundsat File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd Line: 45
+    Info (12022): Found design unit 1: auk_dspip_roundsat-beh File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd Line: 61
+    Info (12023): Found entity 1: auk_dspip_roundsat File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_roundsat.vhd Line: 45
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/apn_fft_mult_can.vhd
-    Info (12022): Found design unit 1: apn_fft_mult_can-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd Line: 39
-    Info (12023): Found entity 1: apn_fft_mult_can File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd Line: 21
+    Info (12022): Found design unit 1: apn_fft_mult_can-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd Line: 39
+    Info (12023): Found entity 1: apn_fft_mult_can File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_can.vhd Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file fft/synthesis/submodules/apn_fft_mult_cpx_1825.v
-    Info (12023): Found entity 1: apn_fft_mult_cpx_1825 File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx_1825.v Line: 19
+    Info (12023): Found entity 1: apn_fft_mult_cpx_1825 File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx_1825.v Line: 19
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/apn_fft_mult_cpx.vhd
-    Info (12022): Found design unit 1: apn_fft_mult_cpx-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd Line: 39
-    Info (12023): Found entity 1: apn_fft_mult_cpx File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd Line: 21
+    Info (12022): Found design unit 1: apn_fft_mult_cpx-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd Line: 39
+    Info (12023): Found entity 1: apn_fft_mult_cpx File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/apn_fft_mult_cpx.vhd Line: 21
 Info (12021): Found 1 design units, including 0 entities, in source file fft/synthesis/submodules/hyper_opt_off_pkg.vhd
-    Info (12022): Found design unit 1: hyper_opt_pkg (fft) File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_opt_OFF_pkg.vhd Line: 20
+    Info (12022): Found design unit 1: hyper_opt_pkg (fft) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_opt_OFF_pkg.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/altera_fft_dual_port_ram.vhd
-    Info (12022): Found design unit 1: altera_fft_dual_port_ram-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd Line: 58
-    Info (12023): Found entity 1: altera_fft_dual_port_ram File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd Line: 36
+    Info (12022): Found design unit 1: altera_fft_dual_port_ram-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd Line: 58
+    Info (12023): Found entity 1: altera_fft_dual_port_ram File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_ram.vhd Line: 36
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/altera_fft_dual_port_rom.vhd
-    Info (12022): Found design unit 1: altera_fft_dual_port_rom-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd Line: 43
-    Info (12023): Found entity 1: altera_fft_dual_port_rom File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd Line: 23
+    Info (12022): Found design unit 1: altera_fft_dual_port_rom-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd Line: 43
+    Info (12023): Found entity 1: altera_fft_dual_port_rom File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_dual_port_rom.vhd Line: 23
 Info (12021): Found 6 design units, including 3 entities, in source file fft/synthesis/submodules/altera_fft_mult_add.vhd
-    Info (12022): Found design unit 1: altera_fft_mult_add-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 42
-    Info (12022): Found design unit 2: altera_fft_mult_add_new-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 159
-    Info (12022): Found design unit 3: altera_fft_mult_add_old-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 415
-    Info (12023): Found entity 1: altera_fft_mult_add File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 23
-    Info (12023): Found entity 2: altera_fft_mult_add_new File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 140
-    Info (12023): Found entity 3: altera_fft_mult_add_old File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 396
+    Info (12022): Found design unit 1: altera_fft_mult_add-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 42
+    Info (12022): Found design unit 2: altera_fft_mult_add_new-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 159
+    Info (12022): Found design unit 3: altera_fft_mult_add_old-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 415
+    Info (12023): Found entity 1: altera_fft_mult_add File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 23
+    Info (12023): Found entity 2: altera_fft_mult_add_new File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 140
+    Info (12023): Found entity 3: altera_fft_mult_add_old File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_mult_add.vhd Line: 396
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/altera_fft_single_port_rom.vhd
-    Info (12022): Found design unit 1: altera_fft_single_port_rom-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd Line: 40
-    Info (12023): Found entity 1: altera_fft_single_port_rom File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd Line: 23
+    Info (12022): Found design unit 1: altera_fft_single_port_rom-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd Line: 40
+    Info (12023): Found entity 1: altera_fft_single_port_rom File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/altera_fft_single_port_rom.vhd Line: 23
 Info (12021): Found 2 design units, including 0 entities, in source file fft/synthesis/submodules/auk_fft_pkg.vhd
-    Info (12022): Found design unit 1: auk_fft_pkg (fft) File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd Line: 18
-    Info (12022): Found design unit 2: auk_fft_pkg-body File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd Line: 27
+    Info (12022): Found design unit 1: auk_fft_pkg (fft) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd Line: 18
+    Info (12022): Found design unit 2: auk_fft_pkg-body File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_fft_pkg.vhd Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file fft/synthesis/submodules/hyper_pipeline_interface.v
-    Info (12023): Found entity 1: hyper_pipeline_interface File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_pipeline_interface.v Line: 20
+    Info (12023): Found entity 1: hyper_pipeline_interface File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/hyper_pipeline_interface.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file fft/synthesis/submodules/counter_module.sv
-    Info (12023): Found entity 1: counter_module File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/counter_module.sv Line: 17
+    Info (12023): Found entity 1: counter_module File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/counter_module.sv Line: 17
 Info (12021): Found 1 design units, including 0 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_lib_pkg (fft) File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd Line: 35
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_lib_pkg (fft) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd Line: 35
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd
-    Info (12022): Found design unit 1: auk_dspip_bit_reverse_addr_control-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd Line: 79
-    Info (12023): Found entity 1: auk_dspip_bit_reverse_addr_control File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd Line: 62
+    Info (12022): Found design unit 1: auk_dspip_bit_reverse_addr_control-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd Line: 79
+    Info (12023): Found entity 1: auk_dspip_bit_reverse_addr_control File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd Line: 62
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd
-    Info (12022): Found design unit 1: auk_dspip_bit_reverse_core-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd Line: 111
-    Info (12023): Found entity 1: auk_dspip_bit_reverse_core File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd Line: 89
+    Info (12022): Found design unit 1: auk_dspip_bit_reverse_core-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd Line: 111
+    Info (12023): Found entity 1: auk_dspip_bit_reverse_core File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_core.vhd Line: 89
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd
-    Info (12022): Found design unit 1: auk_dspip_bit_reverse_reverse_carry_adder-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd Line: 89
-    Info (12023): Found entity 1: auk_dspip_bit_reverse_reverse_carry_adder File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd Line: 77
+    Info (12022): Found design unit 1: auk_dspip_bit_reverse_reverse_carry_adder-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd Line: 89
+    Info (12023): Found entity 1: auk_dspip_bit_reverse_reverse_carry_adder File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd Line: 77
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_adder_fp-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd Line: 74
-    Info (12023): Found entity 1: auk_dspip_r22sdf_adder_fp File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd Line: 55
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_adder_fp-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd Line: 74
+    Info (12023): Found entity 1: auk_dspip_r22sdf_adder_fp File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd Line: 55
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_addsub-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd Line: 84
-    Info (12023): Found entity 1: auk_dspip_r22sdf_addsub File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd Line: 63
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_addsub-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd Line: 84
+    Info (12023): Found entity 1: auk_dspip_r22sdf_addsub File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd Line: 63
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_bfi-rtl2 File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd Line: 149
-    Info (12023): Found entity 1: auk_dspip_r22sdf_bfi File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd Line: 97
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_bfi-rtl2 File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd Line: 149
+    Info (12023): Found entity 1: auk_dspip_r22sdf_bfi File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd Line: 97
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_bfii-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd Line: 120
-    Info (12023): Found entity 1: auk_dspip_r22sdf_bfii File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd Line: 69
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_bfii-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd Line: 120
+    Info (12023): Found entity 1: auk_dspip_r22sdf_bfii File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd Line: 69
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_bf_control-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd Line: 106
-    Info (12023): Found entity 1: auk_dspip_r22sdf_bf_control File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd Line: 77
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_bf_control-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd Line: 106
+    Info (12023): Found entity 1: auk_dspip_r22sdf_bf_control File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd Line: 77
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd Line: 145
-    Info (12023): Found entity 1: auk_dspip_r22sdf_cma File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd Line: 100
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd Line: 145
+    Info (12023): Found entity 1: auk_dspip_r22sdf_cma File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma.vhd Line: 100
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma_adder_fp-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd Line: 90
-    Info (12023): Found entity 1: auk_dspip_r22sdf_cma_adder_fp File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd Line: 66
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma_adder_fp-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd Line: 90
+    Info (12023): Found entity 1: auk_dspip_r22sdf_cma_adder_fp File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd Line: 66
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma_bfi_fp-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd Line: 128
-    Info (12023): Found entity 1: auk_dspip_r22sdf_cma_bfi_fp File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd Line: 72
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma_bfi_fp-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd Line: 128
+    Info (12023): Found entity 1: auk_dspip_r22sdf_cma_bfi_fp File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd Line: 72
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma_fp-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd Line: 64
-    Info (12023): Found entity 1: auk_dspip_r22sdf_cma_fp File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd Line: 27
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_cma_fp-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd Line: 64
+    Info (12023): Found entity 1: auk_dspip_r22sdf_cma_fp File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd Line: 27
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_core-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd Line: 160
-    Info (12023): Found entity 1: auk_dspip_r22sdf_core File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd Line: 116
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_core-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd Line: 160
+    Info (12023): Found entity 1: auk_dspip_r22sdf_core File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_core.vhd Line: 116
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_counter-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd Line: 105
-    Info (12023): Found entity 1: auk_dspip_r22sdf_counter File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd Line: 80
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_counter-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd Line: 105
+    Info (12023): Found entity 1: auk_dspip_r22sdf_counter File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_counter.vhd Line: 80
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_delay-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd Line: 92
-    Info (12023): Found entity 1: auk_dspip_r22sdf_delay File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd Line: 71
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_delay-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd Line: 92
+    Info (12023): Found entity 1: auk_dspip_r22sdf_delay File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_delay.vhd Line: 71
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_enable_control-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd Line: 90
-    Info (12023): Found entity 1: auk_dspip_r22sdf_enable_control File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd Line: 65
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_enable_control-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd Line: 90
+    Info (12023): Found entity 1: auk_dspip_r22sdf_enable_control File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd Line: 65
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_stage-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd Line: 182
-    Info (12023): Found entity 1: auk_dspip_r22sdf_stage File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd Line: 131
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_stage-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd Line: 182
+    Info (12023): Found entity 1: auk_dspip_r22sdf_stage File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stage.vhd Line: 131
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_stg_out_pipe-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd Line: 97
-    Info (12023): Found entity 1: auk_dspip_r22sdf_stg_out_pipe File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd Line: 62
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_stg_out_pipe-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd Line: 97
+    Info (12023): Found entity 1: auk_dspip_r22sdf_stg_out_pipe File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd Line: 62
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_stg_pipe-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd Line: 103
-    Info (12023): Found entity 1: auk_dspip_r22sdf_stg_pipe File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd Line: 59
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_stg_pipe-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd Line: 103
+    Info (12023): Found entity 1: auk_dspip_r22sdf_stg_pipe File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd Line: 59
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_top-str File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd Line: 174
-    Info (12023): Found entity 1: auk_dspip_r22sdf_top File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd Line: 130
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_top-str File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd Line: 174
+    Info (12023): Found entity 1: auk_dspip_r22sdf_top File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd Line: 130
 Info (12021): Found 2 design units, including 1 entities, in source file fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd
-    Info (12022): Found design unit 1: auk_dspip_r22sdf_twrom-rtl File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd Line: 99
-    Info (12023): Found entity 1: auk_dspip_r22sdf_twrom File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd Line: 75
+    Info (12022): Found design unit 1: auk_dspip_r22sdf_twrom-rtl File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd Line: 99
+    Info (12023): Found entity 1: auk_dspip_r22sdf_twrom File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd Line: 75
 Info (12021): Found 1 design units, including 1 entities, in source file fft/synthesis/submodules/fft_fft_ii_0.sv
-    Info (12023): Found entity 1: fft_fft_ii_0 File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv Line: 15
+    Info (12023): Found entity 1: fft_fft_ii_0 File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file controll_for_fft.v
-    Info (12023): Found entity 1: controll_for_fft File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/controll_for_fft.v Line: 1
+    Info (12023): Found entity 1: controll_for_fft File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/controll_for_fft.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
-    Info (12023): Found entity 1: testbench File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 3
+    Info (12023): Found entity 1: testbench File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file fft_wrapper.v
+<<<<<<< HEAD
     Info (12023): Found entity 1: fft_wraper File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file find_highest.v
     Info (12023): Found entity 1: find_highest File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/find_highest.v Line: 1
@@ -2286,5 +2476,113 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 18 warnings
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
 The suppressed messages can be found in C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/output_files/spectru.map.smsg.
+=======
+    Info (12023): Found entity 1: fft_wraper File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file magnitude.v
+    Info (12023): Found entity 1: magnitude File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(25): created implicit net for "insignal_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(26): created implicit net for "sink_valid_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(29): created implicit net for "inverse_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(30): created implicit net for "sink_ready_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(31): created implicit net for "sink_error_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(32): created implicit net for "outreal_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(33): created implicit net for "outimag_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at testbench.v(34): created implicit net for "fft_pts_sig" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at fft_wrapper.v(56): created implicit net for "inverse" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 56
+Info (12127): Elaborating entity "magnitude" for the top level hierarchy
+Warning (10855): Verilog HDL warning at magnitude.v(29): initial value for variable ref_real should be constant File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 29
+Warning (10855): Verilog HDL warning at magnitude.v(29): initial value for variable ref_imag should be constant File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 29
+Warning (10230): Verilog HDL assignment warning at magnitude.v(53): truncated value with size 15 to match size of target (13) File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 53
+Warning (10030): Net "ref_real" at magnitude.v(22) has no driver or initial value, using a default initial value '0' File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 22
+Warning (10030): Net "ref_imag" at magnitude.v(22) has no driver or initial value, using a default initial value '0' File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 22
+Warning (12189): Intel FPGA IP Evaluation Mode (Simulation-Only) feature is turned on for all cores in the design
+    Warning (12191): Some cores in this design do not support the Intel FPGA IP Evaluation Mode feature
+        Warning (12192): "FFT/IFFT" does not support the Intel FPGA IP Evaluation Mode feature
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "result[0]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[1]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[2]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[3]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[4]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[5]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[6]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[7]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[8]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[9]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[10]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[11]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+    Warning (13410): Pin "result[12]" is stuck at GND File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 39
+Info (17049): 15 registers lost all their fanouts during netlist optimizations.
+Warning (20013): Ignored 22 assignments for entity "fft" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity fft -sip fft/simulation/fft.sip -library lib_fft was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity fft -sip fft/simulation/fft.sip -library lib_fft was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity fft -sip fft/simulation/fft.sip -library lib_fft was ignored
+Warning (20013): Ignored 33 assignments for entity "fft_fft_ii_0" -- entity does not exist in design
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 54 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 6
+    Warning (15610): No output dependent on input pin "sm_ready" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 9
+    Warning (15610): No output dependent on input pin "sm_enable" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 10
+    Warning (15610): No output dependent on input pin "sm_done" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 11
+    Warning (15610): No output dependent on input pin "source_real[0]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[1]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[2]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[3]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[4]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[5]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[6]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[7]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[8]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[9]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[10]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[11]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[12]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[13]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[14]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[15]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[16]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[17]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[18]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[19]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[20]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[21]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[22]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[23]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_real[24]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 14
+    Warning (15610): No output dependent on input pin "source_imag[0]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[1]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[2]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[3]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[4]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[5]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[6]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[7]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[8]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[9]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[10]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[11]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[12]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[13]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[14]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[15]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[16]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[17]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[18]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[19]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[20]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[21]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[22]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[23]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+    Warning (15610): No output dependent on input pin "source_imag[24]" File: C:/NTNU/Innvevde systemer designprosjekt/Prosjekt/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v Line: 15
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 54 input pins
+    Info (21059): Implemented 13 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Mon Mar 27 17:11:59 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:21
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 
 

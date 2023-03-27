@@ -2,6 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
+<<<<<<< HEAD
 			"pins" : [
 				{
 					"name" : "reset_n",
@@ -12,6 +13,9 @@
 					"strict" : false
 				}
 			]
+=======
+			"pins" : []
+>>>>>>> f022846b5054e7d2eae7d302591fe1e69c96e47c
 		}
 	]
 }
