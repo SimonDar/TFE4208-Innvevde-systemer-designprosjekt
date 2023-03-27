@@ -1,0 +1,6 @@
+16:45:45 **** Clean-only build of configuration Nios II for project getMaxValue_bsp ****
+make clean 
+[BSP clean complete]
+
+16:45:46 Build Finished (took 1s.649ms)
+
