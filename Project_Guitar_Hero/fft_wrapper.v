@@ -1,4 +1,4 @@
-module fft_wraper(clk, in_signal, real_power, imag_power, fft_source_sop, sink_sop, sink_eop, sink_valid);
+module fft_wraper(clk, in_signal, real_power, imag_power, fft_source_sop, fft_source_eop, source_ready);
 
 //listene med tall er ikke riktig. Du må fikse på det martin!
 //Okei martin, im on it!
@@ -7,17 +7,18 @@ input clk;
 input wire [15:0] in_signal;
 wire [15:0] short_in_signal;
 
-output wire [26:0] real_power;
-output wire [26:0] imag_power;
+output wire [24:0] real_power;
+output wire [24:0] imag_power;
 
 //fft signals
-output wire sink_valid;
+wire sink_valid;
 wire sink_ready;
-output wire sink_sop;
-output wire sink_eop;
+wire sink_sop;
+wire sink_eop;
 wire [13:0] fft_pts;
 output wire fft_source_sop;
-wire fft_source_eop;
+output wire fft_source_eop;
+input wire source_ready;
 
 wire [15:0] real_to_fft_p;
 wire [15:0] imag_to_fft_p;
@@ -74,8 +75,8 @@ end
 		.sink_imag(imag_to_fft_p),
 		.fftpts_in(fft_pts),
 		.inverse(1'b0),
-		.source_valid(),
-		.source_ready(1'b1),
+		.source_valid(1'b1),
+		.source_ready(source_ready),
 		.source_error(),
 		.source_sop(fft_source_sop),
 		.source_eop(fft_source_eop),
