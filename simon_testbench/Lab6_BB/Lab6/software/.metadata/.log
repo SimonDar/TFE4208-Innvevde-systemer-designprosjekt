@@ -2485,3 +2485,96 @@ java.io.IOException: Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2023-03-27 13:17:56.796
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:149)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:94)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:63)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2023-03-27 13:17:56.796
+!MESSAGE Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf": Unknown reason
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:149)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:94)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:63)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2023-03-27 13:18:39.703
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:149)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:94)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:63)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2023-03-27 13:18:39.703
+!MESSAGE Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf": Unknown reason
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:149)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:94)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:63)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:18:58.204
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:18:59.014
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:00.394
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:21.769
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:21.801
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:23.180
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:34.840
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [3-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:34.884
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2023-03-27 13:19:36.292
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [3-1]' --device=1 --instance=1 --go /home/simondar/NTNU/TFE4208-Innvevde-systemer-designprosjekt/simon_testbench/Lab6_BB/Lab6/software/Gitar_Hero_NIOS/Gitar_Hero_NIOS.elf]

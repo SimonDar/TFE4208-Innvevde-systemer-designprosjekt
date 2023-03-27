@@ -1318,7 +1318,7 @@ int main()
    405d4:	dfc00115 	stw	ra,4(sp)
    405d8:	df000015 	stw	fp,0(sp)
    405dc:	d839883a 	mov	fp,sp
-printf("Hello from Nios II!3\n");
+printf("Hello from Nios II!2\n");
    405e0:	01000174 	movhi	r4,5
    405e4:	21057304 	addi	r4,r4,5580
    405e8:	004490c0 	call	4490c <puts>

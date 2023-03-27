@@ -50,7 +50,7 @@ void testled()
 
 int main()
 {
-printf("Hello from Nios II!3\n");
+printf("Hello from Nios II!2\n");
 printf("%d", CheckInput());
 return 0;
 }
