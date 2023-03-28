@@ -10,7 +10,7 @@
                 "machinecode", // executable
                 "CheckSignal.cpp", // main file
                 "LedLibrary.cpp", // main file
-                "Main.cpp", // main file
+                "Main.cpp",
                 "-g",
                 "-v"
             ],

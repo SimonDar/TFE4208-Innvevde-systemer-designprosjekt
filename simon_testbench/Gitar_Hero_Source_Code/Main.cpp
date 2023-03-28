@@ -4,7 +4,7 @@
  *  Created on: Mar 26, 2023
  *      Author: simondar
  */
-#include "Main.h"
+#include "Main.hpp"
 
 
 
@@ -61,5 +61,15 @@ int main()
 {
 initprint();
 printf("%d",CheckClose(CheckInput()));
+SpectrumValue(true);
+
+    float coeff[3][4] = {
+        { 100000000, 10000, 1, 0 },
+        { float(pow(9000, 2)), 9000, 1, 100 },
+        { float(pow(11000, 2)), 11000, 1, 100 },
+    };
+ 
+    findSolution(coeff);
+
 return 0;
 }

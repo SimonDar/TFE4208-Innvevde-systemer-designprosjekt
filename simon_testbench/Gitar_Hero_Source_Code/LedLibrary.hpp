@@ -10,8 +10,13 @@
 
     #include <stdio.h>
     #include <math.h>
-    //#include "system.h"
-    #include "altera_avalon_pio_regs.h"
-    //#include "CheckSignal.h"
+    #include <vector>
+
+   // #include "system.h"
+    #include "altera_avalon_pio_regs.hpp"
+    #include "CheckSignal.hpp"
+    #include "PolynomSolver.hpp"
+
+
 
 #endif
