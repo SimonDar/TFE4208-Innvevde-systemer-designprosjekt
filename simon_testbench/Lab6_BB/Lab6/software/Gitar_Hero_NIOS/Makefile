@@ -90,8 +90,8 @@ ACDS_VERSION := 21.1
 ELF := Gitar_Hero_NIOS.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += main.c
 C_SRCS += CheckSignal.c
+C_SRCS += main.c
 CXX_SRCS :=
 ASM_SRCS :=
 
