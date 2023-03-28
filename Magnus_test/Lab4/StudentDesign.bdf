@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,8 +16,7 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 */
 //#pragma file_not_in_maxplusii_format
 (header "graphic" (version "1.4"))
@@ -132,6 +131,22 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 88 -72 256 -56)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "fft_clk" (rect 5 0 39 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -375,6 +390,70 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 144 80))
 	)
 )
+(symbol
+	(rect 360 -96 592 48)
+	(text "fft_wraper" (rect 5 0 55 12)(font "Arial" ))
+	(text "inst2" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "in_signal[15..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "in_signal[15..0]" (rect 21 43 95 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "real_power[26..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "real_power[26..0]" (rect 141 27 224 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "imag_power[26..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "imag_power[26..0]" (rect 136 43 225 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "fft_source_sop" (rect 0 0 75 12)(font "Arial" ))
+		(text "fft_source_sop" (rect 148 59 223 71)(font "Arial" ))
+		(line (pt 232 64)(pt 216 64))
+	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "sink_sop" (rect 0 0 43 12)(font "Arial" ))
+		(text "sink_sop" (rect 175 75 218 87)(font "Arial" ))
+		(line (pt 232 80)(pt 216 80))
+	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "sink_eop" (rect 0 0 43 12)(font "Arial" ))
+		(text "sink_eop" (rect 175 91 218 103)(font "Arial" ))
+		(line (pt 232 96)(pt 216 96))
+	)
+	(port
+		(pt 232 112)
+		(output)
+		(text "sink_valid" (rect 0 0 49 12)(font "Arial" ))
+		(text "sink_valid" (rect 170 107 219 119)(font "Arial" ))
+		(line (pt 232 112)(pt 216 112))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 128))
+	)
+)
 (connector
 	(text "C[3..0]" (rect 578 96 612 108)(font "Arial" ))
 	(pt 568 112)
@@ -538,15 +617,35 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "A[15..0]" (rect 266 80 304 92)(font "Arial" ))
-	(pt 360 96)
-	(pt 256 96)
-	(bus)
-)
-(connector
 	(text "C[4]" (rect 338 104 359 116)(font "Arial" ))
 	(pt 360 120)
 	(pt 336 120)
 )
+(connector
+	(pt 360 -48)
+	(pt 312 -48)
+	(bus)
+)
+(connector
+	(pt 312 -48)
+	(pt 312 96)
+	(bus)
+)
+(connector
+	(text "A[15..0]" (rect 266 80 304 92)(font "Arial" ))
+	(pt 360 96)
+	(pt 312 96)
+	(bus)
+)
+(connector
+	(pt 312 96)
+	(pt 256 96)
+	(bus)
+)
+(connector
+	(pt 256 -64)
+	(pt 360 -64)
+)
 (junction (pt 552 352))
 (junction (pt 568 368))
+(junction (pt 312 96))

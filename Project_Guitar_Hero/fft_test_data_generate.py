@@ -19,4 +19,4 @@ print(img)
 
 f = open("fft_sample_values.txt", "a")
 for e in gfg:
-    f.write(f"{e.real},{e.imag}\n")
+    f.write(f"{int(e.real):x} {int(e.imag):x}\n")

@@ -1,6 +1,6 @@
 Flow report for Ver2
-Thu Jan 19 11:24:45 2023
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Sun Mar 26 17:57:34 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,31 +33,30 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------+
-; Flow Summary                                                                        ;
-+------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Thu Jan 19 11:24:45 2023          ;
-; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                      ; Ver2                                           ;
-; Top-level Entity Name              ; Lab4                                           ;
-; Family                             ; Cyclone IV E                                   ;
-; Device                             ; EP4CE115F29C7                                  ;
-; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 3,702 / 114,480 ( 3 % )                        ;
-;     Total combinational functions  ; 3,470 / 114,480 ( 3 % )                        ;
-;     Dedicated logic registers      ; 1,933 / 114,480 ( 2 % )                        ;
-; Total registers                    ; 1933                                           ;
-; Total pins                         ; 130 / 529 ( 25 % )                             ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 358,336 / 3,981,312 ( 9 % )                    ;
-; Embedded Multiplier 9-bit elements ; 10 / 532 ( 2 % )                               ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                                 ;
-+------------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun Mar 26 17:57:34 2023       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; Ver2                                        ;
+; Top-level Entity Name              ; StudentDesign                               ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,67 +64,208 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/19/2023 11:23:30 ;
+; Start date & time ; 03/26/2023 17:57:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ver2                ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 251485267122011.167412381015788        ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (VHDL)               ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; NUM_PARALLEL_PROCESSORS             ; 4                                      ; 1             ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Lab4        ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Lab4        ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Lab4        ; Top            ;
-; TOP_LEVEL_ENTITY                    ; Lab4                                   ; Ver2          ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                    ; --            ; --          ; eda_palace     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                      ;
++-------------------------------------+--------------------------------------------------------------------------------+---------------+---------------+----------------+
+; Assignment Name                     ; Value                                                                          ; Default Value ; Entity Name   ; Section Id     ;
++-------------------------------------+--------------------------------------------------------------------------------+---------------+---------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 62619200595943.167984622212108                                                 ; --            ; --            ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                                           ; --            ; --            ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (VHDL)                                                       ; <None>        ; --            ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                                           ; --            ; --            ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                             ; --            ; --            ; --             ;
+; MESSAGE_DISABLE                     ; 270007                                                                         ; --            ; fft_fft_ii_0  ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/../../fft.qsys                                                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/fft.v                                                           ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twi1.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twr1.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twi2.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twi3.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twr2.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twr3.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twi4.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twi5.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twr4.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twr5.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twi6.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0_opt_twr6.hex                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/auk_dspip_text_pkg.vhd                               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/auk_dspip_math_pkg.vhd                               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/auk_dspip_lib_pkg.vhd                                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_avalon_streaming_block_sink.vhd      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_avalon_streaming_block_source.vhd    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/auk_dspip_roundsat.vhd                               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/apn_fft_mult_can.vhd                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/apn_fft_mult_can.vhd                           ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v                       ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/apn_fft_mult_cpx_1825.v                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/apn_fft_mult_cpx.vhd                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/apn_fft_mult_cpx.vhd                           ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/auk_dspip_r22sdf_top.ocp                             ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/hyper_opt_OFF_pkg.vhd                         ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/hyper_opt_OFF_pkg.vhd                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/altera_fft_dual_port_ram.vhd                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/altera_fft_dual_port_rom.vhd                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/altera_fft_dual_port_rom.vhd                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/altera_fft_mult_add.vhd                       ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/altera_fft_mult_add.vhd                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/altera_fft_single_port_rom.vhd                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/altera_fft_single_port_rom.vhd                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_fft_pkg.vhd                               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_fft_pkg.vhd                                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/hyper_pipeline_interface.v                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/hyper_pipeline_interface.v                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/counter_module.sv                             ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/counter_module.sv                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_lib_pkg.vhd                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_lib_pkg.vhd                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_bit_reverse_addr_control.vhd        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_bit_reverse_addr_control.vhd         ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_bit_reverse_core.vhd                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_bit_reverse_core.vhd                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_bit_reverse_reverse_carry_adder.vhd ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_bit_reverse_reverse_carry_adder.vhd  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_adder_fp.vhd                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_addsub.vhd                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_bfi.vhd                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_bfi.vhd                       ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_bfii.vhd                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_bfii.vhd                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_bf_control.vhd                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma.vhd                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_cma.vhd                       ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_adder_fp.vhd             ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_cma_adder_fp.vhd              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_bfi_fp.vhd               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_cma_bfi_fp.vhd                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_cma_fp.vhd                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_cma_fp.vhd                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_core.vhd                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_core.vhd                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_counter.vhd                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_counter.vhd                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_delay.vhd                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_delay.vhd                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd           ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_enable_control.vhd            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_stage.vhd                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd             ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_stg_out_pipe.vhd              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_stg_pipe.vhd                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_stg_pipe.vhd                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_top.vhd                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_top.vhd                       ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/mentor/auk_dspip_r22sdf_twrom.vhd                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/aldec/auk_dspip_r22sdf_twrom.vhd                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/fft_fft_ii_0.sv                                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/How_To_Build.txt                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/SVSfftmodel.mexglx                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/SVSfftmodel.mexw32                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/expression.cpp                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/expression.h                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/fft.cpp                                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/fft.h                                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/fpCompiler.cpp                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/fpCompiler.h                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/model_c_wrapper.cpp                     ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/util.cpp                                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/mr42/util.h                                  ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/Sfftmodel.c                         ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/Sfftmodel.mexa64                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/Sfftmodel.mexglx                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/Sfftmodel.mexw32                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/imag_input.txt                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/model.c                             ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/model_c_wrapper.c                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/real_input.txt                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/run_c_wrapper.sh                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/run_model_c.sh                      ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/old_arch/tbcmex.m                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/SVSfftmodel.mexa64                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/SVSfftmodel.mexglx                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/SVSfftmodel.mexw32                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/blksize_report.txt                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/create_static_library.sh              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/expected_imag_out.txt                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/expected_real_out.txt                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/expression.cpp                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/expression.h                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/fft.cpp                               ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/fft.h                                 ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/fft_model.m                           ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/fft_tb.m                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/fpCompiler.cpp                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/fpCompiler.h                          ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/how_to_compile.txt                    ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/imag_input.txt                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/main.cpp                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/model.cpp                             ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/model_c_wrapper.cpp                   ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/readme.txt                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/real_input.txt                        ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/sink.cpp                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/sink.h                                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/source.cpp                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/source.h                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/system.cpp                            ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/system.h                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/util.cpp                              ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/simulation/submodules/c_model/r22sdf/util.h                                ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/synthesis/../fft.cmp                                                       ; --            ; --            ; --             ;
+; MISC_FILE                           ; fft/synthesis/../../fft.qsys                                                   ; --            ; --            ; --             ;
+; NUM_PARALLEL_PROCESSORS             ; 4                                                                              ; 1             ; --            ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                         ; --            ; StudentDesign ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                         ; --            ; StudentDesign ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                         ; --            ; StudentDesign ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                            ; --            ; --            ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                          ; --            ; --            ; --             ;
+; SLD_FILE                            ; fft/synthesis/fft.debuginfo                                                    ; --            ; --            ; --             ;
+; SLD_INFO                            ; QSYS_NAME fft HAS_SOPCINFO 1 GENERATION_ID 1679844856                          ; --            ; fft           ; --             ;
+; SOPCINFO_FILE                       ; fft/synthesis/../../fft.sopcinfo                                               ; --            ; --            ; --             ;
+; SPD_FILE                            ; fft/simulation/../fft.spd                                                      ; --            ; --            ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                             ; --            ; --            ; --             ;
+; TOP_LEVEL_ENTITY                    ; StudentDesign                                                                  ; Ver2          ; --            ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                                                            ; --            ; --            ; eda_palace     ;
++-------------------------------------+--------------------------------------------------------------------------------+---------------+---------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4951 MB             ; 00:00:57                           ;
-; Fitter               ; 00:00:19     ; 1.0                     ; 5772 MB             ; 00:00:28                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4748 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 4905 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4742 MB             ; 00:00:06                           ;
-; Total                ; 00:01:10     ; --                      ; --                  ; 00:01:39                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:31     ; 1.0                     ; 4963 MB             ; 00:00:41                           ;
+; Total                  ; 00:00:31     ; --                      ; --                  ; 00:00:41                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; NTNU15552        ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; NTNU15552        ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; NTNU15552        ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; NTNU15552        ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; NTNU15552        ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; LAPTOP-9PEJ8BTN  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Ver2
-quartus_fit --read_settings_files=off --write_settings_files=off Lab4 -c Ver2
-quartus_asm --read_settings_files=off --write_settings_files=off Lab4 -c Ver2
-quartus_sta Lab4 -c Ver2
-quartus_eda --read_settings_files=off --write_settings_files=off Lab4 -c Ver2
+quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Ver2 --analysis_and_elaboration
 
 
 
