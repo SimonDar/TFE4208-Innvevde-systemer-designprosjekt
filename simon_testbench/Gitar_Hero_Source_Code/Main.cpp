@@ -4,7 +4,7 @@
  *  Created on: Mar 26, 2023
  *      Author: simondar
  */
-#include "Main.h"
+#include "Main.hpp"
 
 
 
@@ -50,7 +50,7 @@ void testled()
 
 void initprint()
 {
-	printf("Hello from Nios II!3\n");
+	printf("Hello from Nios II!34\n");
 	printf("%d\n",CheckInput());
 	printbit(CheckInput());
 	printf("\n");
@@ -61,5 +61,10 @@ int main()
 {
 initprint();
 printf("%d",CheckClose(CheckInput()));
+SpectrumValue(true);
+
+
+printf("\n%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
+
 return 0;
 }
