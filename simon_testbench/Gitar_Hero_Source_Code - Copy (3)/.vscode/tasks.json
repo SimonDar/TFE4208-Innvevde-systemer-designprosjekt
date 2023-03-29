@@ -1,0 +1,41 @@
+/* tasks.json */
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "clang++",
+            "args": [
+                "-o",
+                "machinecode", // executable
+                "CheckSignal.cpp", // main file
+                "LedLibrary.cpp", // main file
+                "Main.cpp",
+                "PolynomSolver.cpp",
+                "-g",
+                "-v"
+            ],
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
