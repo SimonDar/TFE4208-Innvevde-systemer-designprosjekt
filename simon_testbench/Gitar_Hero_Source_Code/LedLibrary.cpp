@@ -23,4 +23,46 @@ int prosentage(int LowNumber, int HighNumber) {
     return(results);
 }
 
+int redLedBinaryValues(int prosentage)
+{
+    float steps = 100;
+    steps /= 18;
+    int toleranceProsentage = 1;
+    int result = 0;
 
+
+
+    if( 50-toleranceProsentage < prosentage && prosentage < 50+toleranceProsentage)
+    {
+        printf("\nMiddle value\n");
+        result = pow(2, 8) + pow(2, 9);
+    }
+    else if (50+toleranceProsentage <= prosentage)
+    {
+        printf("\nHigh value\n");
+
+
+        for (float i = 9; i*steps <= prosentage; i+= 1)
+        {
+             result += pow(2, i);
+        }
+        
+    }
+    else if (50-toleranceProsentage >= prosentage)
+    {
+        printf("\nLow value\n");
+
+        for (float i = 8; i*steps >= prosentage; i -= 1)
+        {
+             result += pow(2, i);
+        }
+    }
+
+
+return result;
+}
+
+int greenLedBinaryValues(int position)
+{
+    return (pow(2, position));
+}

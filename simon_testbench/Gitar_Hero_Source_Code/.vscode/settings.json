@@ -1,6 +1,11 @@
 {
     "files.associations": {
+        "*.sva": "systemverilog",
+        "*.sql": "sqlite",
+        "*.tda": "systemverilog",
+        "*.gfv": "bsv",
         "cmath": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp"
     }
 }

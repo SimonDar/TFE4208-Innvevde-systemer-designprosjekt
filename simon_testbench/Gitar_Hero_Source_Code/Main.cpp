@@ -64,7 +64,20 @@ printf("%d",CheckClose(CheckInput()));
 SpectrumValue(true);
 
 
-printf("\n%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
+//printf("\n%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
+//printf("\n%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
+
+
+printf("\n");
+printbit(redLedBinaryValues(40));
+//printbit(16);
+
+while(1)
+{
+	int prosentageVale = prosentage(SpectrumValue(false),SpectrumValue(true));
+	redLedBinaryValues(prosentageVale);
+	
+}
 
 return 0;
 }

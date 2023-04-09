@@ -12,7 +12,7 @@ int halfWay(int A, int B) { return((A+B)/2); }
 
 int CheckInput()
 {
-    int TempValueToOutput_mHZ = 10000;
+    int TempValueToOutput_mHZ = 12345;
     return(TempValueToOutput_mHZ);
 }
 
@@ -20,6 +20,7 @@ int CheckInput()
 int CheckClose(int InputFrequency) {
 
     int HighNumber, LowNumber;
+    int return_value = 404;
 
     for (int i = 0; i < arrayLengt(); ++i)
     {
@@ -30,15 +31,15 @@ int CheckClose(int InputFrequency) {
         
        if (i == 0 && InputFrequency <= LowNumber)
         {
-            return(0);
+            return_value = 0;
         }
         else if(LowNumber < InputFrequency && InputFrequency <= HighNumber)
         {
-          return(i + 1);
+          return_value = i + 1;
         }
     }
 
-    return(666);
+    return(return_value);
 }
 
 int SpectrumValue(bool print_max_value)
@@ -57,11 +58,11 @@ int SpectrumValue(bool print_max_value)
     {
       case 0:
         HighNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval+1]);
-        LowNumber = gitarFrequency_mHz[interval] * 2 - halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval+1]);
+        LowNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval+1]);
         break;
 
       case 5:
-        HighNumber = gitarFrequency_mHz[interval] * 2 - halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval-1]);
+        HighNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval-1]);
         LowNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval-1]);
         break;
 

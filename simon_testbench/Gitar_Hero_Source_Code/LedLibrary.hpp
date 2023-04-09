@@ -12,12 +12,14 @@
     #include <math.h>
     #include <vector>
 
-   // #include "system.h"
+    // #include "system.h"
     #include "altera_avalon_pio_regs.hpp"
     #include "CheckSignal.hpp"
     #include "PolynomSolver.hpp"
 
 
     int prosentage(int HighNumber, int LowNumber);
+    int redLedBinaryValues(int prosentage);
+    int greenLedBinaryValues(int position);
 
 #endif
