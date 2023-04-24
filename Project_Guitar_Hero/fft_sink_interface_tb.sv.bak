@@ -1,0 +1,18 @@
+`timescale 1ns/100ps
+
+module fft_sink_interface_suite();
+	reg clk, sink_sop, sink_eop, sink_ready, sink_valid, reset_n;
+	reg[15:0] dat_in;
+	reg[15:0] sink_imag, sink_real;
+	
+	fft_sink_interface fft_sink_interface_inst (
+	.clk(clk),
+	.sink_ready(sink_ready),
+	.data_in(data_in),
+	.sink_imag(sink_imag),
+	.sink_real(sink_real),
+	.sink_sop(sink_sop),
+	.sink_eop(sink_eop),
+	.sink_valid(sink_valid),
+	.reset_n(reset_n)
+	);

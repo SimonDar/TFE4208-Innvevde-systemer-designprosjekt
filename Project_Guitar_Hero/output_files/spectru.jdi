@@ -1,8 +1,16 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="0463476c645fa40d53b8"/>
+    <hash md5_digest_80b="08c1ad6c1db599afa91b"/>
   </project>
   <file_info>
     <file device="EP4CE115F29C7" path="spectru.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <sld_infos>
+    <sld_info hpath="ftt_interface:inst3|fft:inst" name="inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME fft HAS_SOPCINFO 1 GENERATION_ID 1679837664"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
 </sld_project_info>

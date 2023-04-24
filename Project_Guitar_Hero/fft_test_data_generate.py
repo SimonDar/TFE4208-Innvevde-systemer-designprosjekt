@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib as plt
 
 numbers = []
 f = open("sine.txt", "r")
@@ -17,6 +18,9 @@ for e in gfg:
 print(real)
 print(img)
 
-f = open("fft_sample_values.txt", "a")
-for e in gfg:
-    f.write(f"{int(e.real):x} {int(e.imag):x}\n")
+plt.plot(real, )
+
+
+#f = open("fft_sample_values.txt", "a")
+#for e in gfg:
+#    f.write(f"{abs(int(e.real)):x} {abs(int(e.imag)):x}\n")
