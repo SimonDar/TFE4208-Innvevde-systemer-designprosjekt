@@ -42,42 +42,38 @@ void testled()
 		}
 		printf("Done, next\n");
 		count = 0;
-
-
 	}
 }
 
 
-void initprint()
+void testAll()
 {
-	printf("Hello from Nios II!34\n");
-	printf("%d\n",CheckInput());
-	printbit(CheckInput());
-	printf("\n");
+
+	printf("START\nInputValue:\t%d\n",CheckInput());
+	printf("HalfWay to zero:\t%d\n",halfWay(CheckInput(), 0));
+	printf("Arraylengt:\t%d\n",arrayLengt());
+	printf("CheckClose:\t%d\n",CheckClose(CheckInput()));
+	printf("SpectrumValue HIGH:\t%d\n",SpectrumValue(true));
+	printf("SpectrumValue LOW:\t%d\n",SpectrumValue(false));
+	printf("prosentage:\t%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
+	printf("redLedBinaryValues:\t%d\n",redLedBinaryValues(prosentage(SpectrumValue(false),SpectrumValue(true))));
+	printf("GreenLedBinaryValues:\t%d\n",greenLedBinaryValues(CheckClose(CheckInput())));
+
+
 }
 
-
-int main()
+int combinedOutput(int red, int green)
 {
-initprint();
-printf("%d",CheckClose(CheckInput()));
-SpectrumValue(true);
-
-
-//printf("\n%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
-//printf("\n%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
-
-
-printf("\n");
-printbit(redLedBinaryValues(40));
-//printbit(16);
-
-while(1)
-{
-	int prosentageVale = prosentage(SpectrumValue(false),SpectrumValue(true));
-	redLedBinaryValues(prosentageVale);
-	
-}
 
 return 0;
 }
+
+int main()
+{
+
+testAll();
+
+
+return 0;
+}
+

@@ -13,7 +13,7 @@
     #include <vector>
 
     // #include "system.h"
-    #include "altera_avalon_pio_regs.hpp"
+    #include "altera_avalon_pio_regs.h"
     #include "CheckSignal.hpp"
     #include "PolynomSolver.hpp"
 

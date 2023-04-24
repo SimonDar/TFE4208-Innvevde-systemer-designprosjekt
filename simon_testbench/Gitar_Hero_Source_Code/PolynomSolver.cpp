@@ -44,11 +44,12 @@ thirdDegreeFormula findSolution(float coeff[3][4])
     float D1 = determinantOfMatrix(d1);
     float D2 = determinantOfMatrix(d2);
     float D3 = determinantOfMatrix(d3);
+    /*
     printf("D is : %lf \n", D);
     printf("D1 is : %lf \n", D1);
     printf("D2 is : %lf \n", D2);
     printf("D3 is : %lf \n", D3);
- 
+    */
 
     float x = D1 / D;
     float y = D2 / D;
@@ -58,9 +59,11 @@ thirdDegreeFormula findSolution(float coeff[3][4])
     if (D != 0) {
         // Coeff have a unique solution. Apply Cramer's Rule
  // calculating z using cramer's rule
+ /*
         printf("Value of x is : %lf\n", x);
         printf("Value of y is : %lf\n", y);
         printf("Value of z is : %lf\n", z);
+        */
     }
     // Case 2
     else {

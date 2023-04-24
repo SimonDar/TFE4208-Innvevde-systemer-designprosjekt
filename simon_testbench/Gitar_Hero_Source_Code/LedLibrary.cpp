@@ -34,12 +34,12 @@ int redLedBinaryValues(int prosentage)
 
     if( 50-toleranceProsentage < prosentage && prosentage < 50+toleranceProsentage)
     {
-        printf("\nMiddle value\n");
+        printf("Middle value\n");
         result = pow(2, 8) + pow(2, 9);
     }
     else if (50+toleranceProsentage <= prosentage)
     {
-        printf("\nHigh value\n");
+        printf("High value\n");
 
 
         for (float i = 9; i*steps <= prosentage; i+= 1)
@@ -50,7 +50,7 @@ int redLedBinaryValues(int prosentage)
     }
     else if (50-toleranceProsentage >= prosentage)
     {
-        printf("\nLow value\n");
+        printf("Low value\n");
 
         for (float i = 8; i*steps >= prosentage; i -= 1)
         {

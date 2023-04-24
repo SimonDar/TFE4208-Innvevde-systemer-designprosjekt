@@ -12,7 +12,7 @@ int halfWay(int A, int B) { return((A+B)/2); }
 
 int CheckInput()
 {
-    int TempValueToOutput_mHZ = 12345;
+    int TempValueToOutput_mHZ = 12446;
     return(TempValueToOutput_mHZ);
 }
 

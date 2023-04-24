@@ -11,7 +11,7 @@
     #include <stdio.h>
     #include <math.h>
     //#include "system.h"
-    #include "altera_avalon_pio_regs.hpp"
+    #include "altera_avalon_pio_regs.h"
 
     int CheckInput();
     int CheckClose(int InputFrequency);
