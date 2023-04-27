@@ -9,7 +9,7 @@ module generateTestInput(
 
     always @ (posedge clk)
     begin
-		result <= 32'd5368;
+		result <= 32'd1234;
     end
     
 endmodule

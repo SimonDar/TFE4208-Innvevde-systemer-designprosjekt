@@ -9,3 +9,8 @@ C:/Users/Per Gunnar/Documents/pgk/Fag/TFE4205/Lab/Eksperimenter/Lab5/wb_NiosProc
 
 Feb 09 11AM:12:58>: Megafunction Altera SOPC Builder is not listed in any 
 wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/liero/Documents/GitHub/TFE4208-Innvevde-systemer-designprosjekt/Robin_testProject/testProject/wb_NiosProcessor.vhd
+
+Mar 26 06PM:29:41>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

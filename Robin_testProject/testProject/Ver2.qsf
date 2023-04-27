@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY Lab7
+set_global_assignment -name TOP_LEVEL_ENTITY shiftReqisterFFT
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "8.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:38  AUGUST 12, 2008"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -565,8 +565,8 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
-set_global_assignment -name BDF_FILE Lab7.bdf
 set_global_assignment -name QIP_FILE DE2_115_SOPC/synthesis/DE2_115_SOPC.qip
+set_global_assignment -name BDF_FILE Lab7.bdf
 set_global_assignment -name VHDL_FILE debounce.vhd
 set_global_assignment -name BDF_FILE wb_processor.bdf
 set_global_assignment -name VHDL_FILE wb_cpu_package.vhd
@@ -580,6 +580,8 @@ set_global_assignment -name VHDL_FILE mul_fsm.vhd
 set_global_assignment -name VHDL_FILE wb_hexTo7segAll.vhd
 set_global_assignment -name VHDL_FILE wb_hexTo7segOne.vhd
 set_global_assignment -name VERILOG_FILE generateTestInput.v
+set_global_assignment -name BDF_FILE codecToFFT.bdf
+set_global_assignment -name VERILOG_FILE shiftReqisterFFT.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
