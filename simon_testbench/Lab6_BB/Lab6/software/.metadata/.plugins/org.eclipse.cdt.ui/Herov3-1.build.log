@@ -1,0 +1,9 @@
+13:17:23 **** Incremental Build of configuration Nios II for project Herov3-1 ****
+make all 
+Info: Building ../Herov3-1_bsp/
+make --no-print-directory -C ../Herov3-1_bsp/
+[BSP build complete]
+[Herov3-1 build complete]
+
+13:17:23 Build Finished (took 165ms)
+

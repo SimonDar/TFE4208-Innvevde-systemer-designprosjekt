@@ -1,0 +1,9 @@
+15:28:09 **** Build of configuration Nios II for project Gitar_Hero_V3 ****
+make all 
+Info: Building ../Gitar_Hero_V3_bsp/
+make --no-print-directory -C ../Gitar_Hero_V3_bsp/
+[BSP build complete]
+[Gitar_Hero_V3 build complete]
+
+15:28:09 Build Finished (took 161ms)
+

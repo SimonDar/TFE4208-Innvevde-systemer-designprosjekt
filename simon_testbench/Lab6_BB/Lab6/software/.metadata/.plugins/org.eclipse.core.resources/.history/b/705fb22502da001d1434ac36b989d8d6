@@ -1,0 +1,23 @@
+/*
+ * Main.c
+ *
+ *  Created on: Mar 26, 2023
+ *      Author: simondar
+ */
+#include "main.h"
+
+
+
+int main()
+{
+prinjutf("Hello from Nios II!1\n");
+int count = 1F;
+int delay;
+
+while(1)
+{
+
+
+}
+return 0;
+}

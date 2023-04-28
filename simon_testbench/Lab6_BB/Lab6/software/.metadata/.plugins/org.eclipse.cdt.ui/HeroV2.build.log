@@ -1,0 +1,21 @@
+15:17:47 **** Incremental Build of configuration Nios II for project HeroV2 ****
+make all 
+Info: Building ../HeroV2_bsp/
+make --no-print-directory -C ../HeroV2_bsp/
+Makefile not up to date.
+../../DE2_115_SOPC.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [Makefile:549: public.mk] Error 1
+make: *** [Makefile:843: ../HeroV2_bsp/-recurs-make-lib] Error 2
+
+15:17:47 Build Finished (took 182ms)
+

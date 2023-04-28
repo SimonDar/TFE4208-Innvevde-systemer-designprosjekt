@@ -1,0 +1,9 @@
+14:09:37 **** Incremental Build of configuration Nios II for project Gitar_Hero_v2 ****
+make all 
+Info: Building ../Gitar_Hero_v2_bsp/
+make --no-print-directory -C ../Gitar_Hero_v2_bsp/
+[BSP build complete]
+[Gitar_Hero_v2 build complete]
+
+14:09:37 Build Finished (took 164ms)
+
