@@ -11,7 +11,7 @@
 void printbit(unsigned n)
 {
     unsigned i;
-    for (i = 1 << 17; i > 0; i = i / 2)
+    for (i = 1 <<  25; i > 0; i = i / 2)
         (n & i) ? printf("1") : printf("0");
     printf("\n");
 }
@@ -48,18 +48,18 @@ void testled()
 
 void testAll()
 {
-
 	printf("START\nInputValue:\t%d\n",CheckInput());
 	printf("HalfWay to zero:\t%d\n",halfWay(CheckInput(), 0));
 	printf("Arraylengt:\t%d\n",arrayLengt());
 	printf("CheckClose:\t%d\n",CheckClose(CheckInput()));
 	printf("SpectrumValue HIGH:\t%d\n",SpectrumValue(true));
 	printf("SpectrumValue LOW:\t%d\n",SpectrumValue(false));
+	int redLedBinaryValues_store = redLedBinaryValues(prosentage(SpectrumValue(false),SpectrumValue(true)));
 	printf("prosentage:\t%d\n",prosentage(SpectrumValue(false),SpectrumValue(true)));
-	printf("redLedBinaryValues:\t%d\n",redLedBinaryValues(prosentage(SpectrumValue(false),SpectrumValue(true))));
+	printf("redLedBinaryValues:\t%d\n",redLedBinaryValues_store);
+	printbit(redLedBinaryValues_store);
 	printf("GreenLedBinaryValues:\t%d\n",greenLedBinaryValues(CheckClose(CheckInput())));
-
-
+	printbit(greenLedBinaryValues(CheckClose(CheckInput())));
 }
 
 int combinedOutput(int red, int green)
@@ -71,8 +71,9 @@ return 0;
 int main()
 {
 
+//testAll();
+	
 testAll();
-
 
 return 0;
 }

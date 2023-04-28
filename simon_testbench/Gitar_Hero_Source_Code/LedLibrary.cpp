@@ -18,48 +18,57 @@ int prosentage(int LowNumber, int HighNumber) {
 
     thirdDegreeFormula Formula = findSolution(coeff);
     
-    results = Formula.x *pow(Input,2) + Formula.y * Input + Formula.z;
+    results =Formula.x *pow(Input,2) + Formula.y * Input + Formula.z;
 
-    return(results);
+    if (results < 0)
+    {
+        results = 0;
+        printf("Prosentage was less than zero \n");
+    }
+         
+
+    return results;
 }
 
 int redLedBinaryValues(int prosentage)
 {
-    float steps = 100;
-    steps /= 18;
-    int toleranceProsentage = 1;
+    float steps = 100/9;
+    int IdealFrequancy = gitarFrequency_mHz[CheckClose(CheckInput())];
+    int tolerance = 3;
     int result = 0;
+    int redLedBegin = 8;
 
 
 
-    if( 50-toleranceProsentage < prosentage && prosentage < 50+toleranceProsentage)
+    if( prosentage < tolerance )
     {
         printf("Middle value\n");
-        result = pow(2, 8) + pow(2, 9);
+        result = 0b1010101010101010100000000;/*pow(2, 5) + pow(2, 8) + pow(2, 9) + pow(2, 12);*/
     }
-    else if (50+toleranceProsentage <= prosentage)
+    else if (IdealFrequancy < CheckInput())
     {
         printf("High value\n");
 
 
-        for (float i = 9; i*steps <= prosentage; i+= 1)
+        for (float i = 9; (i-9)*steps <= prosentage; i+= 1)
         {
-             result += pow(2, i);
+             result += pow(2, i + redLedBegin);
         }
         
     }
-    else if (50-toleranceProsentage >= prosentage)
+    else if (IdealFrequancy > CheckInput())
     {
         printf("Low value\n");
 
-        for (float i = 8; i*steps >= prosentage; i -= 1)
+        float i = 8;
+        for (i = 8; (8-i)*steps <= prosentage; i -= 1)
         {
-             result += pow(2, i);
+             result += pow(2, i + redLedBegin);
         }
     }
 
 
-return result;
+ return result;
 }
 
 int greenLedBinaryValues(int position)

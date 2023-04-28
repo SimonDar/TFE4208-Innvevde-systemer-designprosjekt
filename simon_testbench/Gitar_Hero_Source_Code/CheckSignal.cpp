@@ -12,7 +12,7 @@ int halfWay(int A, int B) { return((A+B)/2); }
 
 int CheckInput()
 {
-    int TempValueToOutput_mHZ = 12446;
+    int TempValueToOutput_mHZ = 12000;
     return(TempValueToOutput_mHZ);
 }
 
@@ -58,7 +58,7 @@ int SpectrumValue(bool print_max_value)
     {
       case 0:
         HighNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval+1]);
-        LowNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval+1]);
+        LowNumber = halfWay(gitarFrequency_mHz[interval], gitarFrequency_mHz[interval]);
         break;
 
       case 5:
