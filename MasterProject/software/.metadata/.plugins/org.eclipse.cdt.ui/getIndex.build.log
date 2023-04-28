@@ -1,0 +1,6 @@
+11:36:55 **** Clean-only build of configuration Nios II for project getIndex ****
+make clean 
+[getIndex clean complete]
+
+11:36:56 Build Finished (took 944ms)
+
