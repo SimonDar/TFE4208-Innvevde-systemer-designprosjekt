@@ -1,0 +1,16 @@
+module shiftReqisterFFT(
+                        clk,
+								DVIedge,
+								dataIn,
+								dataOut
+                    );
+	input clk;
+	
+	output reg[15:0] result;
+
+   always @ (posedge clk)
+   begin
+		result <= 32'd1234;
+	end
+    
+endmodule

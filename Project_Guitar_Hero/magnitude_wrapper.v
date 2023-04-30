@@ -1,6 +1,7 @@
-module magnitude_wrapper(clk, data_in, result);
+module magnitude_wrapper(clk, data_in, DVI, result);
 input clk;
 input wire [15:0] data_in;
+input wire DVI;
 
 output wire [31:0] result;
 
@@ -17,6 +18,7 @@ fft_wrapper fft_wrapper_inst
 	.source_sop(source_sop),	
 	.source_eop(source_eop),	
 	.source_ready(source_ready),	
+	.DVI (DVI),
 	.source_valid(source_valid) 	
 );
 

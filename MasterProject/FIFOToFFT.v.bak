@@ -1,0 +1,4 @@
+module FIFOToFFT (clk, dataOut, DVO);
+	input
+
+endmodule

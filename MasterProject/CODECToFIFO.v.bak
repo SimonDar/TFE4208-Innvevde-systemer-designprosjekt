@@ -1,0 +1,4 @@
+module CODECToFIFO (clk, DVI, wrreq, wrempty, wrfull);
+
+
+endmodule

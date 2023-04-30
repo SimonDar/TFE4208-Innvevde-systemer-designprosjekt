@@ -1,8 +1,9 @@
-module fft_wrapper(clk, data_in, source_real, source_imag, source_sop, source_eop, source_ready, source_valid);
+module fft_wrapper(clk, data_in, source_real, source_imag, source_sop, source_eop, source_ready, DVI, source_valid);
 
 input clk;
 input wire [15:0] data_in;
 input wire source_ready;
+input wire DVI;
 
 output wire [24:0] source_real, source_imag;
 output wire source_sop;
@@ -30,6 +31,7 @@ assign fft_pts = 8192;
 		.clk(clk), 
 		.sink_ready(sink_ready), 
 		.data_in(data_in), 
+		.DVI (DVI),
 		.sink_imag(imag_to_fft_p), 
 		.sink_real(real_to_fft_p), 		 
 		.sink_sop(sink_sop), 

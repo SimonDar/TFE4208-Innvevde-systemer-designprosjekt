@@ -16,38 +16,39 @@ data_in[12] => data_in[12].IN1
 data_in[13] => data_in[13].IN1
 data_in[14] => data_in[14].IN1
 data_in[15] => data_in[15].IN1
-result[0] << magnitude:magnitude_inst.result
-result[1] << magnitude:magnitude_inst.result
-result[2] << magnitude:magnitude_inst.result
-result[3] << magnitude:magnitude_inst.result
-result[4] << magnitude:magnitude_inst.result
-result[5] << magnitude:magnitude_inst.result
-result[6] << magnitude:magnitude_inst.result
-result[7] << magnitude:magnitude_inst.result
-result[8] << magnitude:magnitude_inst.result
-result[9] << magnitude:magnitude_inst.result
-result[10] << magnitude:magnitude_inst.result
-result[11] << magnitude:magnitude_inst.result
-result[12] << magnitude:magnitude_inst.result
-result[13] << magnitude:magnitude_inst.result
-result[14] << magnitude:magnitude_inst.result
-result[15] << magnitude:magnitude_inst.result
-result[16] << magnitude:magnitude_inst.result
-result[17] << magnitude:magnitude_inst.result
-result[18] << magnitude:magnitude_inst.result
-result[19] << magnitude:magnitude_inst.result
-result[20] << magnitude:magnitude_inst.result
-result[21] << magnitude:magnitude_inst.result
-result[22] << magnitude:magnitude_inst.result
-result[23] << magnitude:magnitude_inst.result
-result[24] << magnitude:magnitude_inst.result
-result[25] << magnitude:magnitude_inst.result
-result[26] << magnitude:magnitude_inst.result
-result[27] << magnitude:magnitude_inst.result
-result[28] << magnitude:magnitude_inst.result
-result[29] << magnitude:magnitude_inst.result
-result[30] << magnitude:magnitude_inst.result
-result[31] << magnitude:magnitude_inst.result
+DVI => DVI.IN1
+result[0] <= magnitude:magnitude_inst.result
+result[1] <= magnitude:magnitude_inst.result
+result[2] <= magnitude:magnitude_inst.result
+result[3] <= magnitude:magnitude_inst.result
+result[4] <= magnitude:magnitude_inst.result
+result[5] <= magnitude:magnitude_inst.result
+result[6] <= magnitude:magnitude_inst.result
+result[7] <= magnitude:magnitude_inst.result
+result[8] <= magnitude:magnitude_inst.result
+result[9] <= magnitude:magnitude_inst.result
+result[10] <= magnitude:magnitude_inst.result
+result[11] <= magnitude:magnitude_inst.result
+result[12] <= magnitude:magnitude_inst.result
+result[13] <= magnitude:magnitude_inst.result
+result[14] <= magnitude:magnitude_inst.result
+result[15] <= magnitude:magnitude_inst.result
+result[16] <= magnitude:magnitude_inst.result
+result[17] <= magnitude:magnitude_inst.result
+result[18] <= magnitude:magnitude_inst.result
+result[19] <= magnitude:magnitude_inst.result
+result[20] <= magnitude:magnitude_inst.result
+result[21] <= magnitude:magnitude_inst.result
+result[22] <= magnitude:magnitude_inst.result
+result[23] <= magnitude:magnitude_inst.result
+result[24] <= magnitude:magnitude_inst.result
+result[25] <= magnitude:magnitude_inst.result
+result[26] <= magnitude:magnitude_inst.result
+result[27] <= magnitude:magnitude_inst.result
+result[28] <= magnitude:magnitude_inst.result
+result[29] <= magnitude:magnitude_inst.result
+result[30] <= magnitude:magnitude_inst.result
+result[31] <= magnitude:magnitude_inst.result
 
 
 |magnitude_wrapper|fft_wrapper:fft_wrapper_inst
@@ -121,6 +122,7 @@ source_imag[24] <= fft:fft_inst.source_imag
 source_sop <= fft:fft_inst.source_sop
 source_eop <= fft:fft_inst.source_eop
 source_ready => source_ready.IN1
+DVI => DVI.IN1
 source_valid <= fft:fft_inst.source_valid
 
 
@@ -140,7 +142,6 @@ clk => data_count[11].CLK
 clk => data_count[12].CLK
 clk => sink_eop~reg0.CLK
 clk => sink_sop~reg0.CLK
-clk => sink_valid~reg0.CLK
 clk => reset_count[0].CLK
 clk => reset_count[1].CLK
 clk => reset_n~reg0.CLK
@@ -161,6 +162,7 @@ data_in[12] => sink_real[12].DATAIN
 data_in[13] => sink_real[13].DATAIN
 data_in[14] => sink_real[14].DATAIN
 data_in[15] => sink_real[15].DATAIN
+DVI => sink_valid.DATAIN
 sink_imag[0] <= <GND>
 sink_imag[1] <= <GND>
 sink_imag[2] <= <GND>
@@ -195,7 +197,7 @@ sink_real[14] <= data_in[14].DB_MAX_OUTPUT_PORT_TYPE
 sink_real[15] <= data_in[15].DB_MAX_OUTPUT_PORT_TYPE
 sink_sop <= sink_sop~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sink_eop <= sink_eop~reg0.DB_MAX_OUTPUT_PORT_TYPE
-sink_valid <= sink_valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sink_valid <= DVI.DB_MAX_OUTPUT_PORT_TYPE
 reset_n <= reset_n~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,12 +1,13 @@
-module fft_sink_interface(clk, sink_ready, data_in, sink_imag, sink_real, sink_sop, sink_eop, sink_valid, reset_n);
+module fft_sink_interface(clk, sink_ready, data_in, DVI, sink_imag, sink_real, sink_sop, sink_eop, sink_valid, reset_n);
 	input clk;
 	input sink_ready;
 	input[15:0] data_in;
+	input DVI;
 	
 	output[15:0] sink_imag, sink_real;
 	output reg sink_sop;
 	output reg sink_eop;
-	output reg sink_valid;
+	output wire sink_valid;
 	output reg reset_n;
 	
 	reg[1:0] reset_count;
@@ -15,7 +16,6 @@ module fft_sink_interface(clk, sink_ready, data_in, sink_imag, sink_real, sink_s
 initial begin
 	sink_sop <= 0;
 	sink_eop <= 0;
-	sink_valid <= 0;
 	reset_n <= 0;
 	reset_count <= 0;
 	data_count <= 0;
@@ -23,6 +23,7 @@ end
 
 assign sink_imag = 0;
 assign sink_real = data_in;
+assign sink_valid = DVI;
 
 always @(posedge clk) begin
 	if (reset_count == 2) begin
@@ -30,7 +31,6 @@ always @(posedge clk) begin
 	end
 	else begin
 		reset_count <= reset_count + 1'b1;
-		sink_valid <= 1;
 	end
 	
 end

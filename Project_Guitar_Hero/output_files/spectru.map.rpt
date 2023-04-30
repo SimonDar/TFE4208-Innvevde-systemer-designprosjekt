@@ -1,5 +1,5 @@
 Analysis & Elaboration report for spectru
-Fri Apr 21 14:06:51 2023
+Sun Apr 30 15:11:42 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Apr 21 14:06:51 2023       ;
+; Analysis & Elaboration Status      ; Successful - Sun Apr 30 15:11:42 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; spectru                                     ;
 ; Top-level Entity Name              ; magnitude_wrapper                           ;
@@ -411,7 +411,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Apr 21 14:06:11 2023
+    Info: Processing started: Sun Apr 30 15:11:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off spectru -c spectru --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -575,9 +575,9 @@ Warning (10236): Verilog HDL Implicit Net warning at testbench.v(32): created im
 Warning (10236): Verilog HDL Implicit Net warning at testbench.v(33): created implicit net for "outimag_sig" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 33
 Warning (10236): Verilog HDL Implicit Net warning at testbench.v(34): created implicit net for "fft_pts_sig" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/testbench.v Line: 34
 Info (12127): Elaborating entity "magnitude_wrapper" for the top level hierarchy
-Info (12128): Elaborating entity "fft_wrapper" for hierarchy "fft_wrapper:fft_wrapper_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 21
-Info (12128): Elaborating entity "fft_sink_interface" for hierarchy "fft_wrapper:fft_wrapper_inst|fft_sink_interface:fft_sink_interface_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 39
-Info (12128): Elaborating entity "fft" for hierarchy "fft_wrapper:fft_wrapper_inst|fft:fft_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 64
+Info (12128): Elaborating entity "fft_wrapper" for hierarchy "fft_wrapper:fft_wrapper_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 23
+Info (12128): Elaborating entity "fft_sink_interface" for hierarchy "fft_wrapper:fft_wrapper_inst|fft_sink_interface:fft_sink_interface_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 41
+Info (12128): Elaborating entity "fft" for hierarchy "fft_wrapper:fft_wrapper_inst|fft:fft_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v Line: 66
 Info (12128): Elaborating entity "fft_fft_ii_0" for hierarchy "fft_wrapper:fft_wrapper_inst|fft:fft_inst|fft_fft_ii_0:fft_ii_0" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/fft.v Line: 48
 Info (12128): Elaborating entity "auk_dspip_r22sdf_top" for hierarchy "fft_wrapper:fft_wrapper_inst|fft:fft_inst|fft_fft_ii_0:fft_ii_0|auk_dspip_r22sdf_top:auk_dspip_r22sdf_top_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/fft_fft_ii_0.sv Line: 73
 Info (12128): Elaborating entity "auk_dspip_avalon_streaming_block_sink" for hierarchy "fft_wrapper:fft_wrapper_inst|fft:fft_inst|fft_fft_ii_0:fft_ii_0|auk_dspip_r22sdf_top:auk_dspip_r22sdf_top_inst|auk_dspip_avalon_streaming_block_sink:sink_ctrl_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/synthesis/submodules/auk_dspip_r22sdf_top.vhd Line: 299
@@ -2258,14 +2258,14 @@ Info (12128): Elaborating entity "cntr_aa7" for hierarchy "fft_wrapper:fft_wrapp
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u9b.tdf
     Info (12023): Found entity 1: cntr_u9b File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/db/cntr_u9b.tdf Line: 25
 Info (12128): Elaborating entity "cntr_u9b" for hierarchy "fft_wrapper:fft_wrapper_inst|fft:fft_inst|fft_fft_ii_0:fft_ii_0|auk_dspip_r22sdf_top:auk_dspip_r22sdf_top_inst|auk_dspip_avalon_streaming_block_source:source_control_inst|scfifo:source_FIFO|scfifo_0h71:auto_generated|a_dpfifo_8qv:dpfifo|cntr_u9b:wr_ptr" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/db/a_dpfifo_8qv.tdf Line: 56
-Info (12128): Elaborating entity "magnitude_fsm" for hierarchy "magnitude_fsm:magnitude_fsm_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 31
-Info (12128): Elaborating entity "magnitude" for hierarchy "magnitude:magnitude_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 40
+Info (12128): Elaborating entity "magnitude_fsm" for hierarchy "magnitude_fsm:magnitude_fsm_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 33
+Info (12128): Elaborating entity "magnitude" for hierarchy "magnitude:magnitude_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 42
 Info (144001): Generated suppressed messages file C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/output_files/spectru.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 5015 megabytes
-    Info: Processing ended: Fri Apr 21 14:06:51 2023
-    Info: Elapsed time: 00:00:40
-    Info: Total CPU time (on all processors): 00:00:51
+    Info: Peak virtual memory: 4992 megabytes
+    Info: Processing ended: Sun Apr 30 15:11:42 2023
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:46
 
 
 +--------------------------------------------+

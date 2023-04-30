@@ -1,5 +1,5 @@
 Flow report for Ver2
-Thu Apr 27 13:26:00 2023
+Fri Apr 28 13:19:22 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 27 13:25:57 2023       ;
+; Flow Status                        ; Successful - Fri Apr 28 13:19:22 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Ver2                                        ;
 ; Top-level Entity Name              ; shiftReqisterFFT                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 226,944                                     ;
-;     Total combinational functions  ; 226,943                                     ;
-;     Dedicated logic registers      ; 50                                          ;
-; Total registers                    ; 50                                          ;
-; Total pins                         ; 37                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,61 +64,71 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/27/2023 13:11:04 ;
+; Start date & time ; 04/28/2023 13:19:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ver2                ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                     ;
-+-------------------------------------+----------------------------------------------------------------+---------------+------------------+------------+
-; Assignment Name                     ; Value                                                          ; Default Value ; Entity Name      ; Section Id ;
-+-------------------------------------+----------------------------------------------------------------+---------------+------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 49319239856131.168259386324208                                 ; --            ; --               ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                             ; --            ; --               ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                              ; --            ; --               ; --         ;
-; MISC_FILE                           ; DE2_115_SOPC/synthesis/../DE2_115_SOPC.cmp                     ; --            ; --               ; --         ;
-; MISC_FILE                           ; DE2_115_SOPC/synthesis/../../DE2_115_SOPC.qsys                 ; --            ; --               ; --         ;
-; NUM_PARALLEL_PROCESSORS             ; 4                                                              ; 1             ; --               ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                         ; --            ; shiftReqisterFFT ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                         ; --            ; shiftReqisterFFT ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                         ; --            ; shiftReqisterFFT ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                            ; --            ; --               ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                          ; --            ; --               ; --         ;
-; SLD_FILE                            ; DE2_115_SOPC/synthesis/DE2_115_SOPC.regmap                     ; --            ; --               ; --         ;
-; SLD_FILE                            ; DE2_115_SOPC/synthesis/DE2_115_SOPC.debuginfo                  ; --            ; --               ; --         ;
-; SLD_INFO                            ; QSYS_NAME DE2_115_SOPC HAS_SOPCINFO 1 GENERATION_ID 1679997582 ; --            ; DE2_115_SOPC     ; --         ;
-; SOPCINFO_FILE                       ; DE2_115_SOPC/synthesis/../../DE2_115_SOPC.sopcinfo             ; --            ; --               ; --         ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                             ; --            ; --               ; --         ;
-; TOP_LEVEL_ENTITY                    ; shiftReqisterFFT                                               ; Ver2          ; --               ; --         ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                                            ; --            ; --               ; eda_palace ;
-+-------------------------------------+----------------------------------------------------------------+---------------+------------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                          ;
++--------------------------------------+----------------------------------------------------------------+---------------+------------------+----------------+
+; Assignment Name                      ; Value                                                          ; Default Value ; Entity Name      ; Section Id     ;
++--------------------------------------+----------------------------------------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 62619200595943.168268075140720                                 ; --            ; --               ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                             ; --            ; --               ; FIFOToFFT_tb   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; FIFOToFFT_tb                                                   ; --            ; --               ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                                              ; --            ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)                                ; <None>        ; --               ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                ; --            ; --               ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; FIFOToFFT_tb.sv                                                ; --            ; --               ; FIFOToFFT_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; FIFOToFFT_suite                                                ; --            ; --               ; FIFOToFFT_tb   ;
+; EDA_TEST_BENCH_NAME                  ; FIFOToFFT_tb                                                   ; --            ; --               ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                                           ; --            ; --               ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                             ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                              ; --            ; --               ; --             ;
+; MISC_FILE                            ; DE2_115_SOPC/synthesis/../DE2_115_SOPC.cmp                     ; --            ; --               ; --             ;
+; MISC_FILE                            ; DE2_115_SOPC/synthesis/../../DE2_115_SOPC.qsys                 ; --            ; --               ; --             ;
+; MISC_FILE                            ; AsyncFIFO_bb.v                                                 ; --            ; --               ; --             ;
+; NUM_PARALLEL_PROCESSORS              ; 4                                                              ; 1             ; --               ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                         ; --            ; shiftReqisterFFT ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                         ; --            ; shiftReqisterFFT ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                         ; --            ; shiftReqisterFFT ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                            ; --            ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                          ; --            ; --               ; --             ;
+; SLD_FILE                             ; DE2_115_SOPC/synthesis/DE2_115_SOPC.regmap                     ; --            ; --               ; --             ;
+; SLD_FILE                             ; DE2_115_SOPC/synthesis/DE2_115_SOPC.debuginfo                  ; --            ; --               ; --             ;
+; SLD_INFO                             ; QSYS_NAME DE2_115_SOPC HAS_SOPCINFO 1 GENERATION_ID 1679997582 ; --            ; DE2_115_SOPC     ; --             ;
+; SOPCINFO_FILE                        ; DE2_115_SOPC/synthesis/../../DE2_115_SOPC.sopcinfo             ; --            ; --               ; --             ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                             ; --            ; --               ; --             ;
+; TOP_LEVEL_ENTITY                     ; shiftReqisterFFT                                               ; Ver2          ; --               ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS   ; Off                                                            ; --            ; --               ; eda_palace     ;
++--------------------------------------+----------------------------------------------------------------+---------------+------------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:14:38     ; 1.0                     ; 5602 MB             ; 00:14:55                           ;
-; Total                ; 00:14:38     ; --                      ; --                  ; 00:14:55                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4838 MB             ; 00:00:23                           ;
+; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:23                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-BNKU8BS  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; LAPTOP-9PEJ8BTN  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off testProject -c Ver2
+quartus_map --read_settings_files=on --write_settings_files=off testProject -c Ver2 --analysis_and_elaboration
 
 
 
