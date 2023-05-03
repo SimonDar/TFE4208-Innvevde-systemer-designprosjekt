@@ -9,157 +9,157 @@ z2
 cModel Technology
 Z0 dC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/simulation/modelsim
 vfft
-Z1 !s110 1682078862
+!s110 1682943368
 !i10b 1
 !s100 82agSI>[6hi=z4eT0?iaJ3
 IFnFF9SofiTJMbXg0Y7`OW2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1679837659
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v
 L0 6
-Z3 OV;L;10.5b;63
+Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1682078862.000000
+Z3 !s108 1682943368.000000
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v|
 !s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft/simulation/fft.v|
 !i113 1
-Z5 tCvgOpt 0
+Z4 tCvgOpt 0
 vfft_sink_interface
-Z6 !s110 1682078863
+Z5 !s110 1682943369
 !i10b 1
-!s100 jGR7[:`=0Z]6A:eUj0:jf1
-IRUN4Bz<oFMeUEP5[>7j1O1
-R2
+!s100 akKH57?0MVEn4zVdD`PoD3
+IkC0h;3o?O:lbJ4HON?i`33
+R1
 R0
-w1681991964
+w1682860263
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_sink_interface.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_sink_interface.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-Z7 !s108 1682078863.000000
+Z6 !s108 1682943369.000000
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_sink_interface.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_sink_interface.v|
 !i113 1
-Z8 o-vlog01compat -work work
-Z9 !s92 -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero
-R5
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero
+R4
 vfft_wrapper
-R6
+R5
 !i10b 1
-!s100 k?fk?9_8:=MlY=Vn[BcW=0
-IBk:>SZC`P9H[6H`ajoC9K2
-R2
+!s100 JFWHeSNJz`>K@3L4_Mbd93
+IkI6c?h8bDN:<`84P<^zlL2
+R1
 R0
-w1682075335
+w1682860189
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R4
+R6
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/fft_wrapper.v|
 !i113 1
+R7
 R8
-R9
-R5
+R4
 vmagnitude
-R1
+R5
 !i10b 1
 !s100 3dIzFU9IN_>[6Sj_HjDYg0
 IVKAm0?ilj7eAMlS=>g_do2
-R2
+R1
 R0
 w1682078768
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R4
+R3
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude.v|
 !i113 1
+R7
 R8
-R9
-R5
+R4
 vmagnitude_fsm
-R6
+R5
 !i10b 1
 !s100 o`T?Q0jhSC`gaSmc:D^>D1
 I9l`aIfI2HBOl=kkPOg>U01
-R2
+R1
 R0
 w1682076402
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_fsm.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_fsm.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R7
+R6
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_fsm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_fsm.v|
 !i113 1
+R7
 R8
-R9
-R5
+R4
 vmagnitude_wrapper
-R6
+R5
 !i10b 1
-!s100 hlRY1J5>`e6SRAAWa0=:>2
-I:V<d`F`7b5=HgCZ^o87_40
-R2
+!s100 0`c[hef6F5<KHBjD[0J321
+Ij;f;^3UW5`I=^a<iaD4Z82
+R1
 R0
-w1682076378
+w1682860173
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R7
+R6
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v|
 !i113 1
+R7
 R8
-R9
-R5
+R4
 vmagnitude_wrapper_suite
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-R6
+R5
 !i10b 1
-!s100 LLckFfP`_cFd;M9650>Cl1
-I_U@PEaTDL:Ng9Te5Fj6?;2
-R2
+!s100 [Q8V<b_SZW6Zni4SmK:RG0
+IdjzN5Vz7Q5U^QDWJkR`570
+R1
 !s105 magnitude_wrapper_tb_sv_unit
 S1
 R0
-w1682077512
+w1682943294
 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper_tb.sv
 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper_tb.sv
 L0 3
-R3
+R2
 r1
 !s85 0
 31
-R7
+R6
 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper_tb.sv|
 !i113 1
 o-sv -work work
 !s92 -sv -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero
-R5
+R4

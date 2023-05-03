@@ -1,0 +1,280 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/simulation/modelsim
+vAsyncFIFO
+Z1 !s110 1682960630
+!i10b 1
+!s100 ;MgKW:lI3>8S3Bb?^M0CP2
+Ima_A1PHLQS_9LH;@VWCDT0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1682859433
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/AsyncFIFO.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/AsyncFIFO.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1682960630.000000
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/AsyncFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/AsyncFIFO.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject
+Z7 tCvgOpt 0
+n@async@f@i@f@o
+vCODECToFIFO
+R1
+!i10b 1
+!s100 DY@W9[banU0c7JKz[bjWZ1
+IgK_k1eZUhjmX>zD3^C5Ha0
+R2
+R0
+w1682680745
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/CODECToFIFO.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/CODECToFIFO.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/CODECToFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/CODECToFIFO.v|
+!i113 1
+R5
+R6
+R7
+n@c@o@d@e@c@to@f@i@f@o
+vfft_sink_interface
+R1
+!i10b 1
+!s100 bbTHC8@U1DVW3B41H4_LQ0
+I7L5E=_Nf:hI_olzZVScjX1
+R2
+R0
+w1682960556
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_sink_interface.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_sink_interface.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_sink_interface.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_sink_interface.v|
+!i113 1
+R5
+R6
+R7
+vfft_wrapper
+R1
+!i10b 1
+!s100 ?LiBdS2lLe6DG54Z]QHS_3
+IXBchW`lEE>_Z<7Od<=z>D0
+R2
+R0
+w1682933868
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_wrapper.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_wrapper.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_wrapper.v|
+!i113 1
+R5
+R6
+R7
+vFFTBlock
+R1
+!i10b 1
+!s100 FXF7J0L6ZiDcI7XnKaFQ42
+I@hH5GjS3e>eLUTmdB19883
+R2
+R0
+w1682933172
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/FFTBlock.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/FFTBlock.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/FFTBlock.v|
+!s90 -reportprogress|300|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/FFTBlock.v|
+!i113 1
+R7
+n@f@f@t@block
+vFIFOToFFT
+R1
+!i10b 1
+!s100 C::9QO=OmMeQ8hB7gFHeH2
+Img8;NGREajF2[=4RaVAh;2
+R2
+R0
+w1682677903
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FIFOToFFT.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FIFOToFFT.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FIFOToFFT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FIFOToFFT.v|
+!i113 1
+R5
+R6
+R7
+n@f@i@f@o@to@f@f@t
+vmagnitude
+R1
+!i10b 1
+!s100 3dIzFU9IN_>[6Sj_HjDYg0
+IO_4d`2KR7HO?DDO^D`1<C0
+R2
+R0
+w1682078768
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude.v|
+!i113 1
+R5
+R6
+R7
+vmagnitude_fsm
+R1
+!i10b 1
+!s100 o`T?Q0jhSC`gaSmc:D^>D1
+I8^bVX;OnMfVi<_YbUf:]Q0
+R2
+R0
+w1682076402
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_fsm.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_fsm.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_fsm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_fsm.v|
+!i113 1
+R5
+R6
+R7
+vmagnitude_wrapper
+R1
+!i10b 1
+!s100 <;0HXYbNU9hS];oeFf[?@1
+IoV1BIc[5zLIKGnWdeibR21
+R2
+R0
+w1682946012
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_wrapper.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_wrapper.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_wrapper.v|
+!i113 1
+R5
+R6
+R7
+vproject
+R1
+!i10b 1
+!s100 KV0D18<IYUlZ[PFcBG47`1
+IW=Dd6:MC^GnA=D7MLHj450
+R2
+R0
+w1682945985
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.v|
+!i113 1
+R5
+R6
+R7
+vproject_suite
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 gD7Z6`ce6RKcCNQ_oPV3O3
+IChIW84kmV>m8oZgSlKZk;3
+R2
+!s105 project_sv_unit
+S1
+R0
+w1682945749
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.sv
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/project.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject
+R7
+vshiftReqisterFFT
+R1
+!i10b 1
+!s100 jLDWQO80;XO^1:]8U@TQ`2
+IQ2c6eKCCMj3oh=j2znJe=2
+R2
+R0
+w1682680148
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/shiftReqisterFFT.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/shiftReqisterFFT.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/shiftReqisterFFT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/shiftReqisterFFT.v|
+!i113 1
+R5
+R6
+R7
+nshift@reqister@f@f@t

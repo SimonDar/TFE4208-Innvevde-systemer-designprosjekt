@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 24 88 192 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk_slow" (rect 5 0 48 17)(font "Intel Clear" ))
+	(text "clk_slow" (rect 5 0 47 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 24 104 192 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk_fast" (rect 5 0 43 17)(font "Intel Clear" ))
+	(text "clk_fast" (rect 5 0 42 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -82,6 +82,22 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 904 144 1080 160)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "result[31..0]" (rect 90 0 149 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 328 136 528 248)
@@ -133,14 +149,41 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 184 96))
 	)
 )
-(connector
-	(pt 192 200)
-	(pt 328 200)
-)
-(connector
-	(pt 192 216)
-	(pt 328 216)
-	(bus)
+(symbol
+	(rect 624 120 824 232)
+	(text "magnitude_wrapper" (rect 5 0 99 12)(font "Arial" ))
+	(text "inst2" (rect 8 96 30 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "DVI" (rect 0 0 18 12)(font "Arial" ))
+		(text "DVI" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "data_in[15..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "data_in[15..0]" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "result[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "result[31..0]" (rect 130 27 189 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 96))
+	)
 )
 (connector
 	(pt 192 112)
@@ -149,10 +192,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 240 112)
 	(pt 240 184)
-)
-(connector
-	(pt 240 184)
-	(pt 328 184)
 )
 (connector
 	(pt 328 168)
@@ -166,3 +205,55 @@ refer to the applicable agreement for further details.
 	(pt 256 96)
 	(pt 192 96)
 )
+(connector
+	(pt 528 168)
+	(pt 624 168)
+)
+(connector
+	(pt 304 184)
+	(pt 304 120)
+)
+(connector
+	(pt 304 120)
+	(pt 568 120)
+)
+(connector
+	(pt 240 184)
+	(pt 304 184)
+)
+(connector
+	(pt 304 184)
+	(pt 328 184)
+)
+(connector
+	(pt 568 120)
+	(pt 568 152)
+)
+(connector
+	(pt 568 152)
+	(pt 624 152)
+)
+(connector
+	(text "dataIn[15..0]" (rect 202 200 261 217)(font "Intel Clear" ))
+	(pt 192 216)
+	(pt 328 216)
+	(bus)
+)
+(connector
+	(text "DVI" (rect 202 184 218 201)(font "Intel Clear" ))
+	(pt 192 200)
+	(pt 328 200)
+)
+(connector
+	(text "dataOut[15..0]" (rect 538 168 606 185)(font "Intel Clear" ))
+	(pt 528 184)
+	(pt 624 184)
+	(bus)
+)
+(connector
+	(text "result[31..0]" (rect 834 136 890 153)(font "Intel Clear" ))
+	(pt 824 152)
+	(pt 904 152)
+	(bus)
+)
+(junction (pt 304 184))

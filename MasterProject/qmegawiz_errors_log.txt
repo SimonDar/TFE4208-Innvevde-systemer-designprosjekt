@@ -1,0 +1,6 @@
+
+
+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_niosprocessor.vhd
+
+May 01 01PM:35:13>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

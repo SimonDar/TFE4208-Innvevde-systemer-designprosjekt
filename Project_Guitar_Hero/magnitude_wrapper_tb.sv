@@ -6,6 +6,7 @@ module magnitude_wrapper_suite;
 
 	reg[15:0] data_in;
 	wire[31:0] result;
+	wire DVI;
 	
 
 	reg[15:0] mem1 [8191:0];
@@ -16,8 +17,11 @@ module magnitude_wrapper_suite;
 	magnitude_wrapper magnitude_wrapper_inst(
 	.clk(clk),
 	.data_in(data_in),
-	.result(result)
+	.result(result),
+	.DVI(DVI)
 	);
+	
+	assign DVI = 1;
 	initial begin
 		clk = 0;
 		$readmemh("sine.txt", mem1);

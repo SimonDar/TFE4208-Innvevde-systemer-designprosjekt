@@ -1,10 +1,10 @@
-/* Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition */
+/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/pgk/Quartus/TFE4208LabV22/Lab5Old/") File("Ver2.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/") File("Ver2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

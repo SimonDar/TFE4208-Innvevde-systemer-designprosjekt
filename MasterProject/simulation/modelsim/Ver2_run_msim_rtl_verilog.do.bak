@@ -1,0 +1,150 @@
+transcript on
+if ![file isdirectory Ver2_iputf_libs] {
+	file mkdir Ver2_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+vlib Ver2_iputf_libs/fft_ii_0
+vmap fft_ii_0 ./Ver2_iputf_libs/fft_ii_0
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twi6.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twr5.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twr6.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twi1.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twr1.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twi2.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twi3.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twr2.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twi4.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twr3.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twr4.hex ./
+file copy -force C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0_opt_twi5.hex ./
+
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/auk_dspip_text_pkg.vhd"                               -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/auk_dspip_math_pkg.vhd"                               -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/auk_dspip_lib_pkg.vhd"                                -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd"     -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd"   -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/auk_dspip_roundsat.vhd"                               -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/apn_fft_mult_can.vhd"                          -work fft_ii_0
+vlog     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v"                       -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/apn_fft_mult_cpx.vhd"                          -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/hyper_opt_OFF_pkg.vhd"                         -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd"                  -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/altera_fft_dual_port_rom.vhd"                  -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/altera_fft_mult_add.vhd"                       -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/altera_fft_single_port_rom.vhd"                -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_fft_pkg.vhd"                               -work fft_ii_0
+vlog     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/hyper_pipeline_interface.v"                    -work fft_ii_0
+vlog -sv "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/counter_module.sv"                             -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_lib_pkg.vhd"                  -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_bit_reverse_addr_control.vhd"        -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_bit_reverse_core.vhd"                -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_bit_reverse_reverse_carry_adder.vhd" -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd"                 -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd"                   -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_bfi.vhd"                      -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_bfii.vhd"                     -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd"               -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_cma.vhd"                      -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_cma_adder_fp.vhd"             -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_cma_bfi_fp.vhd"               -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_cma_fp.vhd"                   -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_core.vhd"                     -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_counter.vhd"                  -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_delay.vhd"                    -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd"           -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd"                    -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd"             -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_stg_pipe.vhd"                 -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_top.vhd"                      -work fft_ii_0
+vcom     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/mentor/auk_dspip_r22sdf_twrom.vhd"                    -work fft_ii_0
+vlog -sv "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/submodules/FFTBlock_fft_ii_0.sv"                                 -work fft_ii_0
+vlog     "C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/simulation/FFTBlock.v"                                                                    
+
+vlib FFTBlock
+vmap FFTBlock FFTBlock
+vlog -vlog01compat -work FFTBlock +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/FFTBlock.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_wrapper.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude_fsm.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/magnitude.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_wrapper.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/fft_sink_interface.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/shiftReqisterFFT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FIFOToFFT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/CODECToFIFO.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/AsyncFIFO.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/character_lcd.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/altera_up_character_lcd_communication.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/altera_up_character_lcd_initialization.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/altera_up_avalon_ps2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/altera_up_ps2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/altera_up_ps2_data_in.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/altera_up_ps2_command_out.v}
+vlog -vlog01compat -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/db {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/db/wb_audiostream_channeladder_add_sub.v}
+vlog -sv -work FFTBlock +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/FFTBlock_fft_ii_0.sv}
+vcom -93 -work FFTBlock {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_text_pkg.vhd}
+vcom -93 -work FFTBlock {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_math_pkg.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/debounce.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_package.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/mul_fsm.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_hexTo7segAll.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_hexTo7segOne.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_niosprocessor.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/a_reg_pio.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/b_reg_pio.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/dbg_pc.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/dbg_reg.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/dbg_reg_set.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/jtag_uart.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/onchip_mem.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/ps2_keyboard.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/sys_clk_timer.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/sysid.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_clkgeneratorpll.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_block_oneshotdowncounter.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_block_serdes.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_block_constanttobusbinary.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_audiostream_channeladder.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_audiocfg_cfgctrlupdatesm.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_audiocfg_twowiremaster.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_audiocfg_cfgctrlregisterbank.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_audiocfg_autoconfigonreset.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_audiocfg_autoupdatesm.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/lpm_counter0.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/lpm_shiftreg0.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/lpm_dff0.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/lpm_add_sub0.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/lpm_shiftreg1.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_acomp_factcount.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_block_decoder.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_acomp_factcompare.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_acomp_factormult.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_acomp_envcomp.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_acomp_envshapesub.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_acomp_envshapemult.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/lpm_decode0.vhd}
+vcom -93 -work FFTBlock {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_lib_pkg.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_regfile.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_alu.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_control.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_io.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_mem.vhd}
+vcom -93 -work work {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/wb_cpu_programcounter.vhd}
+
+vlog -sv -work work +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject {C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FIFOToFFT_tb.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L cycloneive -L rtl_work -L work -L FFTBlock -L fft_ii_0 -voptargs="+acc"  FIFOToFFT_suite
+
+add wave *
+view structure
+view signals
+run -all

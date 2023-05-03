@@ -2,8 +2,11 @@
 
 module FIFOToFFT_suite;
 	
-	reg clock_slow, clock_fast, DVI, DVO;
-	reg [15:0] dataIn, dataOut;
+	reg clock_slow, clock_fast, DVI;
+	reg [15:0] dataIn;
+	reg [31:0] result;
+	wire [15:0] dataOut;
+	wire DVO;
 	
 	int clock_counter;
 	int i;
@@ -18,6 +21,13 @@ module FIFOToFFT_suite;
 	.DVO(DVO),
 	.dataIn(dataIn),
 	.dataOut(dataOut)
+	);
+	
+	magnitude_wrapper magnitude_wrapper_inst(
+	.clk(clock_fast),
+	.data_in (dataOut),
+	.DVI(DVO),
+	.result(result)
 	);
 	
 	initial begin

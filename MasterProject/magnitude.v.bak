@@ -1,0 +1,17 @@
+module ();
+
+input clk;
+input ready;
+
+initial begin
+
+	index <= 0;
+	magn <= 0;
+	n <= 0;
+end 
+
+
+always @(posedge clk) begin
+
+	if(ready == 1) begin
+		

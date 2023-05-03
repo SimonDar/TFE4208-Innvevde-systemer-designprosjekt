@@ -44,174 +44,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[0]",
-					"strict" : false
-				},
-				{
 					"name" : "HEX6[6]",
 					"strict" : false
 				},
@@ -272,27 +104,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[7]",
+					"name" : "LEDG15[7]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[6]",
+					"name" : "LEDG15[6]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[5]",
+					"name" : "LEDG15[5]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[4]",
+					"name" : "LEDG15[4]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[3]",
+					"name" : "LEDG15[3]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[2]",
+					"name" : "LEDG15[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG15[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG15[0]",
 					"strict" : false
 				},
 				{
@@ -408,10 +248,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[5]",
-					"strict" : false
-				},
-				{
 					"name" : "SW[17]",
 					"strict" : false
 				},
@@ -456,6 +292,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
 					"name" : "SW[4]",
 					"strict" : false
 				},
@@ -481,14 +321,6 @@
 				},
 				{
 					"name" : "KEY[3]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[1]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[2]",
 					"strict" : false
 				},
 				{

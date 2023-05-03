@@ -1,5 +1,5 @@
 Analysis & Elaboration report for spectru
-Sun Apr 30 15:11:42 2023
+Mon May 01 14:15:36 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Sun Apr 30 15:11:42 2023       ;
+; Analysis & Elaboration Status      ; Successful - Mon May 01 14:15:36 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; spectru                                     ;
 ; Top-level Entity Name              ; magnitude_wrapper                           ;
@@ -411,7 +411,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Apr 30 15:11:05 2023
+    Info: Processing started: Mon May 01 14:15:00 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off spectru -c spectru --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2262,10 +2262,10 @@ Info (12128): Elaborating entity "magnitude_fsm" for hierarchy "magnitude_fsm:ma
 Info (12128): Elaborating entity "magnitude" for hierarchy "magnitude:magnitude_inst" File: C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/magnitude_wrapper.v Line: 42
 Info (144001): Generated suppressed messages file C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/Project_Guitar_Hero/output_files/spectru.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4992 megabytes
-    Info: Processing ended: Sun Apr 30 15:11:42 2023
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Peak virtual memory: 4994 megabytes
+    Info: Processing ended: Mon May 01 14:15:36 2023
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:43
 
 
 +--------------------------------------------+

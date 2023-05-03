@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/simulation/modelsim
+Pauk_dspip_math_pkg
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 w1682933178
+R0
+Z5 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_math_pkg.vhd
+Z6 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_math_pkg.vhd
+l0
+L51
+VgZ9?QVL1InMc:39OTF3311
+!s100 [z_3ODE8b:W7XDJ[_]HTW0
+Z7 OV;C;10.5b;63
+31
+b1
+Z8 !s110 1682945210
+!i10b 1
+Z9 !s108 1682945210.000000
+Z10 !s90 -reportprogress|300|-93|-work|FFTBlock|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_math_pkg.vhd|
+Z11 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_math_pkg.vhd|
+!i113 1
+Z12 o-93 -work FFTBlock
+Z13 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 18 auk_dspip_math_pkg 0 22 gZ9?QVL1InMc:39OTF3311
+R1
+R2
+R3
+l0
+L128
+Vj7AK9SnIEV3=dHPYZif3_1
+!s100 `941_Ff6o7=GBNnXYB1eU3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Pauk_dspip_text_pkg
+R1
+R2
+R3
+R4
+R0
+Z14 8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_text_pkg.vhd
+Z15 FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_text_pkg.vhd
+l0
+L60
+V03U@z77O@b:DO0mVkJTnF1
+!s100 D132L>H75ieXQdW840k7O0
+R7
+31
+b1
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-93|-work|FFTBlock|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_text_pkg.vhd|
+Z17 !s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/auk_dspip_text_pkg.vhd|
+!i113 1
+R12
+R13
+Bbody
+DPx4 work 18 auk_dspip_text_pkg 0 22 03U@z77O@b:DO0mVkJTnF1
+R1
+R2
+R3
+l0
+L76
+VOK[X@T;;665b1omlLIi]73
+!s100 8<?]li33IkB>fMMF[SR`S2
+R7
+31
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+vFFTBlock
+!s110 1682945208
+!i10b 1
+!s100 FXF7J0L6ZiDcI7XnKaFQ42
+I8SVHYMX3NBIfQTl2i@;jE1
+Z18 VDg1SIo80bB@j0V0VzS_@n1
+R0
+R4
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/FFTBlock.v
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/FFTBlock.v
+L0 6
+Z19 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1682945208.000000
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/FFTBlock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|FFTBlock|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/FFTBlock.v|
+!i113 1
+o-vlog01compat -work FFTBlock
+!s92 -vlog01compat -work FFTBlock +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis
+Z20 tCvgOpt 0
+n@f@f@t@block
+vFFTBlock_fft_ii_0
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R8
+!i10b 1
+!s100 Q_5EeRN]f2I0`Z9@42Q810
+I9JP01:a6173AZn7>Ua=`n2
+R18
+!s105 FFTBlock_fft_ii_0_sv_unit
+S1
+R0
+R4
+8C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/FFTBlock_fft_ii_0.sv
+FC:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/FFTBlock_fft_ii_0.sv
+L0 15
+R19
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/FFTBlock_fft_ii_0.sv|
+!s90 -reportprogress|300|-sv|-work|FFTBlock|+incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules|C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules/FFTBlock_fft_ii_0.sv|
+!i113 1
+o-sv -work FFTBlock
+!s92 -sv -work FFTBlock +incdir+C:/Users/magnu/Documents/skole/Invevde_systemer_designprosjekt/project/TFE4208-Innvevde-systemer-designprosjekt/MasterProject/FFTBlock/synthesis/submodules
+R20
+n@f@f@t@block_fft_ii_0
