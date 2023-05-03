@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>28-Apr-2023 11:36:47</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1682674607081</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>03-May-2023 10:17:30</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1683101850226</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\liero\Documents\GitHub\TFE4208-Innvevde-systemer-designprosjekt\MasterProject\software\getIndex_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\DE2_115_SOPC.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>

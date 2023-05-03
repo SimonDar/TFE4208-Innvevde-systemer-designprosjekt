@@ -1,9 +1,9 @@
-13:07:07 **** Incremental Build of configuration Nios II for project getIndex ****
+10:19:10 **** Build of configuration Nios II for project getIndex ****
 make all 
 Info: Building ../getIndex_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../getIndex_bsp/
 [BSP build complete]
 [getIndex build complete]
 
-13:07:07 Build Finished (took 654ms)
+10:19:11 Build Finished (took 1s.341ms)
 

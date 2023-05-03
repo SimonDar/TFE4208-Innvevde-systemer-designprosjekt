@@ -4,7 +4,7 @@
 <stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="1"/>
 <booleanAttribute key="downloadProgram" value="true"/>
-<stringAttribute key="elfFile" value="C:\Users\magnu\Documents\skole\Invevde_systemer_designprosjekt\project\TFE4208-Innvevde-systemer-designprosjekt\MasterProject\software\killme\killme.elf"/>
+<stringAttribute key="elfFile" value="C:\Users\liero\Documents\GitHub\TFE4208-Innvevde-systemer-designprosjekt\MasterProject\software\killme\killme.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
